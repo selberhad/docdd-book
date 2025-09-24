@@ -1,6 +1,10 @@
 # AI Meta Docs (mdBook)
 
+[![Deploy mdBook to GitHub Pages](https://github.com/selberhad/docdd-book/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/selberhad/docdd-book/actions/workflows/gh-pages.yml)
+
 A curated, versioned documentation set for Doc‑Driven Development (DDD), toy models, and AI‑legible engineering practices. This repo uses mdBook to present the docs as a searchable site with a sidebar and clean navigation.
+
+Live site (after first successful deploy): https://selberhad.github.io/docdd-book/
 
 ## Quick Start
 - Prereqs: rustup + cargo installed (Rust stable).
