@@ -12,15 +12,13 @@ Executive summary of how the documentation set fits together, the core concepts 
 ## How the Docs Relate
 
 - Process and Method
-  - DDD.md: The operating protocol—docs → tests → implementation → learnings—with guardrails (complexity, dependencies, security) and self-audit.
-  - TOY_DEV.md: Why we use toy models, how to keep them small, disciplined, and discardable.
-  - PLAN_WRITING.md: How to write stepwise, test-first plans with objective success criteria.
-  - LEARNINGS_WRITING.md: How to capture validated insights, failures, and open questions concisely.
-  - README_WRITING.md: How to write library-level READMEs optimized for AI assistants.
+  - [Doc‑Driven Development (DDD)](./guides/ddd.md): The operating protocol—docs → tests → implementation → learnings—with guardrails and self‑audit.
+  - [Toy Model Development](./guides/toy-dev.md): Why we use toy models, and how to keep them small, disciplined, and discardable.
+  - [Plan Writing](./guides/writing/plan.md): Stepwise, test‑first plans with objective success criteria.
+  - [Learnings Writing](./guides/writing/learnings.md): Capture validated insights, failures, and open questions concisely.
+  - [README Writing](./guides/writing/overview.md): Library‑level READMEs optimized for AI assistants.
 - Diagnostics and Verification
-  - DEBUGGERS.md: CLI + JSON as debugger mode for LLM agents—contract, pipelines as traces, and golden tests as breakpoints.
-- Index
-  - DOC_MAP.md: One-page map with links and short summaries of each document.
+  - [CLI + JSON as Debugger](./guides/debuggers.md): Contract, pipelines as traces, and golden tests as breakpoints.
 
 ## Core Concepts
 
@@ -31,11 +29,11 @@ Executive summary of how the documentation set fits together, the core concepts 
 
 ## Typical Flow
 
-1) Draft SPEC and PLAN for the smallest viable slice (DDD.md, PLAN_WRITING.md).  
+1) Draft SPEC and PLAN for the smallest viable slice ([DDD](./guides/ddd.md), [Plan Writing](./guides/writing/plan.md)).  
 2) Derive tests and a minimal implementation.  
 3) Validate using CLI+JSON pipelines, logs, and golden tests.  
 4) Capture LEARNINGS, adjust constraints, and iterate or integrate.  
-5) Keep READMEs and DOC_MAP current for fast orientation.
+5) Keep pages current and cross‑linked for fast orientation.
 
 ## What Matters
 

@@ -158,11 +158,8 @@ def write_summary():
     parts.append(line("- [Playbook](./playbooks/playbook.md)"))
     parts.append("\n")
 
-    parts.append(line("## Specs"))
-    parts.append(line("- [Spec Writing Guide](./specs/spec-writing.md)"))
-    parts.append("\n")
-
     parts.append(line("## Writing Guides"))
+    parts.append(line("- [Spec Writing Guide](./specs/spec-writing.md)"))
     parts.append(line("- [Plan Writing](./guides/writing/plan.md)"))
     parts.append(line("- [Learnings Writing](./guides/writing/learnings.md)"))
     parts.append(line("- [README Writing](./guides/writing/readme.md)"))
