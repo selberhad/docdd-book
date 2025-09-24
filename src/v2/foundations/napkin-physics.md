@@ -1,6 +1,17 @@
-# Napkin Physics (New Edition)
+# Napkin Physics
 
-Why: upstream simplification to prevent scope drift. Capture problem, assumptions, invariant, mechanism, and first try before writing detailed docs.
+Upstream simplification to prevent scope drift. Capture the problem and constraints on a “napkin” before writing detailed docs.
 
-- Reference: Napkin Physics section in [Playbook](../../playbooks/playbook.md)
-- Consolidate: include examples and anti‑patterns; keep it short and actionable.
+Structure
+- Problem: one sentence.
+- Assumptions: 3–5 bullets.
+- Invariant/Contract: one precise property that must hold.
+- Mechanism: ≤5 bullets describing the minimal path (single‑file spike if possible).
+- First Try: a short paragraph with the simplest approach.
+
+Prohibitions
+- No frameworks; no new layers; no new nouns unless two are deleted elsewhere.
+
+Use it before SPEC/PLAN to encourage parsimony. Keep it short and actionable.
+
+References: [Doc‑Driven Development (Napkin Physics Mode)](../../guides/ddd.md), [Playbook (Napkin Physics)](../../playbooks/playbook.md)
