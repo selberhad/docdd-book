@@ -1,22 +1,22 @@
-Doc-Driven, AI-First Development Protocol (DDD)
+# Doc-Driven, AI-First Development Protocol (DDD)
 
-Purpose
+## Purpose
   This document defines how an AI assistant should operate inside this repository.
   It codifies the Doc Driven Development (DDD) paradigm, toy-model practice, and
   the CLI+JSON debugging substrate. Treat this as the canonical protocol.
 
-Operating Principles
+## Operating Principles
   - AI generates everything: docs, specs, plans, tests, implementations, scaffolding.
   - Humans review, request revisions, and merge; AI loops until approval.
   - Drafts are disposable; clarity and constraints are durable.
   - Prefer parsimony: simplest mechanism that works today beats abstract extensibility.
   - Make state legible to humans and agents: JSON over hidden state, CLIs over frameworks.
 
-Roles
+## Roles
   - Agent: Produce artifacts, self-audit, run tests, propose diffs, respect guardrails.
   - Human Reviewer: Simplify, spot risks, approve/deny PRs, set constraints and budgets.
 
-Core Artifacts (Meta-Document Layer)
+## Core Artifacts (Meta-Document Layer)
   - README.md (per library)
       Purpose: 100–200 words context refresh for AI; what it does, key API, gotchas.
       Must contain: header + one-liner, 2–3 sentence purpose, 3–5 essential method signatures,
@@ -33,7 +33,7 @@ Core Artifacts (Meta-Document Layer)
       Purpose: Retrospective to capture architectural insights, pivots, fragile seams,
                production readiness, and reusable patterns.
 
-Driving Metaphor (Operational Framing)
+## Driving Metaphor (Operational Framing)
   Think of each core artifact as part of a harness system guiding LLM-agents:
 
   - SPEC.md is the bit: precise contract of what inputs/outputs are allowed, keeping the pull straight.  
@@ -43,7 +43,7 @@ Driving Metaphor (Operational Framing)
 
   Together these artifacts let the human act as driver, ensuring the cart (implementation) moves forward under control, with clarity preserved and ambiguity eliminated.  
 
-High-Level Workflow (DDD)
+## High-Level Workflow (DDD)
   1) Docs
        Generate or update SPEC.md and PLAN.md for the current, minimal slice of scope.
        Keep README.md for any touched library crisp and current.
@@ -56,7 +56,7 @@ High-Level Workflow (DDD)
   4) Learnings
        Update LEARNINGS.md with what held, what failed, why, and next constraints.
 
-Napkin Physics Mode (Upstream Simplification)
+## Napkin Physics Mode (Upstream Simplification)
   Use this mode before drafting SPEC/PLAN to encourage parsimony.
   Output structure:
     Problem: one sentence.
@@ -67,7 +67,7 @@ Napkin Physics Mode (Upstream Simplification)
   Prohibitions:
     No frameworks, no new layers, no new nouns unless two are deleted elsewhere.
 
-Toy Models (Downstream Experiments)
+## Toy Models (Downstream Experiments)
   Definition:
     Small, sharply scoped, fully specced implementations designed to be thrown away.
   Purpose:
@@ -91,7 +91,7 @@ Toy Models (Downstream Experiments)
     - Never exceed two axes per toy; more belongs to higher-order integration or production scope.
     - This discipline keeps learnings sharp, avoids doc bloat, and mirrors controlled experiments.
 
-CLI + JSON as Debugger (AI-Legible Execution)
+## CLI + JSON as Debugger (AI-Legible Execution)
   Rationale:
     Enable the agent to “single-step” systems deterministically, inspect state, and bisect.
   Contract:
@@ -109,7 +109,7 @@ CLI + JSON as Debugger (AI-Legible Execution)
     modB < a.json > b.json
     modC --flag X < b.json > out.json
 
-Repository Layout Expectations
+## Repository Layout Expectations
   - /libs/<name>/README.md      concise library refresh for agents
   - /docs/SPEC.md               current contract for active slice
   - /docs/PLAN.md               stepwise plan for active slice
@@ -119,7 +119,7 @@ Repository Layout Expectations
   - /tests/*                    golden, unit, integration tests; fixtures/ as needed
   - /fixtures/*.json            canonical input/output examples for CLIs and APIs
 
-Guardrails and Policies
+## Guardrails and Policies
   Dependencies:
     Default allowlist: stdlib or equivalent; approved lightweight libs must be enumerated.
     Any new import must be justified in SPEC.md and whitelisted in PLAN.md for this slice.
@@ -135,13 +135,13 @@ Guardrails and Policies
   Security and Privacy:
     No PII in fixtures; redact or synthesize test data.
 
-Testing Strategy
+## Testing Strategy
   - Unit tests per function or CLI; golden I/O tests for pipelines.
   - Error-path tests for the documented failure modes.
   - Contract tests: ensure JSON conforms to schema versions; invariants hold.
   - Snapshot tests permissible for textual outputs with stable normalization rules.
 
-Self-Audit (Agent must run before proposing diffs)
+## Self-Audit (Agent must run before proposing diffs)
   Print the following metrics and simplify once if any threshold is exceeded:
     file_count_changed
     total_added_lines
@@ -152,21 +152,21 @@ Self-Audit (Agent must run before proposing diffs)
     test_count_added vs prod_functions_touched
   If warned, rerun Napkin Physics and regenerate minimal spike.
 
-Human Review Gates (What to present)
+## Human Review Gates (What to present)
   - One-paragraph summary of problem and mechanism (from Napkin output).
   - SPEC and PLAN diffs with checkboxes aligned to success criteria.
   - Test results: pass/fail matrix; coverage or representative list.
   - If CLI work: pipeline diagram and sample fixture diffs (a.json → b.json).
   - Proposed next step: smallest next increment with rationale.
 
-Decision Outcomes (Reviewer)
+## Decision Outcomes (Reviewer)
   - approve: merge as-is; add brief LEARNINGS entry.
   - revise_docs: tighten SPEC/PLAN; agent regenerates tests/impl.
   - revise_tests: adjust contracts; agent revises implementation.
   - revise_impl: simplify or correct; agent edits code only.
   - abort: stop slice; record why and constraints learned.
 
-Prompts and Modes (for the Agent)
+## Prompts and Modes (for the Agent)
   Napkin Physics (pre-docs):
     Mode: physicists with a napkin.
     Output: Problem; Assumptions; Invariant; Mechanism; First Try; Prohibitions respected.
@@ -179,7 +179,7 @@ Prompts and Modes (for the Agent)
   Self-Audit Mode:
     Compute repository metrics; if warnings, simplify and retry once before PR.
 
-Success Criteria (per slice)
+## Success Criteria (per slice)
   - A minimal spike exists that demonstrates the core mechanism end-to-end.
   - Tests derived from SPEC pass; error-path tests cover top 2 failure modes.
   - If CLIs: pipeline reproduces golden fixtures deterministically.
@@ -187,7 +187,7 @@ Success Criteria (per slice)
   - LEARNINGS adds at least one architectural insight or constraint.
   - Complexity and dependency guardrails respected.
 
-Simplification Heuristics (apply before coding and before PR)
+## Simplification Heuristics (apply before coding and before PR)
   - One-File Spike rule: prefer 1 file ≤ 120 lines to prove the loop.
   - Two-Function Rule: exactly two public entrypoints when feasible:
       parse(input)->state and apply(state,input)->state|output.

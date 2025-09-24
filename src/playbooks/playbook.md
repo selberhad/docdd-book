@@ -6,7 +6,7 @@
 
 Doc-Driven Development (DocDD) turns ambiguous problems into deterministic, legible systems through lightweight docs, disposable toy models, and incremental integrations.  
 
-See: [[DDD]].
+See: [Doc-Driven Development (DDD)](../guides/ddd.md).
 
 ---
 
@@ -29,7 +29,7 @@ See: [[DDD]].
 4. LEARNINGS — capture outcomes and constraints.
 5. README - publish tool/API docs for future use.
 
-See:  [[SPEC_WRITING]], [[PLAN_WRITING]], [[LEARNINGS_WRITING]], [[README_WRITING]]
+See:  [Spec Writing](../specs/spec-writing.md), [Plan Writing](../guides/writing/plan.md), [Learnings Writing](../guides/writing/learnings.md), [README Writing](../guides/writing/overview.md)
 
 ---
 
@@ -43,7 +43,7 @@ Quick pre-spec simplification:
 
 Rule: no frameworks, no new nouns unless two are deleted.  
 
-See: [[DDD]].
+See: [Doc-Driven Development (DDD)](../guides/ddd.md).
 
 ---
 
@@ -62,7 +62,7 @@ Goal: compounding clarity
 
 Anti-Goal: combinatorial drift
 
-See: [[KICKOFF_WRITING]].
+See: [Kickoff Writing](../guides/writing/kickoff.md).
 
 ---
 
@@ -74,7 +74,7 @@ Cycle: SPEC → PLAN → Tests → Minimal code → LEARNINGS.
 
 Axis discipline: a base toy isolates one axis; an integration toy merges exactly two.  
 
-See: [[TOY_DEV]].
+See: [Toy Model Development](../guides/toy-dev.md).
 
 ---
 
@@ -92,7 +92,7 @@ Error JSON shape:
 
 Schema-first: document I/O schemas in SPEC.  
 
-See: [[DEBUGGERS]].
+See: [CLI + JSON as Debugger](../guides/debuggers.md).
 
 ---
 
@@ -100,7 +100,7 @@ See: [[DEBUGGERS]].
 
 Compose CLIs as UNIX-style pipelines with inspectable intermediates, but only when this makes sense. It's not a good fit for every project.
 
-See: [[DDD]], [[DEBUGGERS]].
+See: [Doc-Driven Development (DDD)](../guides/ddd.md), [CLI + JSON as Debugger](../guides/debuggers.md).
 
 ---
 

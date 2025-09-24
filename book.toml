@@ -17,6 +17,7 @@ warning-policy = "error"
 exclude = [
     # Add patterns to exclude if needed
 ]
+optional = true
 
 [build]
 create-missing = false

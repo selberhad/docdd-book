@@ -20,6 +20,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src"
 
+# Prefer sourcing from docs/legacy if present; otherwise use repo root
+LEGACY = ROOT / "docs" / "legacy"
+ORIGIN = LEGACY if LEGACY.exists() else ROOT
+
 
 def ensure_dirs():
     (SRC / "playbooks").mkdir(parents=True, exist_ok=True)
@@ -28,9 +32,24 @@ def ensure_dirs():
     (SRC / "appendices").mkdir(parents=True, exist_ok=True)
 
 
+def clean_src():
+    """Delete all contents of ./src for a fresh migration."""
+    if not SRC.exists():
+        SRC.mkdir(parents=True)
+        return
+    for p in SRC.iterdir():
+        try:
+            if p.is_dir() and not p.is_symlink():
+                shutil.rmtree(p)
+            else:
+                p.unlink()
+        except Exception as e:
+            print(f"Warning: failed to remove {p}: {e}")
+
+
 def choose_latest_version(pattern: str) -> Path | None:
-    """Find the highest *_Vn.md matching pattern (glob pattern relative to ROOT)."""
-    candidates = sorted(ROOT.glob(pattern))
+    """Find the highest *_Vn.md matching pattern (glob pattern relative to ORIGIN)."""
+    candidates = sorted(ORIGIN.glob(pattern))
     latest = None
     max_n = -1
     version_re = re.compile(r"_V(\d+)\.md$")
@@ -72,27 +91,31 @@ def create_book_toml():
 
 
 def migrate():
+    print(f"Using source directory: {ORIGIN}")
+    print("Cleaning ./src for fresh migration ...")
+    clean_src()
     ensure_dirs()
 
     mapping: list[tuple[str, str]] = [
         ("README.md", "introduction.md"),
-        ("DOC_MAP.md", "doc-map.md"),
+        # Excluded: DOC_MAP.md (not part of the book)
         ("SPEC_WRITING.md", "specs/spec-writing.md"),
         ("DEBUGGERS.md", "guides/debuggers.md"),
         ("DDD.md", "guides/ddd.md"),
         ("TOY_DEV.md", "guides/toy-dev.md"),
         ("PLAN_WRITING.md", "guides/writing/plan.md"),
         ("LEARNINGS_WRITING.md", "guides/writing/learnings.md"),
-        ("README_WRITING.md", "guides/writing/readme.md"),
+        ("README_WRITING.md", "guides/writing/overview.md"),
         ("KICKOFF_WRITING.md", "guides/writing/kickoff.md"),
-        ("SPEC_V2.md", "specs/spec.md"),
+        # Canonicalize: use latest SPEC as the Spec Writing Guide
+        ("SPEC_V2.md", "specs/spec-writing.md"),
         ("PLAN.md", "appendices/plan.md"),
-        ("FINAL_COMP.md", "appendices/final-comp.md"),
+        # Excluded: FINAL_COMP.md (not part of the book)
     ]
 
     # Copy canonical single-version files if present
     for src_name, dest_rel in mapping:
-        src_path = ROOT / src_name
+        src_path = ORIGIN / src_name
         if src_path.exists():
             copy_file(src_path, SRC / dest_rel)
         else:
@@ -119,7 +142,7 @@ def write_summary():
         return text + "\n"
 
     parts.append(line("- [Introduction](./introduction.md)"))
-    parts.append(line("- [Documentation Map](./doc-map.md)"))
+    # Excluded: Documentation Map
     parts.append("\n")
 
     parts.append(line("## Core Guides"))
@@ -133,7 +156,6 @@ def write_summary():
     parts.append("\n")
 
     parts.append(line("## Specs"))
-    parts.append(line("- [Product Spec](./specs/spec.md)"))
     parts.append(line("- [Spec Writing Guide](./specs/spec-writing.md)"))
     parts.append("\n")
 
@@ -146,7 +168,7 @@ def write_summary():
 
     parts.append(line("## Appendices"))
     parts.append(line("- [Plan (Example/Template)](./appendices/plan.md)"))
-    parts.append(line("- [Final Compilation](./appendices/final-comp.md)"))
+    # Excluded: Final Compilation
 
     (SRC / "SUMMARY.md").write_text("".join(parts), encoding="utf-8")
     print("Wrote src/SUMMARY.md")

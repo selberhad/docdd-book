@@ -32,23 +32,23 @@ Its job: extract maximum value from an experiment by recording **what worked, wh
 ## Essential Sections
 
 ### Header
-    # Toy Model N: [System Name] – Learnings
-    Duration: X days | Status: [Complete/Incomplete] | Estimate: Y days
+    # Toy Model N: System Name – Learnings
+    Duration: X days | Status: Complete/Incomplete | Estimate: Y days
 
 ### Summary
-- Built: [1 line]  
-- Worked: [1–2 key successes]  
-- Failed: [1–2 key failures]  
-- Uncertain: [open question]
+- Built: 1 line  
+- Worked: 1–2 key successes  
+- Failed: 1–2 key failures  
+- Uncertain: open question
 
 ### Evidence
-- ✅ Validated: [concise finding with evidence]  
-- ⚠️ Challenged: [difficulty, workaround, lesson]  
-- ❌ Failed: [explicit dead end]  
-- 🌀 Uncertain: [still unresolved]
+- ✅ Validated: concise finding with evidence  
+- ⚠️ Challenged: difficulty, workaround, lesson  
+- ❌ Failed: explicit dead end  
+- 🌀 Uncertain: still unresolved
 
 ### Pivots
-- [Original approach] → [New approach], why, and what remains unknown.
+- Original approach → New approach, why, and what remains unknown.
 
 ### Impact
 - Reusable pattern or asset  
