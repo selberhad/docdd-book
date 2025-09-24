@@ -17,3 +17,6 @@ __pycache__/
 # Logs & env
 *.log
 .env
+
+# Migration backups
+src*.tgz

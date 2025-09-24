@@ -16,6 +16,7 @@ import os
 import re
 import shutil
 from pathlib import Path
+import tarfile
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src"
@@ -92,6 +93,8 @@ def create_book_toml():
 
 def migrate():
     print(f"Using source directory: {ORIGIN}")
+    # Backup current ./src non-clobbering before cleaning
+    backup_src()
     print("Cleaning ./src for fresh migration ...")
     clean_src()
     ensure_dirs()
@@ -183,3 +186,25 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def backup_src():
+    """Create a tar.gz backup of ./src at repo root: src.tgz, or src-<n>.tgz if exists."""
+    if not SRC.exists():
+        print("No ./src to back up.")
+        return
+    # Choose non-clobbering name
+    candidate = ROOT / "src.tgz"
+    if candidate.exists():
+        i = 1
+        while True:
+            alt = ROOT / f"src-{i}.tgz"
+            if not alt.exists():
+                candidate = alt
+                break
+            i += 1
+    try:
+        with tarfile.open(candidate, "w:gz") as tar:
+            tar.add(SRC, arcname="src")
+        print(f"Backed up ./src -> {candidate}")
+    except Exception as e:
+        print(f"Warning: failed to back up ./src: {e}")
