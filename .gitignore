@@ -1,0 +1,19 @@
+# mdBook output
+book/
+
+# Rust
+target/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Editors/OS
+.DS_Store
+.idea/
+.vscode/
+
+# Logs & env
+*.log
+.env

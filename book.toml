@@ -1,0 +1,22 @@
+[book]
+title = "AI Meta Docs"
+authors = ["Contributors"]
+language = "en"
+multilingual = false
+src = "src"
+
+[output.html]
+default-theme = "light"
+git-repository-url = ""
+
+# Enable link checking as part of `mdbook build` if the plugin is installed.
+[output.linkcheck]
+follow-web-links = false
+traverse-parent-directories = false
+warning-policy = "error"
+exclude = [
+    # Add patterns to exclude if needed
+]
+
+[build]
+create-missing = false
