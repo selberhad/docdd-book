@@ -2,23 +2,24 @@
 
 ## Overview
 
-- **Total files:** 17
-- **Total words:** 6,026
-- **Total lines:** 1,414
-- **Total characters:** 48,040
-- **Reading time:** ~30 minutes
+- **Total files:** 18
+- **Total words:** 6,468
+- **Total lines:** 1,456
+- **Total characters:** 50,635
+- **Reading time:** ~32 minutes
 
 ## Per-File Breakdown
 
 | File | Words | Lines |
 |------|------:|------:|
-| SUMMARY.md | 59 | 26 |
+| SUMMARY.md | 60 | 27 |
 | authoring/README.md | 158 | 21 |
 | authoring/kickoff-writing.md | 338 | 75 |
 | authoring/learnings-writing.md | 188 | 71 |
 | authoring/plan-writing.md | 345 | 119 |
 | authoring/readme-writing.md | 304 | 132 |
 | authoring/spec-writing.md | 338 | 101 |
+| faq.md | 441 | 41 |
 | foundations/ddd-principles.md | 591 | 93 |
 | foundations/ddd-repo-guardrails.md | 687 | 122 |
 | foundations/debugger-mindset.md | 412 | 61 |
@@ -29,4 +30,4 @@
 | patterns/examples/archive-browser-spec.md | 481 | 128 |
 | patterns/examples-archive.md | 223 | 35 |
 | practice/docdd-agents-template.md | 420 | 121 |
-| **TOTAL** | **6,026** | **1,414** |
+| **TOTAL** | **6,468** | **1,456** |
