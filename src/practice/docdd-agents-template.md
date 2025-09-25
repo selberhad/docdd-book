@@ -1,4 +1,4 @@
-# DocDD Loop & Kickoff
+# DocDD AGENTS.md Template
 
 ---
 
@@ -124,4 +124,3 @@ Habits to constrain complexity:
 - **Human** — spotter: nudges when the agent stalls or drifts, and makes judgment calls the agent cannot.
 
 ---
-

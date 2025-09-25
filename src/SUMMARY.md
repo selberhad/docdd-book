@@ -10,7 +10,7 @@
   - [Repo Layout, Guardrails, Workflow](./foundations/ddd-repo-guardrails.md)
 
 ### Part II — Practice (How)
-- [DocDD Loop & Kickoff](./practice/loop-and-kickoff.md)
+- [DocDD AGENTS.md Template](./practice/docdd-agents-template.md)
 - [Checklists & Workflow](./practice/checklists-and-workflow.md)
 
 ### Part III — Authoring Guides
