@@ -3,10 +3,10 @@
 ## Overview
 
 - **Total files:** 17
-- **Total words:** 5,964
-- **Total lines:** 1,411
-- **Total characters:** 47,430
-- **Reading time:** ~29 minutes
+- **Total words:** 6,062
+- **Total lines:** 1,423
+- **Total characters:** 48,280
+- **Reading time:** ~30 minutes
 
 ## Per-File Breakdown
 
@@ -27,6 +27,6 @@
 | patterns/examples/archive-browser-kickoff.md | 490 | 105 |
 | patterns/examples/archive-browser-plan.md | 406 | 68 |
 | patterns/examples/archive-browser-spec.md | 481 | 128 |
-| patterns/examples-archive.md | 125 | 23 |
+| patterns/examples-archive.md | 223 | 35 |
 | practice/docdd-agents-template.md | 420 | 121 |
-| **TOTAL** | **5,964** | **1,411** |
+| **TOTAL** | **6,062** | **1,423** |

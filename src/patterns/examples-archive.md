@@ -4,7 +4,19 @@ This archive lists concrete, working examples referenced throughout the book. It
 
 ## Archive Browser Project
 
-A complete DocDD example showing the full development cycle for a TUI archive browser. This example comes from an open‑source project created with the DocDD methodology: [chatgpt‑export‑viewer](https://www.npmjs.com/package/chatgpt-export-viewer).
+A complete DocDD example demonstrating the full development cycle from kickoff to shipped product. This real-world project produced [chatgpt‑export‑viewer](https://www.npmjs.com/package/chatgpt-export-viewer), a suite of composable CLI tools for browsing ChatGPT export archives.
+
+**Project outcome:** A cross-platform toolkit with clean human-AI collaboration boundaries:
+- **Human role:** Product direction, UX decisions, constraint setting, edge case validation
+- **Agent role:** Implementation, refactoring, shared pattern extraction, packaging polish
+
+**Key architectural decisions:**
+- CLI + JSON I/O for deterministic, testable composition
+- Keyboard-first TUI with instant responsiveness (`/` search, `n/N` navigation)
+- Modular libraries: ZIP access, terminal primitives, cross-platform launchers
+- Publishing discipline: proper `bin` entries, dependency management, lint/format gates
+
+The example demonstrates DocDD's strength in AI-first development: clear documentation boundaries enable effective human-agent collaboration while maintaining code quality and user experience standards.
 
 ### Kickoff Document
 Initial project definition using "napkin physics" to establish core constraints and approach.
