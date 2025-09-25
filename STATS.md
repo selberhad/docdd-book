@@ -2,17 +2,17 @@
 
 ## Overview
 
-- **Total files:** 18
-- **Total words:** 6,207
-- **Total lines:** 1,429
-- **Total characters:** 50,159
-- **Reading time:** ~31 minutes
+- **Total files:** 19
+- **Total words:** 6,502
+- **Total lines:** 1,467
+- **Total characters:** 52,623
+- **Reading time:** ~32 minutes
 
 ## Per-File Breakdown
 
 | File | Words | Lines |
 |------|------:|------:|
-| SUMMARY.md | 60 | 27 |
+| SUMMARY.md | 63 | 28 |
 | appendices/faq.md | 441 | 41 |
 | authoring/README.md | 158 | 21 |
 | authoring/kickoff-writing.md | 338 | 75 |
@@ -25,9 +25,10 @@
 | foundations/debugger-mindset.md | 426 | 99 |
 | foundations/napkin-physics.md | 93 | 19 |
 | foundations/toy-model-rationale.md | 493 | 117 |
+| patterns/chatgpt-export-viewer.md | 224 | 35 |
 | patterns/examples/archive-browser-kickoff.md | 490 | 105 |
 | patterns/examples/archive-browser-plan.md | 406 | 68 |
 | patterns/examples/archive-browser-spec.md | 481 | 128 |
-| patterns/examples-archive.md | 223 | 35 |
+| patterns/spatial-mud-database.md | 291 | 37 |
 | practice/docdd-agents-template.md | 420 | 121 |
-| **TOTAL** | **6,207** | **1,429** |
+| **TOTAL** | **6,502** | **1,467** |

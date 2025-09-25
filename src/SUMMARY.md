@@ -2,7 +2,7 @@
 
 
 ### Part I — Foundations (Why)
-- [Doc‑Driven Development — Principles](./foundations/ddd-principles.md)
+- [Doc‑Driven Development](./foundations/ddd-principles.md)
   - [Napkin Physics](./foundations/napkin-physics.md)
   - [Toy‑Model Rationale](./foundations/toy-model-rationale.md)
   - [Debugger Mindset](./foundations/debugger-mindset.md)
@@ -20,8 +20,9 @@
   - [Learnings Writing](./authoring/learnings-writing.md)
 
 ### Part IV — Patterns & Appendices
-- [Examples Archive](./patterns/examples-archive.md)
+- [Case Study I](./patterns/chatgpt-export-viewer.md)
   - [Archive Browser Kickoff](./patterns/examples/archive-browser-kickoff.md)
   - [Archive Browser Spec](./patterns/examples/archive-browser-spec.md)
   - [Archive Browser Plan](./patterns/examples/archive-browser-plan.md)
+- [Case Study II](./patterns/spatial-mud-database.md)
 - [FAQ](./appendices/faq.md)

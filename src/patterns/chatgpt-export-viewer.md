@@ -1,4 +1,4 @@
-# Examples Archive
+# Case Study I
 
 This archive lists concrete, working examples referenced throughout the book. It is intentionally small and current.
 
