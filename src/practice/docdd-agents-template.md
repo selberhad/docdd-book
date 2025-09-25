@@ -1,5 +1,7 @@
 # DocDD AGENTS.md Template
 
+This chapter provides a sample `AGENTS.md` you can drop into a repository to guide a coding agent in using Document‑Driven Development (DocDD). Treat it as a template: adapt roles, guardrails, and the DocDD loop to your project’s constraints and goals.
+
 ---
 
 ## 1. Purpose
