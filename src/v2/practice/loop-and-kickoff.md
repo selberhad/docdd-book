@@ -36,6 +36,7 @@ See:  [Spec Writing](../authoring/spec-writing.md), [Plan Writing](../authoring/
 ## 4. Napkin Physics
 
 Quick pre-spec simplification:  
+
 - Problem (1 sentence)  
 - Assumptions (a few bullets)  
 - Invariant (one crisp property)  
@@ -62,7 +63,7 @@ Goal: compounding clarity
 
 Anti-Goal: combinatorial drift
 
-See: [Kickoff Writing](../guides/writing/kickoff.md).
+See: [Kickoff](#5-kickoff-the-binary-weave).
 
 ---
 
@@ -74,7 +75,7 @@ Cycle: SPEC → PLAN → Tests → Minimal code → LEARNINGS.
 
 Axis discipline: a base toy isolates one axis; an integration toy merges exactly two.  
 
-See: [Toy Model Development](../guides/toy-dev.md).
+See: [Toy‑Model Rationale](../foundations/toy-model-rationale.md).
 
 ---
 
@@ -107,6 +108,7 @@ See: [Doc-Driven Development (DDD)](../foundations/ddd-principles.md), [CLI + JS
 ## 9. Guardrails & Heuristics
 
 Habits to constrain complexity:  
+
 - Default import allowlist; justify exceptions.  
 - Prefer single-file spikes.  
 - Two-Function Rule: parse(input)→state; apply(state,input)→state|output.  

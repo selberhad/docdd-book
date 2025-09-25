@@ -24,18 +24,21 @@ _Toy models are scientific experiments, not products. Their purpose is to learn,
 
 ### 1. Specification (SPEC.md)
 Define the experiment before you run it.  
+
 - Data structures, operations, and expected behaviors  
 - Edge cases and failure conditions  
 - Clear success criteria  
 
 ### 2. Planning (PLAN.md)
 Lay out the steps like a recipe.  
+
 - Sequence of test-first steps  
 - Risks and dependencies  
 - What to validate at each stage  
 
 ### 3. Implementation
 Run the experiment under strict discipline.  
+
 - Write failing tests first  
 - Add only enough code to make them pass  
 - Capture errors clearly and specifically  
@@ -43,6 +46,7 @@ Run the experiment under strict discipline.
 
 ### 4. Learning Extraction (LEARNINGS.md)
 Distill the insight.  
+
 - What worked, what failed  
 - Patterns worth reusing  
 - Integration implications  

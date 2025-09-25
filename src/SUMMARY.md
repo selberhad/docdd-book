@@ -33,10 +33,11 @@
 - [Checklists & Workflow](./v2/practice/checklists-and-workflow.md)
 
 ### Part III — Authoring Guides
-- [Spec Writing](./v2/authoring/spec-writing.md)
-- [Plan Writing](./v2/authoring/plan-writing.md)
-- [README Writing](./v2/authoring/readme-writing.md)
-- [Learnings Writing](./v2/authoring/learnings-writing.md)
+- [Authoring Guides](./v2/authoring/README.md)
+  - [Spec Writing](./v2/authoring/spec-writing.md)
+  - [Plan Writing](./v2/authoring/plan-writing.md)
+  - [README Writing](./v2/authoring/readme-writing.md)
+  - [Learnings Writing](./v2/authoring/learnings-writing.md)
 
 ### Part IV — Patterns & Appendices
 - [Toy Patterns](./v2/patterns/toy-patterns.md)

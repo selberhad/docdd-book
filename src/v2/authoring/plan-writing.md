@@ -9,12 +9,14 @@ _Guide to planning toy model development with TDD discipline._
 A **PLAN.md is a strategic roadmap** describing **what to build and how to build it step-by-step**. It enforces clarity, sequencing, and validation.
 
 ### ❌ NOT:
+
 - Implementation code
 - Literal test code
 - Copy-paste ready
 - Exhaustive details
 
 ### ✅ IS:
+
 - Stepwise development roadmap
 - TDD methodology guide
 - Illustrative code patterns only
@@ -25,6 +27,7 @@ A **PLAN.md is a strategic roadmap** describing **what to build and how to build
 ## Structure
 
 ### Header
+
 - **Overview**: Goal, scope, priorities
 - **Methodology**: TDD principles; what to test vs. not test
 
@@ -36,16 +39,19 @@ A **PLAN.md is a strategic roadmap** describing **what to build and how to build
     Why this step matters
 
     ### Step N.a: Write Tests
+
     - Outline test strategy (no literal code)
     - Key cases: core, error, integration
     - Expected validation behavior
 
     ### Step N.b: Implement
+
     - Tasks: file/module creation, core ops, integration
     - Code patterns for illustration only
     - State and error handling guidance
 
     ### Success Criteria
+
     - [ ] Clear, testable checkpoints
     - [ ] Functional + quality standards met
 
@@ -54,12 +60,14 @@ A **PLAN.md is a strategic roadmap** describing **what to build and how to build
 ## Key Practices
 
 ### TDD Discipline
+
 - Write failing tests first
 - Red → Green → Next
 - Focus on interfaces and contracts
 - Cover error paths explicitly
 
 ### Test Scope
+
 - ✅ Test: core features, errors, integration points
 - ❌ Skip: helpers, edge cases, perf, internals
 
@@ -91,6 +99,7 @@ Always check with concrete, objective boxes:
 ---
 
 ## Anti-Patterns
+
 - ❌ Full test code in Plan (use bullet outlines)
 - ❌ Full implementation code (use patterns only)
 - ❌ Over-detail (Plan guides, does not replace dev thinking)
@@ -98,6 +107,7 @@ Always check with concrete, objective boxes:
 ---
 
 ## Why This Works
+
 - **Clear sequencing**: prevents scope drift  
 - **TDD enforcement**: quality-first mindset  
 - **Concrete validation**: objective step completion  

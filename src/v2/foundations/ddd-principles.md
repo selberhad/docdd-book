@@ -6,6 +6,7 @@
   the CLI+JSON debugging substrate. Treat this as the canonical protocol.
 
 ## Operating Principles
+
   - AI generates everything: docs, specs, plans, tests, implementations, scaffolding.
   - Humans review, request revisions, and merge; AI loops until approval.
   - Drafts are disposable; clarity and constraints are durable.
@@ -13,22 +14,27 @@
   - Make state legible to humans and agents: JSON over hidden state, CLIs over frameworks.
 
 ## Roles
+
   - Agent: Produce artifacts, self-audit, run tests, propose diffs, respect guardrails.
   - Human Reviewer: Simplify, spot risks, approve/deny PRs, set constraints and budgets.
 
 ## Core Artifacts (Meta-Document Layer)
+
   - README.md (per library)
       Purpose: 100–200 words context refresh for AI; what it does, key API, gotchas.
       Must contain: header + one-liner, 2–3 sentence purpose, 3–5 essential method signatures,
                     core concepts, gotchas/caveats, representative quick test path.
+
   - SPEC.md
       Purpose: Comprehensive behavioral contract for the current scope.
       Must contain: input/output formats, invariants, internal state shapes, operations,
                     validation rules, error semantics, test scenarios, success criteria.
+
   - PLAN.md
       Purpose: Strategic roadmap; stepwise sequence using Docs → Tests → Impl cadence.
       Must contain: what to test vs. skip, order of steps, timeboxing, dependencies,
                     risks, explicit success checkboxes per step.
+
   - LEARNINGS.md
       Purpose: Retrospective to capture architectural insights, pivots, fragile seams,
                production readiness, and reusable patterns.
@@ -44,15 +50,19 @@
   Together these artifacts let the human act as driver, ensuring the cart (implementation) moves forward under control, with clarity preserved and ambiguity eliminated.  
 
 ## High-Level Workflow (DDD)
+
   1) Docs
        Generate or update SPEC.md and PLAN.md for the current, minimal slice of scope.
        Keep README.md for any touched library crisp and current.
+
   2) Tests
        Derive executable tests (or rubrics) directly from SPEC.md.
        Golden examples and negative/error-path cases are required.
+
   3) Implementation
        Provide the minimal code to pass tests; keep changes tightly scoped.
        Prefer single-file spikes for first proofs.
+
   4) Learnings
        Update LEARNINGS.md with what held, what failed, why, and next constraints.
 
@@ -79,37 +89,48 @@
   Exit Criteria:
     All step-level success criteria checked; insights recorded; follow-up scope cut.
   Toy Integration Convention:
-    - Each toyN_* directory must contain exactly one SPEC.md, PLAN.md, and LEARNINGS.md.
-    - If a SPEC or PLAN grows too large or unfocused, split scope into new toyN_* experiments.
-    - Integration toys (e.g. toy5_*, toy6_*) exist to recombine validated sub-toys.
-    - Replace in place: update LEARNINGS.md rather than creating multiples for the same toy.
-    - When consolidating, fold prior learnings into a single current doc; discard stale versions.
-    - Always bias toward minimal scope: smaller toys, fewer docs, clearer insights.
+
+  - Each toyN_* directory must contain exactly one SPEC.md, PLAN.md, and LEARNINGS.md.
+  - If a SPEC or PLAN grows too large or unfocused, split scope into new toyN_* experiments.
+  - Integration toys (e.g. toy5_*, toy6_*) exist to recombine validated sub-toys.
+  - Replace in place: update LEARNINGS.md rather than creating multiples for the same toy.
+  - When consolidating, fold prior learnings into a single current doc; discard stale versions.
+  - Always bias toward minimal scope: smaller toys, fewer docs, clearer insights.
+
   Axis Principle for Toy Models:
-    - A base toy isolates exactly one axis of complexity (a single invariant, mechanism, or seam).
-    - An integration toy merges exactly two axes to probe their interaction.
-    - Never exceed two axes per toy; more belongs to higher-order integration or production scope.
-    - This discipline keeps learnings sharp, avoids doc bloat, and mirrors controlled experiments.
+
+  - A base toy isolates exactly one axis of complexity (a single invariant, mechanism, or seam).
+  - An integration toy merges exactly two axes to probe their interaction.
+  - Never exceed two axes per toy; more belongs to higher-order integration or production scope.
+  - This discipline keeps learnings sharp, avoids doc bloat, and mirrors controlled experiments.
 
 ## CLI + JSON as Debugger (AI-Legible Execution)
   Rationale:
-    Enable the agent to “single-step” systems deterministically, inspect state, and bisect.
+
+  - Enable the agent to “single-step” systems deterministically, inspect state, and bisect.
+
   Contract:
-    Each functional module provides a CLI:
-      stdin: JSON
-      stdout: JSON
-      stderr: machine-parsable error JSON when failing
-    CLIs are pure (no hidden state); logs allowed but do not alter outputs.
+
+  - Each functional module provides a CLI:
+    - stdin: JSON
+    - stdout: JSON
+    - stderr: machine-parsable error JSON when failing
+  - CLIs are pure (no hidden state); logs allowed but do not alter outputs.
+
   Conventions:
-    Schema-first: document input/output JSON schemas and versions in SPEC.md.
-    Stable Errors: shape { "type": "ERR_CODE", "message": "human text", "hint": "actionable fix" }.
-    Quick Test: each CLI ships with a one-command golden test path.
+
+  - Schema-first: document input/output JSON schemas and versions in SPEC.md.
+  - Stable Errors: shape { "type": "ERR_CODE", "message": "human text", "hint": "actionable fix" }.
+  - Quick Test: each CLI ships with a one-command golden test path.
+
   Minimal Pipeline Pattern:
-    modA < in.json > a.json
-    modB < a.json > b.json
-    modC --flag X < b.json > out.json
+
+  - modA < in.json > a.json
+  - modB < a.json > b.json
+  - modC --flag X < b.json > out.json
 
 ## Repository Layout Expectations
+
   - /libs/<name>/README.md      concise library refresh for agents
   - /docs/SPEC.md               current contract for active slice
   - /docs/PLAN.md               stepwise plan for active slice
@@ -136,6 +157,7 @@
     No PII in fixtures; redact or synthesize test data.
 
 ## Testing Strategy
+
   - Unit tests per function or CLI; golden I/O tests for pipelines.
   - Error-path tests for the documented failure modes.
   - Contract tests: ensure JSON conforms to schema versions; invariants hold.
@@ -143,16 +165,19 @@
 
 ## Self-Audit (Agent must run before proposing diffs)
   Print the following metrics and simplify once if any threshold is exceeded:
-    file_count_changed
-    total_added_lines
-    imports_added_outside_allowlist
-    new_named_abstractions
-    max_function_cyclomatic_complexity
-    average_function_length
-    test_count_added vs prod_functions_touched
+
+  - file_count_changed
+  - total_added_lines
+  - imports_added_outside_allowlist
+  - new_named_abstractions
+  - max_function_cyclomatic_complexity
+  - average_function_length
+  - test_count_added vs prod_functions_touched
+
   If warned, rerun Napkin Physics and regenerate minimal spike.
 
 ## Human Review Gates (What to present)
+
   - One-paragraph summary of problem and mechanism (from Napkin output).
   - SPEC and PLAN diffs with checkboxes aligned to success criteria.
   - Test results: pass/fail matrix; coverage or representative list.
@@ -160,6 +185,7 @@
   - Proposed next step: smallest next increment with rationale.
 
 ## Decision Outcomes (Reviewer)
+
   - approve: merge as-is; add brief LEARNINGS entry.
   - revise_docs: tighten SPEC/PLAN; agent regenerates tests/impl.
   - revise_tests: adjust contracts; agent revises implementation.
@@ -168,18 +194,28 @@
 
 ## Prompts and Modes (for the Agent)
   Napkin Physics (pre-docs):
-    Mode: physicists with a napkin.
-    Output: Problem; Assumptions; Invariant; Mechanism; First Try; Prohibitions respected.
+
+  - Mode: physicists with a napkin.
+  - Output: Problem; Assumptions; Invariant; Mechanism; First Try; Prohibitions respected.
+
   DDD Docs Mode:
-    Generate SPEC.md and PLAN.md for the smallest viable slice that proves the invariant.
+
+  - Generate SPEC.md and PLAN.md for the smallest viable slice that proves the invariant.
+
   TDD Mode:
-    Emit failing tests derived from SPEC; then minimal code to pass; then refactor.
+
+  - Emit failing tests derived from SPEC; then minimal code to pass; then refactor.
+
   CLI Mode:
-    Propose or update CLIs with exact stdin/out JSON exemplars and a one-line golden test.
+
+  - Propose or update CLIs with exact stdin/out JSON exemplars and a one-line golden test.
+
   Self-Audit Mode:
-    Compute repository metrics; if warnings, simplify and retry once before PR.
+
+  - Compute repository metrics; if warnings, simplify and retry once before PR.
 
 ## Success Criteria (per slice)
+
   - A minimal spike exists that demonstrates the core mechanism end-to-end.
   - Tests derived from SPEC pass; error-path tests cover top 2 failure modes.
   - If CLIs: pipeline reproduces golden fixtures deterministically.
@@ -188,14 +224,17 @@
   - Complexity and dependency guardrails respected.
 
 ## Simplification Heuristics (apply before coding and before PR)
+
   - One-File Spike rule: prefer 1 file ≤ 120 lines to prove the loop.
   - Two-Function Rule: exactly two public entrypoints when feasible:
       parse(input)->state and apply(state,input)->state|output.
+
   - No New Nouns: do not introduce new abstractions unless you delete two.
   - 80/20 Errors: implement the two most likely failures; raise clearly for the rest.
   - Time-Boxed Satisficing: propose what you could build in 30 minutes today.
 
 Glossary
+
   - DDD: Doc Driven Development; Docs → Tests → Implementation → Learnings.
   - Toy Model: miniature, fully specced experiment intended to be discarded after extracting insight.
   - Napkin Physics: upstream parsimony framing to derive minimal mechanisms.

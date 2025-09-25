@@ -14,6 +14,7 @@ Its job: extract maximum value from an experiment by recording **what worked, wh
 ## What It Is / Is Not
 
 ### ❌ Not
+
 - A feature list  
 - Implementation details  
 - A user manual  
@@ -21,6 +22,7 @@ Its job: extract maximum value from an experiment by recording **what worked, wh
 - Hype or speculation without evidence  
 
 ### ✅ Is
+
 - A record of validated insights  
 - A log of failures and limitations  
 - A map of open questions  
@@ -36,21 +38,25 @@ Its job: extract maximum value from an experiment by recording **what worked, wh
     Duration: X days | Status: Complete/Incomplete | Estimate: Y days
 
 ### Summary
+
 - Built: 1 line  
 - Worked: 1–2 key successes  
 - Failed: 1–2 key failures  
 - Uncertain: open question
 
 ### Evidence
+
 - ✅ Validated: concise finding with evidence  
 - ⚠️ Challenged: difficulty, workaround, lesson  
 - ❌ Failed: explicit dead end  
 - 🌀 Uncertain: still unresolved
 
 ### Pivots
+
 - Original approach → New approach, why, and what remains unknown.
 
 ### Impact
+
 - Reusable pattern or asset  
 - Architectural consequence  
 - Estimate calibration (time/effort vs. outcome)
