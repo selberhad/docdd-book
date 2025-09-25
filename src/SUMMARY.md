@@ -21,6 +21,5 @@
   - [Learnings Writing](./authoring/learnings-writing.md)
 
 ### Part IV — Patterns & Appendices
-- [Toy Patterns](./patterns/toy-patterns.md)
 - [Examples Archive](./patterns/examples-archive.md)
   - [Plan (Example/Template)](./patterns/examples/plan.md)
