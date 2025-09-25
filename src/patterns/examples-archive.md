@@ -12,7 +12,7 @@ Summary
 
 - This example comes from an open‑source project created with the DocDD methodology: chatgpt‑export‑viewer (npm: https://www.npmjs.com/package/chatgpt-export-viewer).
 
-Open the full example: [Plan (Example/Template)](./examples/plan.md)
+Open the full example: [Plan (Example/Template)](./examples/archive-browser-plan.md)
 
 Notes
 - Keep examples practical and minimal; link them from relevant chapters.
