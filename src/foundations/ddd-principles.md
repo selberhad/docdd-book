@@ -72,7 +72,7 @@
   - Idea: capture problem, assumptions, invariant, minimal mechanism, and first try.
   - Why: enforces parsimony; prevents new layers/nouns without deletion elsewhere.
 
-  See: [1.3 Napkin Physics](../foundations/napkin-physics.md)
+  See: [1.3 Napkin Physics](./napkin-physics.md)
 
 ## Toy Models (Overview)
   Toy models are small, discardable experiments to extract architectural insight.
@@ -81,7 +81,7 @@
   - Why: validate invariants, data shapes, and APIs early; reduce risk and rework.
   - Integration: build via two‑at‑a‑time merges; keep scope small and focused.
 
-  See: [1.2 Toy‑Model Rationale](../foundations/toy-model-rationale.md)
+  See: [1.2 Toy‑Model Rationale](./toy-model-rationale.md)
 
 ## CLI + JSON as Debugger (Overview)
   The debugger mindset makes execution legible and falsifiable for both humans and agents.
@@ -90,7 +90,7 @@
   - Why: enables single‑step reasoning, bisecting, and stable golden tests.
   - Outcome: predictable behavior and inspectable state across the system.
 
-  See: [1.1 Debugger Mindset](../foundations/debugger-mindset.md)
+  See: [1.1 Debugger Mindset](./debugger-mindset.md)
 
 ## Repository Layout Expectations
 

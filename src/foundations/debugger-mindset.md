@@ -1,6 +1,6 @@
 # Debugger Mindset
 
-In [Doc-Driven Development (DDD)](../foundations/ddd-principles.md), I argued that code is now cheap and disposable, while durable value comes from clarity extracted into documents. But once you have docs, plans, and specs, there remains a practical bottleneck: **how do you let an LLM agent actually run a system without getting lost in hidden state?**
+In [Doc-Driven Development (DDD)](./ddd-principles.md), I argued that code is now cheap and disposable, while durable value comes from clarity extracted into documents. But once you have docs, plans, and specs, there remains a practical bottleneck: **how do you let an LLM agent actually run a system without getting lost in hidden state?**
 
 The answer is to treat your tools as if they’re running in **debugger mode** — exposing every step of execution in machine-readable form. The simplest universal substrate for this is **CLI + JSON**.
 
