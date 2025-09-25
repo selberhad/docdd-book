@@ -1,122 +1,57 @@
-## Repository Layout Expectations
+# Repository Layout, Guardrails, Workflow
 
-  - /libs/<name>/README.md      concise library refresh for agents
-  - /docs/SPEC.md               current contract for active slice
-  - /docs/PLAN.md               stepwise plan for active slice
-  - /docs/LEARNINGS.md          retrospective entries per slice
-  - /schemas/*.json             JSON Schemas (versioned)
-  - /cli/*                      small stateless CLI entrypoints
-  - /tests/*                    golden, unit, integration tests; fixtures/ as needed
-  - /fixtures/*.json            canonical input/output examples for CLIs and APIs
+Document-Driven Development requires minimal repository structure to enable parallel experimentation through toy models. Each toy is a self-contained experiment with complete meta-documentation.
 
-## Guardrails and Policies
+DocDD is inherently **flexible and modular** - different projects require different flavors. A spatial database benefits from CLI+JSON debugging and strict TDD practices, while a TUI project might emphasize human user testing over JSON pipelines. This book provides foundational patterns to help you discover the right DocDD variant for your specific problem domain.
 
-- **Dependencies:**
-  - Default allowlist: stdlib or equivalent; approved lightweight libs must be enumerated.
-  - Any new import must be justified in SPEC.md and whitelisted in PLAN.md for this slice.
+*Note: If this were an RFC, most recommendations would be SHOULDs not MUSTs - adapt the patterns to fit your context rather than following them rigidly.*
 
-- **Complexity Constraints:**
-  - Initial spikes: single file ≤ 120 lines when feasible.
-  - Average function length ≤ 25 lines; cyclomatic complexity ≤ 10 per function.
-  - No more than two new named abstractions per slice (class/module/pattern).
+## Toy-Based Structure
 
-- **Error Handling:**
-  - Implement top 2 failure modes; others raise clear string or structured error JSON.
-  - No secret leakage (keys, prompts) in errors or logs.
+```
+toys/
+  toy1_short_name/
+    SPEC.md      - Initial contract for this experiment
+    PLAN.md      - Initial implementation roadmap
+    SPEC_2.md    - Refined contract after first iteration
+    PLAN_2.md    - Updated roadmap for next stage
+    README.md    - Living orientation document (updated each stage)
+    LEARNINGS.md - Accumulating insights (updated each stage)
+    [implementation files as needed]
+  toy2_another_name/
+    [same structure]
+```
 
-- **Costs and Latency:**
-  - Track approximate token/$ and p95 latency for representative tests in LEARNINGS.md.
+## Core Principles
 
-- **Security and Privacy:**
-  - No PII in fixtures; redact or synthesize test data.
+**Toy Independence**: Each toy contains everything needed to understand and reproduce the experiment. No shared dependencies on global documentation or complex directory hierarchies.
 
-## Testing Strategy
+**Language Agnostic**: Directory structure and conventions emerge naturally from language choice (Python, Rust, JavaScript, etc.). DocDD imposes no language-specific requirements.
 
-  - Unit tests per function or CLI; golden I/O tests for pipelines.
-  - Error-path tests for the documented failure modes.
-  - Contract tests: ensure JSON conforms to schema versions; invariants hold.
-  - Snapshot tests permissible for textual outputs with stable normalization rules.
+**Iteration Cheapness**: Code can be rewritten freely since LLMs make implementation cheap. The meta-documents capture lasting insights while code remains malleable.
 
-## Self-Audit (Agent must run before proposing diffs)
-  Print the following metrics and simplify once if any threshold is exceeded:
+**Staged Evolution**: SPEC and PLAN documents can be versioned (SPEC_2.md, PLAN_2.md) for major iterations within a toy. README and LEARNINGS are living documents updated after each stage to accumulate insights.
 
-  - file_count_changed
-  - total_added_lines
-  - imports_added_outside_allowlist
-  - new_named_abstractions
-  - max_function_cyclomatic_complexity
-  - average_function_length
-  - test_count_added vs prod_functions_touched
+## Essential Constraints
 
-  If warned, rerun Napkin Physics and regenerate minimal spike.
+**Constrained Vocabulary**: When working with LLMs for content generation, limit vocabulary to well-defined terms to reduce hallucination and improve consistency.
 
-## Human Review Gates (What to present)
+**Meta-Document Discipline**: The four-document pattern (SPEC, PLAN, README, LEARNINGS) provides structure without prescribing implementation details.
 
-  - One-paragraph summary of problem and mechanism (from Napkin output).
-  - SPEC and PLAN diffs with checkboxes aligned to success criteria.
-  - Test results: pass/fail matrix; coverage or representative list.
-  - If CLI work: pipeline diagram and sample fixture diffs (a.json → b.json).
-  - Proposed next step: smallest next increment with rationale.
+**Clear Error Handling**: Structure errors for machine parsing when building CLI tools. Avoid leaking secrets or credentials in error messages or logs.
 
-## Decision Outcomes (Reviewer)
+## What DocDD Doesn't Prescribe
 
-  - approve: merge as-is; add brief LEARNINGS entry.
-  - revise_docs: tighten SPEC/PLAN; agent regenerates tests/impl.
-  - revise_tests: adjust contracts; agent revises implementation.
-  - revise_impl: simplify or correct; agent edits code only.
-  - abort: stop slice; record why and constraints learned.
+- File organization within toys (language-dependent)
+- Testing frameworks or strategies (project-dependent)
+- Code complexity metrics (emerge from practice)
+- Dependency management approaches (language-dependent)
+- Directory structures beyond the basic toy pattern
 
-## Prompts and Modes (for the Agent)
-  Napkin Physics (pre-docs):
+## Toy to Production Evolution
 
-  - Mode: physicists with a napkin.
-  - Output: Problem; Assumptions; Invariant; Mechanism; First Try; Prohibitions respected.
+The README serves as production documentation, written and updated alongside implementation. README and LEARNINGS must reflect current reality - stale documentation is not permitted for these living documents. Historical SPEC and PLAN versions can remain as archival documentation or be cleaned up according to preference.
 
-  DDD Docs Mode:
+When a toy proves valuable enough to ship, its mature meta-documents become the definitive production specs. Archive Browser demonstrates this path: the toy's evolved documentation serves as the shipped NPM package's complete specification.
 
-  - Generate SPEC.md and PLAN.md for the smallest viable slice that proves the invariant.
-
-  TDD Mode:
-
-  - Emit failing tests derived from SPEC; then minimal code to pass; then refactor.
-
-  CLI Mode:
-
-  - Propose or update CLIs with exact stdin/out JSON exemplars and a one-line golden test.
-
-  Self-Audit Mode:
-
-  - Compute repository metrics; if warnings, simplify and retry once before PR.
-
-## Success Criteria (per slice)
-
-  - A minimal spike exists that demonstrates the core mechanism end-to-end.
-  - Tests derived from SPEC pass; error-path tests cover top 2 failure modes.
-  - If CLIs: pipeline reproduces golden fixtures deterministically.
-  - Meta-docs are in sync: README (touched libs), SPEC, PLAN updated.
-  - LEARNINGS adds at least one architectural insight or constraint.
-  - Complexity and dependency guardrails respected.
-
-## Simplification Heuristics (apply before coding and before PR)
-
-  - One-File Spike rule: prefer 1 file ≤ 120 lines to prove the loop.
-  - Two-Function Rule: exactly two public entrypoints when feasible:
-      parse(input)->state and apply(state,input)->state|output.
-
-  - No New Nouns: do not introduce new abstractions unless you delete two.
-  - 80/20 Errors: implement the two most likely failures; raise clearly for the rest.
-  - Time-Boxed Satisficing: propose what you could build in 30 minutes today.
-
-Glossary
-
-  - DDD: Doc Driven Development; Docs → Tests → Implementation → Learnings.
-  - Toy Model: miniature, fully specced experiment intended to be discarded after extracting insight.
-  - Napkin Physics: upstream parsimony framing to derive minimal mechanisms.
-  - CLI+JSON Debugger: UNIX-style composition where each module is a pure CLI with JSON I/O.
-  - Golden Test: canonical input/output pair that must remain stable across changes.
-  - Invariant: property that must hold across operations (e.g., schema validity, conservation of count).
-
-End Notes
-  The assistant’s mandate is not to produce maximal code, but to produce maximal clarity with minimal code.
-  Drafts are fuel; constraints and insights are the product. Operate accordingly.
-
+The methodology's strength lies in its minimal constraints that enable focused experimentation rather than comprehensive rules that must be followed.
