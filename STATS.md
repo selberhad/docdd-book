@@ -5,7 +5,7 @@
 - **Total files:** 18
 - **Total words:** 6,468
 - **Total lines:** 1,456
-- **Total characters:** 50,635
+- **Total characters:** 50,646
 - **Reading time:** ~32 minutes
 
 ## Per-File Breakdown
@@ -13,13 +13,13 @@
 | File | Words | Lines |
 |------|------:|------:|
 | SUMMARY.md | 60 | 27 |
+| appendices/faq.md | 441 | 41 |
 | authoring/README.md | 158 | 21 |
 | authoring/kickoff-writing.md | 338 | 75 |
 | authoring/learnings-writing.md | 188 | 71 |
 | authoring/plan-writing.md | 345 | 119 |
 | authoring/readme-writing.md | 304 | 132 |
 | authoring/spec-writing.md | 338 | 101 |
-| faq.md | 441 | 41 |
 | foundations/ddd-principles.md | 591 | 93 |
 | foundations/ddd-repo-guardrails.md | 687 | 122 |
 | foundations/debugger-mindset.md | 412 | 61 |
