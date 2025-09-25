@@ -3,6 +3,10 @@ name: Deploy mdBook to GitHub Pages
 on:
   push:
     branches: [ main ]
+    paths-ignore:
+      - 'docs/**'
+      - '*.md'
+      - '.gitignore'
   workflow_dispatch:
 
 permissions:
