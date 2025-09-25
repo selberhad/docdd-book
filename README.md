@@ -23,10 +23,10 @@ This repository is an mdBook about the Document‑Driven Development (DocDD) met
 - `book.toml`: mdBook configuration (HTML output + linkcheck).
 - `src/`: book sources
   - `SUMMARY.md`: table of contents.
-  - `foundations/`: Chapter 1 (principles and overviews).
-  - `practice/`: Chapter 2 (loop, checklists, workflow).
-  - `authoring/`: Chapter 3 (writing guides).
-  - `patterns/`: Chapter 4 (patterns and examples).
+  - `foundations/`: principles and overviews.
+  - `practice/`: AGENTS.md template and operational guidance.
+  - `authoring/`: writing guides (SPEC, PLAN, README, LEARNINGS).
+  - `patterns/`: patterns and examples archive.
 - `scripts/`: helper scripts (`bootstrap_mdbook.sh`, `serve_local.sh`, `ci_local.sh`).
 
 ## Contributing
