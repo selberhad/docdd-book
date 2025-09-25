@@ -17,6 +17,7 @@
 - [Authoring Guides](./authoring/README.md)
   - [Spec Writing](./authoring/spec-writing.md)
   - [Plan Writing](./authoring/plan-writing.md)
+  - [Kickoff Writing](./authoring/kickoff-writing.md)
   - [README Writing](./authoring/readme-writing.md)
   - [Learnings Writing](./authoring/learnings-writing.md)
 
