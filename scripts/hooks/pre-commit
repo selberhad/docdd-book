@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Pre-commit hook: build the mdBook and run linkcheck
+set -euo pipefail
+
+echo "[pre-commit] Running 'make check' (mdbook build + linkcheck)..."
+
+if ! command -v mdbook >/dev/null 2>&1; then
+  echo "[pre-commit] mdbook not found. Run 'make setup' first." >&2
+  exit 1
+fi
+
+make check
+
+echo "[pre-commit] OK — build and linkcheck passed."
