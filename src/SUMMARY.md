@@ -22,4 +22,6 @@
 
 ### Part IV — Patterns & Appendices
 - [Examples Archive](./patterns/examples-archive.md)
-  - [Plan (Example/Template)](./patterns/examples/plan.md)
+  - [Archive Browser Kickoff](./patterns/examples/archive-browser-kickoff.md)
+  - [Archive Browser Spec](./patterns/examples/archive-browser-spec.md)
+  - [Archive Browser Plan](./patterns/examples/archive-browser-plan.md)

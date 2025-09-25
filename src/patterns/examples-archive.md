@@ -2,17 +2,21 @@
 
 This archive lists concrete, working examples referenced by the v2 chapters. It is intentionally small and current.
 
-## Plan (Example/Template) — Archive Browser, Stage 1
-Summary
-- Demonstrates a real PLAN.md for Stage 1 of an "Archive Browser" kickoff.
-- Two primitives (Toy A + Toy B):
-  - Toy A — ZIP metadata reader: golden output, error cases, determinism, central directory only.
-  - Toy B — TUI list: startup, stress, and error behavior; non‑blocking and clean exit.
-- Includes precise tests, implementation constraints, and success criteria for each step.
+## Archive Browser Project
 
-- This example comes from an open‑source project created with the DocDD methodology: chatgpt‑export‑viewer (npm: https://www.npmjs.com/package/chatgpt-export-viewer).
+A complete DocDD example showing the full development cycle for a TUI archive browser. This example comes from an open‑source project created with the DocDD methodology: [chatgpt‑export‑viewer](https://www.npmjs.com/package/chatgpt-export-viewer).
 
-Open the full example: [Plan (Example/Template)](./examples/archive-browser-plan.md)
+### Kickoff Document
+Initial project definition using "napkin physics" to establish core constraints and approach.
+- [Archive Browser Kickoff](./examples/archive-browser-kickoff.md)
+
+### Spec Document
+Technical specification defining invariants, contracts, and behaviors for Stage 1 primitives.
+- [Archive Browser Spec](./examples/archive-browser-spec.md)
+
+### Plan Document
+Step-by-step implementation plan with TDD methodology, success criteria, and risk mitigation.
+- [Archive Browser Plan](./examples/archive-browser-plan.md)
 
 Notes
 - Keep examples practical and minimal; link them from relevant chapters.
