@@ -11,7 +11,6 @@
 
 ### Part II — Practice (How)
 - [DocDD AGENTS.md Template](./practice/docdd-agents-template.md)
-- [Checklists & Workflow](./practice/checklists-and-workflow.md)
 
 ### Part III — Authoring Guides
 - [Authoring Guides](./authoring/README.md)
