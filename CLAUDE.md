@@ -57,6 +57,7 @@ make install-hooks  # Install pre-commit hook (run once per clone)
 **Examples structure:** Uses flat file naming with prefixes (e.g., `archive-browser-plan.md`, `archive-browser-spec.md`) to support multiple example projects while working within mdBook's single-level nesting limitation.
 
 **Git workflow:**
+- **When to commit:** Only commit when explicitly prompted by the user
 - **Commit messages:** Keep concise for small changes (one short descriptive line)
 - **Commit and push:** When user explicitly requests "commit and push", always chain: `git commit ... && git push origin main`
 - Use conventional commit format: `type(scope): description`
