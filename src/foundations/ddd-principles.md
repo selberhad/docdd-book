@@ -18,36 +18,27 @@
   - Agent: Produce artifacts, self-audit, run tests, propose diffs, respect guardrails.
   - Human Reviewer: Simplify, spot risks, approve/deny PRs, set constraints and budgets.
 
-## Core Artifacts (Meta-Document Layer)
+## Core Artifacts: The Meta-Document Harness
 
-  - README.md (per library)
-      Purpose: 100–200 words context refresh for AI; what it does, key API, gotchas.
-      Must contain: header + one-liner, 2–3 sentence purpose, 3–5 essential method signatures,
-                    core concepts, gotchas/caveats, representative quick test path.
+The four core artifacts form a harness system that guides AI agents while preserving human control:
 
-  - SPEC.md
-      Purpose: Comprehensive behavioral contract for the current scope.
-      Must contain: input/output formats, invariants, internal state shapes, operations,
-                    validation rules, error semantics, test scenarios, success criteria.
+- **SPEC.md** — *The bit: precise contract keeping the pull straight*
+  - **Purpose:** Comprehensive behavioral contract for the current scope
+  - **Must contain:** Input/output formats, invariants, internal state shapes, operations, validation rules, error semantics, test scenarios, success criteria
 
-  - PLAN.md
-      Purpose: Strategic roadmap; stepwise sequence using Docs → Tests → Impl cadence.
-      Must contain: what to test vs. skip, order of steps, timeboxing, dependencies,
-                    risks, explicit success checkboxes per step.
+- **PLAN.md** — *The yoke: aligns effort into test-first steps*
+  - **Purpose:** Strategic roadmap using Docs → Tests → Implementation cadence
+  - **Must contain:** What to test vs. skip, order of steps, timeboxing, dependencies, risks, explicit success checkboxes per step
 
-  - LEARNINGS.md
-      Purpose: Retrospective to capture architectural insights, pivots, fragile seams,
-               production readiness, and reusable patterns.
+- **README.md** — *The map: concise orientation for integration*
+  - **Purpose:** 100–200 words context refresh for AI on library functionality
+  - **Must contain:** Header + one-liner, 2–3 sentence purpose, 3–5 essential method signatures, core concepts, gotchas/caveats, representative test path
 
-## Driving Metaphor (Operational Framing)
-  Think of each core artifact as part of a harness system guiding LLM-agents:
+- **LEARNINGS.md** — *The tracks: record of constraints and lessons*
+  - **Purpose:** Retrospective capturing architectural insights, pivots, fragile seams, production readiness, reusable patterns
+  - **Must contain:** What held, what failed, why, and next constraints discovered
 
-  - SPEC.md is the bit: precise contract of what inputs/outputs are allowed, keeping the pull straight.  
-  - PLAN.md is the yoke: aligns effort into test-first steps so power isn’t wasted.  
-  - LEARNINGS.md are the tracks: record where the cart has gone, constraints discovered, and lessons not to repeat.  
-  - README.md is the map: a concise orientation tool to reestablish bearings during integration.  
-
-  Together these artifacts let the human act as driver, ensuring the cart (implementation) moves forward under control, with clarity preserved and ambiguity eliminated.  
+Together these artifacts let the human act as driver, ensuring the cart (implementation) moves forward under control, with clarity preserved and ambiguity eliminated.  
 
 ## High-Level Workflow (DDD)
 
