@@ -33,8 +33,10 @@ make stats    # Generate book statistics
 ```
 
 ## Commits & PRs
-- Conventional commits preferred (e.g., `docs(authoring): improve spec template`)
-- Include brief rationale and context
+- **Commit messages:** Use conventional format, keep concise for small changes (one short line)
+  - Good: `docs(authoring): improve spec template`
+  - Avoid: Long multi-paragraph commit messages for simple edits
+- **Commit and push:** When user explicitly asks to "commit and push", chain commands: `git commit ... && git push origin main`
 - CI automatically skips runs for changes to `docs/**` or root `*.md` files
 - Let CI run; fix any build/link failures before review
 
