@@ -5,6 +5,7 @@
 This repository is an mdBook about the Document‑Driven Development (DocDD) methodology. It is not product documentation for a software project. The book teaches how to use specs, plans, and tight feedback loops (with toy models and a CLI+JSON “debugger mindset”) to build software with clarity and speed.
 
 - Read online: https://selberhad.github.io/docdd-book/
+- Book statistics: [STATS.md](STATS.md)
 
 ## What You’ll Learn
 - Foundations (why): principles of DocDD, Napkin Physics, Toy‑Model rationale, Debugger mindset.

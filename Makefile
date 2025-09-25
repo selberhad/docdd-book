@@ -1,4 +1,4 @@
-.PHONY: setup build serve check clean migrate install-hooks
+.PHONY: setup build serve check clean migrate install-hooks stats
 
 setup:
 	@bash scripts/bootstrap_mdbook.sh
@@ -23,3 +23,6 @@ install-hooks:
 	@cp scripts/hooks/pre-commit .git/hooks/pre-commit
 	@chmod +x .git/hooks/pre-commit
 	@echo "Installed pre-commit hook: runs 'make check' before committing."
+
+stats:
+	@python3 scripts/book_stats.py

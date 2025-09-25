@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Pre-commit hook: build the mdBook and run linkcheck
+# Pre-commit hook: build the mdBook, run linkcheck, and update stats
 set -euo pipefail
 
 echo "[pre-commit] Running 'make check' (mdbook build + linkcheck)..."
@@ -11,4 +11,15 @@ fi
 
 make check
 
-echo "[pre-commit] OK — build and linkcheck passed."
+echo "[pre-commit] Generating STATS.md..."
+python3 scripts/book_stats.py --markdown > STATS.md
+
+# Add STATS.md to the commit if it changed
+if git diff --quiet STATS.md 2>/dev/null; then
+  echo "[pre-commit] STATS.md unchanged."
+else
+  echo "[pre-commit] STATS.md updated, adding to commit."
+  git add STATS.md
+fi
+
+echo "[pre-commit] OK — build, linkcheck, and stats update completed."
