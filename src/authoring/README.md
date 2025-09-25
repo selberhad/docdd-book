@@ -1,10 +1,21 @@
 # Authoring Guides
 
-This section groups the writing guides used across the book. Each chapter is a full guide carried forward into v2.
+**Agent-oriented writing templates for Doc Driven Development.**
 
-- Spec Writing: structure, examples, and validation to make behavior falsifiable.
-- Plan Writing: step templates and TDD discipline for actionable plans.
-- README Writing: concise orientation docs for internal libraries.
-- Learnings Writing: capturing evidence, pivots, and impact.
+These guides are designed to be copied into your repository and referenced by AI agents before authoring documents. They provide structured templates, constraints, and examples that help agents produce consistent, high-quality documentation.
 
-Use these when drafting or reviewing documents to keep style and content consistent.
+## How to Use These Guides
+
+1. **Copy to your repo:** Place relevant guides in your project's `docs/` or `.ai/` directory
+2. **Reference in prompts:** Tell your agent to "read the spec writing guide before creating SPEC.md"
+3. **Maintain consistency:** Use across projects to build a library of well-structured documents
+
+## Available Guides
+
+- **Spec Writing:** Structure, examples, and validation to make behavior falsifiable
+- **Plan Writing:** Step templates and TDD discipline for actionable plans
+- **Kickoff Writing:** "Napkin physics" approach to project initialization
+- **README Writing:** Concise orientation docs for internal libraries
+- **Learnings Writing:** Capturing evidence, pivots, and architectural insights
+
+Each guide includes templates, constraints, anti-patterns, and real examples to help agents author documents that integrate seamlessly with the DocDD workflow.

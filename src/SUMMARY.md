@@ -1,6 +1,5 @@
 # Summary
 
-## New Edition (WIP)
 
 ### Part I — Foundations (Why)
 - [Doc‑Driven Development — Principles](./foundations/ddd-principles.md)

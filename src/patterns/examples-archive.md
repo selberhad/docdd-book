@@ -1,6 +1,6 @@
 # Examples Archive
 
-This archive lists concrete, working examples referenced by the v2 chapters. It is intentionally small and current.
+This archive lists concrete, working examples referenced throughout the book. It is intentionally small and current.
 
 ## Archive Browser Project
 
