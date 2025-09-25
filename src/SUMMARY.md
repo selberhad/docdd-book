@@ -4,9 +4,10 @@
 
 ### Part I — Foundations (Why)
 - [Doc‑Driven Development — Principles](./foundations/ddd-principles.md)
-  - [Debugger Mindset](./foundations/debugger-mindset.md)
-  - [Toy‑Model Rationale](./foundations/toy-model-rationale.md)
   - [Napkin Physics](./foundations/napkin-physics.md)
+  - [Toy‑Model Rationale](./foundations/toy-model-rationale.md)
+  - [Debugger Mindset](./foundations/debugger-mindset.md)
+  - [Repo Layout, Guardrails, Workflow](./foundations/ddd-repo-guardrails.md)
 
 ### Part II — Practice (How)
 - [DocDD Loop & Kickoff](./practice/loop-and-kickoff.md)
