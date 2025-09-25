@@ -10,6 +10,8 @@ Summary
   - Toy B — TUI list: startup, stress, and error behavior; non‑blocking and clean exit.
 - Includes precise tests, implementation constraints, and success criteria for each step.
 
+- This example comes from an open‑source project created with the DocDD methodology: chatgpt‑export‑viewer (npm: https://www.npmjs.com/package/chatgpt-export-viewer).
+
 Open the full example: [Plan (Example/Template)](./examples/plan.md)
 
 Notes
