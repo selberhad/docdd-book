@@ -4,8 +4,8 @@
 
 - **Total files:** 17
 - **Total words:** 5,964
-- **Total lines:** 1,406
-- **Total characters:** 47,405
+- **Total lines:** 1,411
+- **Total characters:** 47,430
 - **Reading time:** ~29 minutes
 
 ## Per-File Breakdown
@@ -20,7 +20,7 @@
 | authoring/readme-writing.md | 304 | 132 |
 | authoring/spec-writing.md | 338 | 101 |
 | foundations/ddd-principles.md | 627 | 102 |
-| foundations/ddd-repo-guardrails.md | 687 | 117 |
+| foundations/ddd-repo-guardrails.md | 687 | 122 |
 | foundations/debugger-mindset.md | 412 | 61 |
 | foundations/napkin-physics.md | 93 | 19 |
 | foundations/toy-model-rationale.md | 493 | 117 |
@@ -29,4 +29,4 @@
 | patterns/examples/archive-browser-spec.md | 481 | 128 |
 | patterns/examples-archive.md | 125 | 23 |
 | practice/docdd-agents-template.md | 420 | 121 |
-| **TOTAL** | **5,964** | **1,406** |
+| **TOTAL** | **5,964** | **1,411** |

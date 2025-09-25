@@ -10,20 +10,25 @@
   - /fixtures/*.json            canonical input/output examples for CLIs and APIs
 
 ## Guardrails and Policies
-  Dependencies:
-    Default allowlist: stdlib or equivalent; approved lightweight libs must be enumerated.
-    Any new import must be justified in SPEC.md and whitelisted in PLAN.md for this slice.
-  Complexity Constraints:
-    Initial spikes: single file ≤ 120 lines when feasible.
-    Average function length ≤ 25 lines; cyclomatic complexity ≤ 10 per function.
-    No more than two new named abstractions per slice (class/module/pattern).
-  Error Handling:
-    Implement top 2 failure modes; others raise clear string or structured error JSON.
-    No secret leakage (keys, prompts) in errors or logs.
-  Costs and Latency:
-    Track approximate token/$ and p95 latency for representative tests in LEARNINGS.md.
-  Security and Privacy:
-    No PII in fixtures; redact or synthesize test data.
+
+- **Dependencies:**
+  - Default allowlist: stdlib or equivalent; approved lightweight libs must be enumerated.
+  - Any new import must be justified in SPEC.md and whitelisted in PLAN.md for this slice.
+
+- **Complexity Constraints:**
+  - Initial spikes: single file ≤ 120 lines when feasible.
+  - Average function length ≤ 25 lines; cyclomatic complexity ≤ 10 per function.
+  - No more than two new named abstractions per slice (class/module/pattern).
+
+- **Error Handling:**
+  - Implement top 2 failure modes; others raise clear string or structured error JSON.
+  - No secret leakage (keys, prompts) in errors or logs.
+
+- **Costs and Latency:**
+  - Track approximate token/$ and p95 latency for representative tests in LEARNINGS.md.
+
+- **Security and Privacy:**
+  - No PII in fixtures; redact or synthesize test data.
 
 ## Testing Strategy
 
