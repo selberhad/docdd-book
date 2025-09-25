@@ -54,6 +54,14 @@ Distill the insight.
 
 ---
 
+## Exit Criteria
+
+- All step-level success criteria checked  
+- Insights recorded  
+- Follow-up scope cut  
+
+---
+
 ## Guiding Principles
 
 - **Test-Driven Development is mandatory**  
@@ -87,3 +95,23 @@ Distill the insight.
 Toy models are **gardening, not construction**.  
 You’re cultivating understanding, not building monuments.  
 The point is clarity, not permanence.  
+
+---
+
+## Toy Integration Convention
+
+- Each toyN_* directory must contain exactly one SPEC.md, PLAN.md, and LEARNINGS.md.  
+- If a SPEC or PLAN grows too large or unfocused, split scope into new toyN_* experiments.  
+- Integration toys (e.g. toy5_*, toy6_*) exist to recombine validated sub-toys.  
+- Replace in place: update LEARNINGS.md rather than creating multiples for the same toy.  
+- When consolidating, fold prior learnings into a single current doc; discard stale versions.  
+- Always bias toward minimal scope: smaller toys, fewer docs, clearer insights.  
+
+---
+
+## Axis Principle for Toy Models
+
+- A base toy isolates exactly one axis of complexity (a single invariant, mechanism, or seam).  
+- An integration toy merges exactly two axes to probe their interaction.  
+- Never exceed two axes per toy; more belongs to higher‑order integration or production scope.  
+- This discipline keeps learnings sharp, avoids doc bloat, and mirrors controlled experiments.  
