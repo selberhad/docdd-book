@@ -42,3 +42,4 @@
 ### Part IV — Patterns & Appendices
 - [Toy Patterns](./v2/patterns/toy-patterns.md)
 - [Examples Archive](./v2/patterns/examples-archive.md)
+  - [Plan (Example/Template)](./v2/patterns/examples/plan.md)
