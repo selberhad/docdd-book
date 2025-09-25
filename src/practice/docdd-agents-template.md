@@ -6,7 +6,6 @@
 
 Doc-Driven Development (DocDD) turns ambiguous problems into deterministic, legible systems through lightweight docs, disposable toy models, and incremental integrations.  
 
-See: [Doc-Driven Development (DDD)](../foundations/ddd-principles.md).
 
 ---
 
@@ -29,7 +28,6 @@ See: [Doc-Driven Development (DDD)](../foundations/ddd-principles.md).
 4. LEARNINGS — capture outcomes and constraints.
 5. README - publish tool/API docs for future use.
 
-See:  [Spec Writing](../authoring/spec-writing.md), [Plan Writing](../authoring/plan-writing.md), [Learnings Writing](../authoring/learnings-writing.md), [README Writing](../authoring/readme-writing.md)
 
 ---
 
@@ -44,7 +42,6 @@ Quick pre-spec simplification:
 
 Rule: no frameworks, no new nouns unless two are deleted.  
 
-See: [Doc-Driven Development (DDD)](../foundations/ddd-principles.md).
 
 ---
 
@@ -63,7 +60,6 @@ Goal: compounding clarity
 
 Anti-Goal: combinatorial drift
 
-See: [Kickoff](#5-kickoff-the-binary-weave).
 
 ---
 
@@ -75,7 +71,6 @@ Cycle: SPEC → PLAN → Tests → Minimal code → LEARNINGS.
 
 Axis discipline: a base toy isolates one axis; an integration toy merges exactly two.  
 
-See: [Toy‑Model Rationale](../foundations/toy-model-rationale.md).
 
 ---
 
@@ -93,7 +88,6 @@ Error JSON shape:
 
 Schema-first: document I/O schemas in SPEC.  
 
-See: [CLI + JSON as Debugger](../foundations/debugger-mindset.md).
 
 ---
 
@@ -101,7 +95,6 @@ See: [CLI + JSON as Debugger](../foundations/debugger-mindset.md).
 
 Compose CLIs as UNIX-style pipelines with inspectable intermediates, but only when this makes sense. It's not a good fit for every project.
 
-See: [Doc-Driven Development (DDD)](../foundations/ddd-principles.md), [CLI + JSON as Debugger](../foundations/debugger-mindset.md).
 
 ---
 
