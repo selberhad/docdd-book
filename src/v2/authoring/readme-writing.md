@@ -17,4 +17,4 @@ Writing guidelines
 Template and quality check
 - Use the provided template; ensure a reader can grasp purpose in 10 seconds, know primary methods, avoid mistakes, and validate via quick test.
 
-Reference: [README Writing Guidelines](../../guides/writing/overview.md)
+ 

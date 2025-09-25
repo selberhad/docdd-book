@@ -17,4 +17,4 @@ Essential sections
 Style
 - Short, factual, bullet‑heavy; note failures/unknowns explicitly; one page max.
 
-Reference: [How to Write LEARNINGS.md](../../guides/writing/learnings.md)
+ 

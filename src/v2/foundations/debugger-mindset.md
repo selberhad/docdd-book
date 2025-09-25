@@ -29,6 +29,5 @@ When not to force it
 - For long‑running or stateful processes, add explicit snapshot/export commands to surface state rather than forcing strict purity internally.
 
 Cross‑references
-- Foundations: [Doc‑Driven Principles](../../v2/foundations/ddd-principles.md)
-- Practice: [DocDD Loop & Kickoff](../../v2/practice/loop-and-kickoff.md)
-- Reference: [CLI + JSON as Debugger](../../guides/debuggers.md)
+- Foundations: [Doc‑Driven Principles](../foundations/ddd-principles.md)
+- Practice: [DocDD Loop & Kickoff](../practice/loop-and-kickoff.md)

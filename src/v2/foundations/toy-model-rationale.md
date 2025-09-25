@@ -39,5 +39,3 @@ Strategic guidance
 
 North star
 Gardening, not construction: cultivate understanding; clarity over permanence.
-
-Reference: [Toy Model Development](../../guides/toy-dev.md)

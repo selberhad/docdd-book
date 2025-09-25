@@ -1,5 +1,9 @@
-# Examples Archive (New Edition)
+# Examples Archive
 
-A small, well‑labeled archive of examples and templates referenced by chapters; replace large legacy archives with curated, current samples.
+This archive lists concrete examples referenced by chapters. It is intentionally small and current.
 
-- Initial pointer: [Plan (Example/Template)](../../appendices/plan.md)
+Available examples
+- Plan (Example/Template): [appendices/plan.md](../../appendices/plan.md)
+
+Related guidance
+- Export in multiple formats (when useful): JSON for state, DOT for graphs, CSV for tabular views.

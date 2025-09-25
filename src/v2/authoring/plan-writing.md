@@ -33,4 +33,4 @@ Success criteria
 Anti‑patterns
 - Full test code in PLAN; full implementation code; excessive detail that replaces thinking.
 
-Reference: [Plan Writing (legacy)](../../guides/writing/plan.md)
+ 

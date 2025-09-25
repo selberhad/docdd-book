@@ -41,4 +41,4 @@ Guardrails & policies
 - Security/Privacy: no PII in fixtures.
 - Costs/Latency: track representative p95 and token/$ in LEARNINGS when relevant.
 
-References: [DDD](../../guides/ddd.md), [Playbook](../../playbooks/playbook.md)
+See also: [Doc‑Driven Principles](../foundations/ddd-principles.md), [DocDD Loop & Kickoff](../practice/loop-and-kickoff.md), [Debugger Mindset](../foundations/debugger-mindset.md)

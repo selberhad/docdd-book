@@ -34,5 +34,4 @@ Anti‑patterns
 - Over‑detailed kickoffs; kickoff maps the weave, specs carry details.
 
 Cross‑references
-- Foundations: [Doc‑Driven Principles](../../v2/foundations/ddd-principles.md), [Napkin Physics](../../v2/foundations/napkin-physics.md)
-- Guides: [Kickoff Writing](../../guides/writing/kickoff.md), [Playbook (legacy)](../../playbooks/playbook.md)
+- Foundations: [Doc‑Driven Principles](../foundations/ddd-principles.md), [Napkin Physics](../foundations/napkin-physics.md)

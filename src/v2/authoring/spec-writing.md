@@ -66,6 +66,4 @@ Validation:
 - Input ranges, error conditions, edge cases
 ```
 
-Cross‑references
-- Full reference: [Spec Writing Guide (legacy)](../../specs/spec-writing.md)
-- Foundations: [Doc‑Driven Principles](../../v2/foundations/ddd-principles.md)
+See also: [Doc‑Driven Principles](../foundations/ddd-principles.md)

@@ -14,4 +14,4 @@ Prohibitions
 
 Use it before SPEC/PLAN to encourage parsimony. Keep it short and actionable.
 
-References: [Doc‑Driven Development (Napkin Physics Mode)](../../guides/ddd.md), [Playbook (Napkin Physics)](../../playbooks/playbook.md)
+See also: [Doc‑Driven Principles](../foundations/ddd-principles.md), [DocDD Loop & Kickoff](../practice/loop-and-kickoff.md)
