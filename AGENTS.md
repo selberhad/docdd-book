@@ -2,24 +2,39 @@
 
 This repo contains an mdBook about the Document‑Driven Development (DocDD) methodology. Keep changes focused, minimal, and verifiable.
 
+**See also:** `CLAUDE.md` for comprehensive development guidance.
+
 ## Workflow
 - Prefer small PRs scoped to one topic.
 - Update `SUMMARY.md` when adding/moving chapters.
-- Run a local build before pushing; ensure links are valid.
+- Run `make check` before committing to validate builds and links.
 
 ## Pre‑commit Hook
-- Install once per clone to enforce local checks:
-  - `make install-hooks`
-- What it does: runs `make check` (mdbook build + linkcheck) and blocks commits on failure or when `mdbook` is missing.
-- Install tools if needed: `make setup`.
+- Install once per clone: `make install-hooks`
+- What it does:
+  - Runs `make check` (mdbook build + linkcheck)
+  - Auto-generates `STATS.md` with current word counts and reading time
+  - Blocks commits on build failures or missing mdbook
+- Install tools if needed: `make setup`
 
-## Style
-- One H1 per page; concise, bullet‑first writing.
-- Use relative links within `src/`.
-- Keep file names lowercase, hyphen‑separated.
+## Content Guidelines
+- **One H1 per page** with concise, bullet-first writing
+- **Agent-oriented guides:** Authoring guides in `src/authoring/` are templates for AI agents to copy into repositories
+- **Examples structure:** Use flat file naming with prefixes (e.g., `archive-browser-plan.md`) for multiple example projects
+- Use relative links within `src/`
+- Keep file names lowercase, hyphen-separated
+
+## Development Commands
+```bash
+make setup    # Install mdbook and linkcheck tools
+make serve    # Live preview with hot reload
+make check    # Build + linkcheck validation
+make stats    # Generate book statistics
+```
 
 ## Commits & PRs
-- Conventional commits preferred (e.g., `docs(authoring): …`).
-- Include a brief rationale and screenshots/links when helpful.
-- Let CI run; fix any build/link failures prior to review.
+- Conventional commits preferred (e.g., `docs(authoring): improve spec template`)
+- Include brief rationale and context
+- CI automatically skips runs for changes to `docs/**` or root `*.md` files
+- Let CI run; fix any build/link failures before review
 
