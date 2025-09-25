@@ -66,68 +66,31 @@
   4) Learnings
        Update LEARNINGS.md with what held, what failed, why, and next constraints.
 
-## Napkin Physics Mode (Upstream Simplification)
-  Use this mode before drafting SPEC/PLAN to encourage parsimony.
-  Output structure:
-    Problem: one sentence.
-    Assumptions: 3–5 bullets.
-    Invariant/Contract: one precise relation or property.
-    Mechanism: ≤5 bullets describing a single-file spike (stdlib or minimal deps).
-    First Try: one paragraph describing the simplest path.
-  Prohibitions:
-    No frameworks, no new layers, no new nouns unless two are deleted elsewhere.
+## Napkin Physics (Overview)
+  Upstream simplification to avoid scope drift before writing specs and plans.
 
-## Toy Models (Downstream Experiments)
-  Definition:
-    Small, sharply scoped, fully specced implementations designed to be thrown away.
-  Purpose:
-    Validate data structures, invariants, APIs, and error behavior with minimal code.
-  Cycle:
-    SPEC.md (contract) → PLAN.md (recipe) → Tests → Minimal Impl → LEARNINGS.md (extraction).
-  Principles:
-    Tests-first; minimal dependencies; structured errors; event sourcing when useful.
-  Exit Criteria:
-    All step-level success criteria checked; insights recorded; follow-up scope cut.
-  Toy Integration Convention:
+  - Idea: capture problem, assumptions, invariant, minimal mechanism, and first try.
+  - Why: enforces parsimony; prevents new layers/nouns without deletion elsewhere.
 
-  - Each toyN_* directory must contain exactly one SPEC.md, PLAN.md, and LEARNINGS.md.
-  - If a SPEC or PLAN grows too large or unfocused, split scope into new toyN_* experiments.
-  - Integration toys (e.g. toy5_*, toy6_*) exist to recombine validated sub-toys.
-  - Replace in place: update LEARNINGS.md rather than creating multiples for the same toy.
-  - When consolidating, fold prior learnings into a single current doc; discard stale versions.
-  - Always bias toward minimal scope: smaller toys, fewer docs, clearer insights.
+  See: [1.3 Napkin Physics](../foundations/napkin-physics.md)
 
-  Axis Principle for Toy Models:
+## Toy Models (Overview)
+  Toy models are small, discardable experiments to extract architectural insight.
 
-  - A base toy isolates exactly one axis of complexity (a single invariant, mechanism, or seam).
-  - An integration toy merges exactly two axes to probe their interaction.
-  - Never exceed two axes per toy; more belongs to higher-order integration or production scope.
-  - This discipline keeps learnings sharp, avoids doc bloat, and mirrors controlled experiments.
+  - Idea: SPEC → PLAN → Tests → Minimal Impl → LEARNINGS cycle under TDD and minimal deps.
+  - Why: validate invariants, data shapes, and APIs early; reduce risk and rework.
+  - Integration: build via two‑at‑a‑time merges; keep scope small and focused.
 
-## CLI + JSON as Debugger (AI-Legible Execution)
-  Rationale:
+  See: [1.2 Toy‑Model Rationale](../foundations/toy-model-rationale.md)
 
-  - Enable the agent to “single-step” systems deterministically, inspect state, and bisect.
+## CLI + JSON as Debugger (Overview)
+  The debugger mindset makes execution legible and falsifiable for both humans and agents.
 
-  Contract:
+  - Idea: expose pure CLIs with JSON I/O and structured errors; favor deterministic pipelines.
+  - Why: enables single‑step reasoning, bisecting, and stable golden tests.
+  - Outcome: predictable behavior and inspectable state across the system.
 
-  - Each functional module provides a CLI:
-    - stdin: JSON
-    - stdout: JSON
-    - stderr: machine-parsable error JSON when failing
-  - CLIs are pure (no hidden state); logs allowed but do not alter outputs.
-
-  Conventions:
-
-  - Schema-first: document input/output JSON schemas and versions in SPEC.md.
-  - Stable Errors: shape { "type": "ERR_CODE", "message": "human text", "hint": "actionable fix" }.
-  - Quick Test: each CLI ships with a one-command golden test path.
-
-  Minimal Pipeline Pattern:
-
-  - modA < in.json > a.json
-  - modB < a.json > b.json
-  - modC --flag X < b.json > out.json
+  See: [1.1 Debugger Mindset](../foundations/debugger-mindset.md)
 
 ## Repository Layout Expectations
 
