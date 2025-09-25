@@ -1,41 +1,85 @@
 # Toy‑Model Rationale
 
-Toy models are scientific experiments, not products. Their purpose is to learn, reduce risk, and sharpen architectural clarity — not to ship.
+_Toy models are scientific experiments, not products. Their purpose is to learn, reduce risk, and sharpen architectural clarity—not to ship._
 
-What toy models are
-- Focused experiments: each toy validates a single idea.
-- Cheap and discardable: code is expendable; insight is what matters.
-- Architectural probes: test assumptions, reveal edge cases, expose integration challenges.
-- Learning accelerators: fast cycles of build → test → document.
+---
 
-What they are not
-- Not production systems or comprehensive solutions; not sacred code; not shortcuts to “done”.
+## What Toy Models Are
 
-Cycle
-1) SPEC.md — define data, operations, success criteria, and failure cases.
-2) PLAN.md — sequence minimal test‑first steps and risks.
-3) Implementation — write only enough code to pass tests.
-4) LEARNINGS.md — record what worked/failed, patterns, integration implications.
+- **Focused experiments**: Each toy validates a single technical idea.  
+- **Cheap and discardable**: Code is expendable; insight is what matters.  
+- **Architectural probes**: They test assumptions, reveal edge cases, and expose integration challenges.  
+- **Learning accelerators**: Fast cycles of building, testing, and documenting.  
 
-Guiding principles
-- TDD is mandatory (red → green → next).
-- Errors are specific and actionable; structure them.
-- Event sourcing helps you replay and inspect state evolution.
-- Minimal dependencies, maximum clarity; avoid frameworks.
-- Export insights in multiple formats when useful (JSON/DOT/CSV).
+## What Toy Models Are Not
 
-Patterns that work
-- Single‑class toys for small cohesive experiments.
-- Module‑based toys when responsibilities split naturally.
-- Adapters when integrating external systems.
+- Not production systems  
+- Not comprehensive solutions  
+- Not sacred code to preserve  
+- Not shortcuts to “done”  
 
-Testing philosophy
-- Prefer properties (invariants) over ad‑hoc examples.
-- Include complex end‑to‑end scenarios and deliberate error paths.
+---
 
-Strategic guidance
-- Pivot early when a better approach appears; persist only when gains are real.
-- Preserve learnings even when discarding code; keep APIs/data consistent across toys.
+## The Toy Model Cycle
 
-North star
-Gardening, not construction: cultivate understanding; clarity over permanence.
+### 1. Specification (SPEC.md)
+Define the experiment before you run it.  
+- Data structures, operations, and expected behaviors  
+- Edge cases and failure conditions  
+- Clear success criteria  
+
+### 2. Planning (PLAN.md)
+Lay out the steps like a recipe.  
+- Sequence of test-first steps  
+- Risks and dependencies  
+- What to validate at each stage  
+
+### 3. Implementation
+Run the experiment under strict discipline.  
+- Write failing tests first  
+- Add only enough code to make them pass  
+- Capture errors clearly and specifically  
+- Stop when the hypothesis is validated  
+
+### 4. Learning Extraction (LEARNINGS.md)
+Distill the insight.  
+- What worked, what failed  
+- Patterns worth reusing  
+- Integration implications  
+- Strategic takeaways  
+
+---
+
+## Guiding Principles
+
+- **Test-Driven Development is mandatory**  
+  The red-green cycle keeps experiments honest, forces clarity, and documents usage.  
+
+- **Error messages are for humans and AIs**  
+  Be specific, actionable, and structured. Good errors guide both debugging and future automation.  
+
+- **Event sourcing is your microscope**  
+  Record every operation so you can replay, inspect, and debug how state evolved.  
+
+- **Minimal dependencies, maximum clarity**  
+  Use proven libraries, avoid frameworks, keep the system transparent.  
+
+- **Export in multiple formats**  
+  JSON for state, DOT for graphs, CSV for tabular views. Make insights portable.  
+
+---
+
+## Strategic Guidance
+
+- Pivot early when better approaches appear; persist when the gain is marginal.  
+- Preserve learnings even when abandoning code.  
+- Keep APIs clean and data formats consistent across toys.  
+- Discard code without guilt—the artifact that matters is the documentation of insight.  
+
+---
+
+## North Star
+
+Toy models are **gardening, not construction**.  
+You’re cultivating understanding, not building monuments.  
+The point is clarity, not permanence.  

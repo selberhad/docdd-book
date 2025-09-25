@@ -1,69 +1,92 @@
 # Spec Writing
 
-Purpose
-- Make behavior falsifiable before code exists. A reader should be able to write tests from your spec alone.
+_Guide to writing toy-model specifications in the Doc-Driven Development paradigm._
 
-Principles
-- Concrete over abstract: use realistic data and full structures.
-- Single axis: spec one cohesive capability; split when scope drifts.
-- Validation first: define invariants and error semantics clearly.
+---
 
-Recommended structure
-1) Header
-   - Title: System Name Specification
-   - One‑line purpose and scope
-2) Overview
-   - What it does (2–3 sentences)
-   - Key principles and integration context
-3) Data Model
-   - Full example structures (JSON or domain format)
-   - Fields, types, ranges, and meanings; schemas if helpful
-4) Operations
-   - For each command/API: Syntax → Parameters → Examples → Behavior → Validation
-   - Include error conditions and edge cases
-5) Test Scenarios
-   - Simple, Complex, Error (and Integration if necessary)
-6) Success Criteria
-   - Checkbox list of falsifiable outcomes
-7) Error Handling
-   - Shapes, codes, and example messages; guidance for consumers
+## Purpose
 
-Common pitfalls (and fixes)
-- Vague behavior → Add step‑by‑step outcomes and invariants.
-- Placeholder data → Replace with realistic values and nested structures.
-- Missing errors → List the top 2–3 failure modes with examples.
-- Scope creep → Split into smaller specs; keep each about one axis.
+A **SPEC.md is a contract spike**: it defines what the system must accept, produce, and guarantee.  
+It exists to make implementation falsifiable — to ensure tests and validation have clear ground truth.
 
-Template excerpt
-```
-## Data Model
-{
-  "entity": {
-    "id": "e1",
-    "label": "entry_hall",
-    "geometry": { "x": -8.5, "y": -8.5, "width": 17, "height": 17 }
-  }
-}
+---
 
-## Operations
-#### `aggregate <rules> [scope]`
-Applies aggregation rules.
+## What a SPEC.md Is / Is Not
 
-Parameters:
-- `<rules>`: "indoor_standard" | "outdoor_large"
-- `[scope]`: optional selector
+### ❌ Not
+- Implementation details (classes, functions, algorithms)
+- Internal design notes (unless exposed in the contract)
+- Tutorials, manuals, or user guides
+- Vague aspirations ("the system should work well")
 
-Examples:
-```
-aggregate indoor_standard
-aggregate outdoor_large rooms:west
-```
+### ✅ Is
+- Precise input/output formats
+- Defined state transitions or invariants
+- Operation semantics (commands, APIs, behaviors)
+- Error and validation rules
+- Concrete test scenarios and acceptance criteria
 
-Behavior:
-- Explains transformations and invariants preserved
+---
 
-Validation:
-- Input ranges, error conditions, edge cases
-```
+## Core Structure
 
-See also: [Doc‑Driven Principles](../foundations/ddd-principles.md)
+### 1. Header
+Toy Model N: System Name Specification
+
+One-line purpose statement
+
+### 2. Overview
+- **What it does:** core purpose in 2–3 sentences
+- **Key principles:** 3–5 bullets on design philosophy
+- **Integration context:** if relevant, note inputs/outputs to other toys
+
+### 3. Data Model
+Define external data formats with **realistic examples**:
+- All required fields shown
+- Nested structures expanded
+- Field purposes explained
+- JSON schemas when clarity demands
+
+### 4. Core Operations
+Document commands or APIs with a consistent pattern:
+- **Syntax** (formal usage)
+- **Parameters** (required/optional, ranges, defaults)
+- **Examples** (simple + complex)
+- **Behavior** (state changes, outputs, side effects)
+- **Validation** (rules, errors, edge cases)
+
+### 5. Test Scenarios
+3 categories:
+1. **Simple** — minimal case
+2. **Complex** — realistic usage
+3. **Error** — invalid inputs, edge handling  
+Optionally, **Integration** — only if toy touches another system.
+
+### 6. Success Criteria
+Checkboxes phrased as falsifiable conditions, e.g.:
+- [ ] Operation X preserves invariant Y
+- [ ] Error messages are structured JSON
+- [ ] Round-trip import/export retains labels
+
+---
+
+## Quality Heuristics
+
+High-quality SPECs are:
+- **Precise** — eliminate ambiguity
+- **Minimal** — only cover one axis of complexity
+- **Falsifiable** — every statement testable
+- **Contextual** — note integration points when they matter
+
+Low-quality SPECs are:
+- Vague ("system processes data")
+- Over-prescriptive (dictating implementation)
+- Bloated with internal details
+- Missing testable criteria
+
+---
+
+## Conclusion
+
+A SPEC.md is not a design novel.  
+It is a **minimal, precise contract** that locks in what must hold true, so tests and implementations can be judged unambiguously. If multiple axes of complexity emerge, split them into separate toy models.

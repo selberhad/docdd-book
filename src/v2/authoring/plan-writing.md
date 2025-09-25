@@ -1,36 +1,109 @@
 # Plan Writing
 
-Purpose
-- A PLAN.md is a strategic roadmap: what to build and how to build it step‑by‑step, enforcing clarity, sequencing, and validation.
+_Guide to planning toy model development with TDD discipline._
 
-What it is / is not
-- Not: implementation code, literal test code, copy‑paste ready, exhaustive details.
-- Is: stepwise development roadmap, TDD guide, illustrative patterns only, success criteria with checkboxes.
+---
 
-Structure
-- Header: overview (goal, scope, priorities) and methodology (TDD; what to test vs not test).
-- Step template:
-```
-## Step N: <Feature Name> **<PRIORITY>**
-### Goal
-Why this step matters
-### Step N.a: Write Tests
-- Strategy (no literal code); core, error, integration cases; expected validation
-### Step N.b: Implement
-- Tasks, code patterns (illustrative), state and error handling
+## What a PLAN.md Actually Is
+
+A **PLAN.md is a strategic roadmap** describing **what to build and how to build it step-by-step**. It enforces clarity, sequencing, and validation.
+
+### ❌ NOT:
+- Implementation code
+- Literal test code
+- Copy-paste ready
+- Exhaustive details
+
+### ✅ IS:
+- Stepwise development roadmap
+- TDD methodology guide
+- Illustrative code patterns only
+- Success criteria with checkboxes
+
+---
+
+## Structure
+
+### Header
+- **Overview**: Goal, scope, priorities
+- **Methodology**: TDD principles; what to test vs. not test
+
+### Step Template
+
+    ## Step N: <Feature Name> **<PRIORITY>**
+
+    ### Goal
+    Why this step matters
+
+    ### Step N.a: Write Tests
+    - Outline test strategy (no literal code)
+    - Key cases: core, error, integration
+    - Expected validation behavior
+
+    ### Step N.b: Implement
+    - Tasks: file/module creation, core ops, integration
+    - Code patterns for illustration only
+    - State and error handling guidance
+
+    ### Success Criteria
+    - [ ] Clear, testable checkpoints
+    - [ ] Functional + quality standards met
+
+---
+
+## Key Practices
+
+### TDD Discipline
+- Write failing tests first
+- Red → Green → Next
+- Focus on interfaces and contracts
+- Cover error paths explicitly
+
+### Test Scope
+- ✅ Test: core features, errors, integration points
+- ❌ Skip: helpers, edge cases, perf, internals
+
+### Code Patterns
+Use examples as **patterns**, not literal code:
+
+    cmdWalk(cells, direction) {
+        if (!(direction in DIRECTIONS)) throw Error(`Invalid: ${direction}`);
+        const [dx, dy] = DIRECTIONS[direction];
+        this.cursor.x += cells * dx; this.cursor.y += cells * dy;
+    }
+
+### Tasks
+Break implementation into minimal units:
+
+    1. Create directory/files
+    2. Implement core command parsing
+    3. Add integration test path
+    4. Error handling
+
 ### Success Criteria
-- [ ] Clear, testable checkpoints
-```
+Always check with concrete, objective boxes:
 
-Key practices
-- TDD discipline: write failing tests first; Red → Green → Next; focus on interfaces and contracts; cover error paths explicitly.
-- Test scope: test core features, errors, and integrations; skip helpers, edge/perf, internals.
-- Code patterns: examples as patterns, not literal code; keep tasks minimal and explicit.
+- [ ] Parser initializes cleanly  
+- [ ] Commands mutate state correctly  
+- [ ] Errors raised for invalid input  
+- [ ] Test suite runs with single command  
 
-Success criteria
-- Concrete, objective boxes for functional and quality outcomes.
+---
 
-Anti‑patterns
-- Full test code in PLAN; full implementation code; excessive detail that replaces thinking.
+## Anti-Patterns
+- ❌ Full test code in Plan (use bullet outlines)
+- ❌ Full implementation code (use patterns only)
+- ❌ Over-detail (Plan guides, does not replace dev thinking)
 
- 
+---
+
+## Why This Works
+- **Clear sequencing**: prevents scope drift  
+- **TDD enforcement**: quality-first mindset  
+- **Concrete validation**: objective step completion  
+- **Minimal guidance**: gives direction without over-specifying  
+
+---
+
+## Conclusion
+A good PLAN.md is a **map, not the territory**. It sequences work, enforces TDD, and defines success. It avoids detail bloat while ensuring implementers know exactly **what to test, what to build, and when it’s done**.
