@@ -6,6 +6,7 @@ This repository is an mdBook about the Document‑Driven Development (DocDD) met
 
 - Read online: https://selberhad.github.io/docdd-book/
 - Book statistics: [STATS.md](STATS.md)
+- Blog posts: [docs/blog/README.md](docs/blog/README.md)
 
 ## What You’ll Learn
 - Foundations (why): principles of DocDD, Napkin Physics, Toy‑Model rationale, Debugger mindset.
@@ -28,13 +29,24 @@ This repository is an mdBook about the Document‑Driven Development (DocDD) met
   - `practice/`: AGENTS.md template and operational guidance.
   - `authoring/`: writing guides (SPEC, PLAN, README, LEARNINGS).
   - `patterns/`: patterns and examples archive.
-- `scripts/`: helper scripts (`bootstrap_mdbook.sh`, `serve_local.sh`, `ci_local.sh`).
+- `docs/`: additional content
+  - `blog/`: related blog posts and essays.
+  - `legacy/`: original agent-oriented docs migrated to create this book.
+- `scripts/`: helper scripts and `migrate_to_mdbook.py` used to transform legacy docs.
 
 ## Contributing
 - Start with issues/PRs for typos, structure, or new examples.
 - Follow repository guidelines in `AGENTS.md` (style and commit guidance).
 - Keep pages focused (one topic per page); prefer bullets and concrete examples.
 - Run `make check` before committing to catch broken links and build errors.
+
+## AI-First Development Example
+
+This repository serves as a practical example of "vibe-writing" a technical book using mdBook and AI coding agents like Anthropic's Claude Code CLI and OpenAI's Codex CLI, demonstrating effective human-AI collaboration:
+
+- Original agent-oriented documentation in `docs/legacy/` was migrated using `scripts/migrate_to_mdbook.py`
+- Book content collaboratively developed through iterative human-AI editing
+- Automated statistics, pre-commit hooks, and CI/CD provide quality gates without heavyweight process
 
 ## Deploying
 - Published via GitHub Pages on pushes to `main` (see workflow badge above).
