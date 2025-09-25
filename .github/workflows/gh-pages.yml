@@ -3,10 +3,11 @@ name: Deploy mdBook to GitHub Pages
 on:
   push:
     branches: [ main ]
-    paths-ignore:
-      - 'docs/**'
-      - '*.md'
-      - '.gitignore'
+    paths:
+      - 'src/**'
+      - 'book.toml'
+      - 'Makefile'
+      - '.github/workflows/gh-pages.yml'
   workflow_dispatch:
 
 permissions:
