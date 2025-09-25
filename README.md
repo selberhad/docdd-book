@@ -35,10 +35,12 @@ This repository is an mdBook about the Document‑Driven Development (DocDD) met
 - `scripts/`: helper scripts and `migrate_to_mdbook.py` used to transform legacy docs.
 
 ## Contributing
-- Start with issues/PRs for typos, structure, or new examples.
-- Follow repository guidelines in `AGENTS.md` (style and commit guidance).
-- Keep pages focused (one topic per page); prefer bullets and concrete examples.
-- Run `make check` before committing to catch broken links and build errors.
+External contributions and pull requests are not accepted for this draft.
+
+- Feedback, typos, and suggestions: please open an issue at
+  https://github.com/selberhad/docdd-book/issues
+- PRs will be closed without review; this helps keep the text coherent while
+  it evolves.
 
 ## AI-First Development Example
 
@@ -50,3 +52,8 @@ This repository serves as a practical example of "vibe-writing" a technical book
 
 ## Deploying
 - Published via GitHub Pages on pushes to `main` (see workflow badge above).
+
+## License
+- Text: Personal-Use (no redistribution). See `LICENSE.md`.
+- Code samples: MIT (see `LICENSE.md`).
+- Permissions/requests: open an issue on the GitHub repo.

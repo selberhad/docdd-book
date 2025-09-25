@@ -1,0 +1,64 @@
+name: Reader Feedback / Question
+description: Ask a question or suggest an improvement to the book.
+title: "[reader] <short summary>"
+labels: ["reader-feedback"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - Question
+        - Suggestion / Improvement
+        - Typo / Grammar
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: chapter
+    attributes:
+      label: Chapter or page
+      description: Link to the online page or path like src/foundations/ddd-principles.md
+      placeholder: e.g., https://selberhad.github.io/docdd-book/foundations/ddd-principles.html
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: What’s your question or feedback?
+      description: Be specific. If it’s a suggestion, describe the change; if it’s a question, what’s unclear?
+      placeholder: Describe the issue or proposal concisely…
+    validations:
+      required: true
+
+  - type: textarea
+    id: excerpt
+    attributes:
+      label: Relevant excerpt (optional)
+      description: Quote the exact line(s) if helpful.
+      render: markdown
+
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context (optional)
+      description: What you were trying to do, environment, or prior assumptions.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues for duplicates.
+          required: true
+        - label: I’m referencing the latest “New Edition (WIP)” build.
+          required: false
+
+  - type: input
+    id: contact
+    attributes:
+      label: Optional contact (GitHub/Twitter/etc.)
+      placeholder: @yourhandle

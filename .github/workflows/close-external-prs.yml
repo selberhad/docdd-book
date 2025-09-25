@@ -1,0 +1,27 @@
+name: Close External PRs
+
+on:
+  pull_request_target:
+    types: [opened, reopened]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  close-external:
+    if: "!contains(['OWNER','MEMBER','COLLABORATOR'], github.event.pull_request.author_association)"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comment and close PR
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo, number } = context.issue;
+            const issuesUrl = `https://github.com/${owner}/${repo}/issues`;
+            const body = [
+              'Thanks for your interest! This repository does not accept external pull requests.',
+              `Please open an issue instead: ${issuesUrl}`,
+            ].join('\n\n');
+            await github.rest.issues.createComment({ owner, repo, issue_number: number, body });
+            await github.rest.pulls.update({ owner, repo, pull_number: number, state: 'closed' });
+
