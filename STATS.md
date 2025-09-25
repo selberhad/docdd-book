@@ -3,10 +3,10 @@
 ## Overview
 
 - **Total files:** 19
-- **Total words:** 6,502
-- **Total lines:** 1,467
-- **Total characters:** 52,623
-- **Reading time:** ~32 minutes
+- **Total words:** 6,730
+- **Total lines:** 1,485
+- **Total characters:** 54,413
+- **Reading time:** ~33 minutes
 
 ## Per-File Breakdown
 
@@ -23,7 +23,7 @@
 | foundations/ddd-principles.md | 591 | 93 |
 | foundations/ddd-repo-guardrails.md | 412 | 57 |
 | foundations/debugger-mindset.md | 426 | 99 |
-| foundations/napkin-physics.md | 93 | 19 |
+| foundations/napkin-physics.md | 321 | 37 |
 | foundations/toy-model-rationale.md | 493 | 117 |
 | patterns/chatgpt-export-viewer.md | 224 | 35 |
 | patterns/examples/archive-browser-kickoff.md | 490 | 105 |
@@ -31,4 +31,4 @@
 | patterns/examples/archive-browser-spec.md | 481 | 128 |
 | patterns/spatial-mud-database.md | 291 | 37 |
 | practice/docdd-agents-template.md | 420 | 121 |
-| **TOTAL** | **6,502** | **1,467** |
+| **TOTAL** | **6,730** | **1,485** |
