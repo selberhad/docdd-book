@@ -4,9 +4,9 @@
 
 ### Part I — Foundations (Why)
 - [Doc‑Driven Development — Principles](./v2/foundations/ddd-principles.md)
-- [Debugger Mindset](./v2/foundations/debugger-mindset.md)
-- [Toy‑Model Rationale](./v2/foundations/toy-model-rationale.md)
-- [Napkin Physics](./v2/foundations/napkin-physics.md)
+  - [Debugger Mindset](./v2/foundations/debugger-mindset.md)
+  - [Toy‑Model Rationale](./v2/foundations/toy-model-rationale.md)
+  - [Napkin Physics](./v2/foundations/napkin-physics.md)
 
 ### Part II — Practice (How)
 - [DocDD Loop & Kickoff](./v2/practice/loop-and-kickoff.md)
