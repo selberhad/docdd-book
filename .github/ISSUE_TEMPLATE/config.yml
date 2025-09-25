@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Read the book (latest)
+    url: https://selberhad.github.io/docdd-book/
+    about: Browse the online mdBook to find chapter links.
+  - name: License and permissions
+    url: https://github.com/selberhad/docdd-book/blob/main/LICENSE.md
+    about: See licensing terms for text and code samples.
