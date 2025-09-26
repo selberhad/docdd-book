@@ -1,8 +1,11 @@
 # Spec Writing
 
-_Guide to writing toy-model specifications in the Doc-Driven Development paradigm._
+This chapter provides agent-oriented documentation for writing SPEC.md files in DocDD projects. Drop this guide into your repository as `SPEC_WRITING.md` to help AI agents understand how to create precise behavioral contracts for toy models.
 
 ---
+
+```markdown
+# SPEC_WRITING.md
 
 ## Purpose
 
@@ -97,5 +100,6 @@ Low-quality SPECs are:
 
 ## Conclusion
 
-A SPEC.md is not a design novel.  
+A SPEC.md is not a design novel.
 It is a **minimal, precise contract** that locks in what must hold true, so tests and implementations can be judged unambiguously. If multiple axes of complexity emerge, split them into separate toy models.
+```

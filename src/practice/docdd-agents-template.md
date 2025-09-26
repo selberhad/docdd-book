@@ -1,8 +1,11 @@
 # DocDD AGENTS.md Template
 
-This chapter provides a sample `AGENTS.md` you can drop into a repository to guide a coding agent in using Document‑Driven Development (DocDD). Treat it as a template: adapt roles, guardrails, and the DocDD loop to your project’s constraints and goals.
+This chapter provides a sample `AGENTS.md` you can drop into a repository to guide a coding agent in using Document‑Driven Development (DocDD). Treat it as a template: adapt roles, guardrails, and the DocDD loop to your project's constraints and goals.
 
 ---
+
+```markdown
+# AGENTS.md
 
 ## 1. Purpose
 
@@ -117,5 +120,4 @@ Habits to constrain complexity:
 
 - **Agent** — generates docs, toys, integrations; pushes forward.  
 - **Human** — spotter: nudges when the agent stalls or drifts, and makes judgment calls the agent cannot.
-
----
+```

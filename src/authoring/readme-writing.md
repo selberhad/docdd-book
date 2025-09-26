@@ -1,8 +1,11 @@
 # README Writing
 
-Guidelines for creating concise, AI assistant–focused README.md files for internal libraries and modules.
+This chapter provides agent-oriented documentation for writing README.md files in DocDD projects. Drop this guide into your repository as `README_WRITING.md` to help AI agents create effective context refresh documentation.
 
 ---
+
+```markdown
+# README_WRITING.md
 
 ## Purpose
 
@@ -17,10 +20,8 @@ These READMEs serve as **context refresh documents** for AI assistants working w
 ## Required Structure
 
 ### **1. Header + One-Liner**
-```markdown
-# library_name
-Brief description of what it does and key technology/pattern
-```
+    # library_name
+    Brief description of what it does and key technology/pattern
 
 ### **2. Purpose (2–3 sentences)**
 
@@ -29,11 +30,9 @@ Brief description of what it does and key technology/pattern
 - How it fits in the broader system/integration
 
 ### **3. Key API (essential methods only)**
-```python
-# 3-5 most important methods with type hints
-primary_method(param: Type) -> ReturnType
-secondary_method(param: Type) -> ReturnType
-```
+    # 3-5 most important methods with type hints
+    primary_method(param: Type) -> ReturnType
+    secondary_method(param: Type) -> ReturnType
 
 ### **4. Core Concepts (bullet list)**
 
@@ -50,9 +49,7 @@ secondary_method(param: Type) -> ReturnType
 - Integration pitfalls
 
 ### **6. Quick Test**
-```bash
-pytest tests/test_basic.py  # or most representative test
-```
+    pytest tests/test_basic.py  # or most representative test
 
 ---
 
@@ -87,36 +84,32 @@ pytest tests/test_basic.py  # or most representative test
 
 ## Template
 
-```markdown
-# library_name
-Brief description of what it does
+    # library_name
+    Brief description of what it does
 
-## Purpose
-2–3 sentences covering the core problem solved, architectural approach, and role in broader integration.
+    ## Purpose
+    2–3 sentences covering the core problem solved, architectural approach, and role in broader integration.
 
-## Key API
-```python
-most_important_method(params: Type) -> ReturnType
-second_most_important(params: Type) -> ReturnType
-utility_method(params: Type) -> ReturnType
-```
+    ## Key API
+    most_important_method(params: Type) -> ReturnType
+    second_most_important(params: Type) -> ReturnType
+    utility_method(params: Type) -> ReturnType
 
-## Core Concepts
+    ## Core Concepts
 
-- Key data structure or abstraction
-- Critical constraint or assumption
-- Integration point with other libraries
-- Important design pattern
+    - Key data structure or abstraction
+    - Critical constraint or assumption
+    - Integration point with other libraries
+    - Important design pattern
 
-## Gotchas
+    ## Gotchas
 
-- Known limitation or performance constraint
-- Common usage mistake to avoid
-- Integration pitfall with other libraries
+    - Known limitation or performance constraint
+    - Common usage mistake to avoid
+    - Integration pitfall with other libraries
 
-## Quick Test
-`pytest tests/test_representative.py`
-```
+    ## Quick Test
+    pytest tests/test_representative.py
 
 ---
 
@@ -130,3 +123,4 @@ A good library README should allow an AI assistant to:
 4. **Validate functionality** through quick test
 
 If any of these takes longer than expected, the README needs to be more concise or better organized.
+```

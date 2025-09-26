@@ -1,8 +1,11 @@
 # Learnings Writing
 
-_Guide for capturing architectural insights from toy model experiments._
+This chapter provides agent-oriented documentation for writing LEARNINGS.md files in DocDD projects. Drop this guide into your repository as `LEARNINGS_WRITING.md` to help AI agents create effective retrospective documentation that captures architectural insights and constraints.
 
 ---
+
+```markdown
+# LEARNINGS_WRITING.md
 
 ## Purpose
 
@@ -68,4 +71,7 @@ Its job: extract maximum value from an experiment by recording **what worked, wh
 - Keep it **short and factual**.  
 - Prefer **bullet points** over prose.  
 - Note **failures and unknowns** as explicitly as successes.  
-- One page max — dense, parsimonious, reusable.  
+- One page max — dense, parsimonious, reusable.
+
+LEARNINGS.md is not a diary. It is a **distilled record of architectural insights** that prevent future agents from repeating failures and help them understand what constraints actually matter.
+```  

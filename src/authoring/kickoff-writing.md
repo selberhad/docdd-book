@@ -1,7 +1,14 @@
-## Kickoff Writing Guide — Binary-Weave Kickoff Docs
+# Kickoff Writing
 
-This document instructs the agent how to write a kickoff document for a new DocDD project.  
-The goal is to produce a single, explicit binary-weave plan — not a flat list of toys, not parallel streams.  
+This chapter provides agent-oriented documentation for writing KICKOFF.md files in DocDD projects. Drop this guide into your repository as `KICKOFF_WRITING.md` to help AI agents structure project kickoffs using napkin physics and binary-weave integration patterns.
+
+---
+
+```markdown
+# KICKOFF_WRITING.md
+
+This document instructs the agent how to write a kickoff document for a new DocDD project.
+The goal is to produce a single, explicit binary-weave plan — not a flat list of toys, not parallel streams.
 The weave always alternates: *new primitive → integration with prior product*.  
 
 ---
@@ -69,7 +76,6 @@ The weave always alternates: *new primitive → integration with prior product*.
 - [ ] Integration always combines current product with one new primitive?  
 - [ ] Final product and invariants stated at end?  
 
-If all are checked, the kickoff is valid.  
-
----
+If all are checked, the kickoff is valid.
+```
 

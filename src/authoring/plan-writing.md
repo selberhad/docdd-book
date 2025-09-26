@@ -1,8 +1,11 @@
 # Plan Writing
 
-_Guide to planning toy model development with TDD discipline._
+This chapter provides agent-oriented documentation for writing PLAN.md files in DocDD projects. Drop this guide into your repository as `PLAN_WRITING.md` to help AI agents create strategic roadmaps for toy model implementation.
 
 ---
+
+```markdown
+# PLAN_WRITING.md
 
 ## What a PLAN.md Actually Is
 
@@ -116,4 +119,5 @@ Always check with concrete, objective boxes:
 ---
 
 ## Conclusion
-A good PLAN.md is a **map, not the territory**. It sequences work, enforces TDD, and defines success. It avoids detail bloat while ensuring implementers know exactly **what to test, what to build, and when it’s done**.
+A good PLAN.md is a **map, not the territory**. It sequences work, enforces TDD, and defines success. It avoids detail bloat while ensuring implementers know exactly **what to test, what to build, and when it's done**.
+```
