@@ -46,22 +46,24 @@ The four core artifacts form a harness system that guides AI agents while preser
 
 Together these artifacts let the human act as driver, ensuring the cart (implementation) moves forward under control, with clarity preserved and ambiguity eliminated.  
 
-## High-Level Workflow (DDD)
+## High-Level Workflow
 
-  1) Docs
-       Generate or update SPEC.md and PLAN.md for the current, minimal slice of scope.
-       Keep README.md for any touched library crisp and current.
+The Document-Driven Development cycle follows four sequential phases:
 
-  2) Tests
-       Derive executable tests (or rubrics) directly from SPEC.md.
-       Golden examples and negative/error-path cases are required.
+**1. Documentation**
+- Generate or update SPEC.md and PLAN.md for the current, minimal slice of scope
+- Keep README.md for any touched library crisp and current
 
-  3) Implementation
-       Provide the minimal code to pass tests; keep changes tightly scoped.
-       Prefer single-file spikes for first proofs.
+**2. Tests**
+- Derive executable tests (or rubrics) directly from SPEC.md
+- Golden examples and negative/error-path cases are required
 
-  4) Learnings
-       Update LEARNINGS.md with what held, what failed, why, and next constraints.
+**3. Implementation**
+- Provide the minimal code to pass tests; keep changes tightly scoped
+- Prefer single-file spikes for first proofs
+
+**4. Learnings**
+- Update LEARNINGS.md with what held, what failed, why, and next constraints
 
 ## Napkin Physics (Overview)
   Upstream simplification to avoid scope drift before writing specs and plans.
