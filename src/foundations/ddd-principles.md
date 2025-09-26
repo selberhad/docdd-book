@@ -1,17 +1,28 @@
 # Doc‑Driven Development — Principles
 
-## Purpose
-  This document defines how an AI assistant should operate inside this repository.
-  It codifies the Doc Driven Development (DDD) paradigm, toy-model practice, and
-  the CLI+JSON debugging substrate. Treat this as the canonical protocol.
+## The Economic Shift
 
-## Operating Principles
+AI assistants have fundamentally altered the economics of software creation. Activities that once consumed significant human effort — writing code, updating documentation, refactoring existing implementations — can now be automated or substantially accelerated. This economic inversion transforms the traditional development calculus across multiple dimensions:
 
-  - AI generates everything: docs, specs, plans, tests, implementations, scaffolding.
-  - Humans review, request revisions, and merge; AI loops until approval.
-  - Drafts are disposable; clarity and constraints are durable.
-  - Prefer parsimony: simplest mechanism that works today beats abstract extensibility.
-  - Make state legible to humans and agents: JSON over hidden state, CLIs over frameworks.
+**Code Generation**: Scaffolding, boilerplate, tests, and even complex implementations can be generated in minutes rather than hours.
+
+**Documentation Maintenance**: Updating specs, refreshing README files, and maintaining API documentation become automated workflow steps rather than manual overhead.
+
+**Refactoring Operations**: Restructuring code that already works — traditionally a hard-to-justify business expense due to the effort-to-benefit ratio — becomes routine maintenance within the development cycle.
+
+The result is a shifted value equation: individual artifacts (code, docs, tests) become disposable and cheap to regenerate, while clarity, architectural insight, and strategic decision-making become the primary sources of durable value.
+
+Document-Driven Development emerges from this shifted landscape. Rather than starting with implementation and documenting afterward, the methodology reverses the flow: **Docs → Tests → Implementation → Learnings**. The AI generates all artifacts, while the human acts as reviewer, simplifier, and strategic guide.
+
+## Core Principles
+
+**AI as Generator, Human as Editor**: The AI produces comprehensive artifacts (documentation, specifications, plans, tests, implementations) while the human focuses on simplification, risk identification, and constraint setting. This division leverages each party's strengths — AI's generative capacity and human's editorial judgment.
+
+**Disposable Code, Durable Insight**: Individual implementations are treated as expendable drafts. The lasting value lies in the clarity extracted through the development process and captured in meta-documentation. This removes psychological barriers to refactoring and experimentation.
+
+**Parsimony Over Extensibility**: Prefer the simplest mechanism that solves today's problem rather than abstract frameworks designed for hypothetical future needs. This principle counters AI systems' tendency toward comprehensive, layered solutions.
+
+**System Legibility**: Design for transparent, inspectable execution. Favor JSON data interchange, CLI interfaces, and deterministic behavior over hidden state and complex frameworks. This enables both humans and AI to reason about system behavior reliably.
 
 ## Roles
 
