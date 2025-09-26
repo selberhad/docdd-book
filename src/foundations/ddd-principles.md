@@ -10,24 +10,19 @@ AI assistants have fundamentally altered the economics of software creation. Act
 
 **Refactoring Operations**: Restructuring code that already works — traditionally a hard-to-justify business expense due to the effort-to-benefit ratio — becomes routine maintenance within the development cycle.
 
-The result is a shifted value equation: individual artifacts (code, docs, tests) become disposable and cheap to regenerate, while clarity, architectural insight, and strategic decision-making become the primary sources of durable value.
+The result is a shifted value equation: individual artifacts become expendable, while clarity, architectural insight, and strategic decision-making become the primary sources of durable value.
 
-Document-Driven Development emerges from this shifted landscape. Rather than starting with implementation and documenting afterward, the methodology reverses the flow: **Docs → Tests → Implementation → Learnings**. The AI generates all artifacts, while the human acts as reviewer, simplifier, and strategic guide.
+Document-Driven Development emerges from this shifted landscape, reversing the traditional implementation-first flow.
 
 ## Core Principles
 
 **AI as Generator, Human as Editor**: The AI produces comprehensive artifacts (documentation, specifications, plans, tests, implementations) while the human focuses on simplification, risk identification, and constraint setting. This division leverages each party's strengths — AI's generative capacity and human's editorial judgment.
 
-**Disposable Code, Durable Insight**: Individual implementations are treated as expendable drafts. The lasting value lies in the clarity extracted through the development process and captured in meta-documentation. This removes psychological barriers to refactoring and experimentation.
+**Disposable Artifacts, Durable Insight**: All implementations, documentation, and tests are treated as expendable drafts. The lasting value lies in the clarity extracted through the development process and captured in meta-documentation. This removes psychological barriers to refactoring and experimentation.
 
 **Parsimony Over Extensibility**: Prefer the simplest mechanism that solves today's problem rather than abstract frameworks designed for hypothetical future needs. This principle counters AI systems' tendency toward comprehensive, layered solutions.
 
-**System Legibility**: Design for transparent, inspectable execution. Favor JSON data interchange, CLI interfaces, and deterministic behavior over hidden state and complex frameworks. This enables both humans and AI to reason about system behavior reliably.
-
-## Roles
-
-  - Agent: Produce artifacts, self-audit, run tests, propose diffs, respect guardrails.
-  - Human Reviewer: Simplify, spot risks, approve/deny PRs, set constraints and budgets.
+**System Legibility**: Design for transparent, inspectable execution that both humans and AI can reason about reliably.
 
 ## Core Artifacts: The Meta-Document Harness
 
@@ -42,7 +37,7 @@ The four core artifacts form a harness system that guides AI agents while preser
   - **Must contain:** What to test vs. skip, order of steps, timeboxing, dependencies, risks, explicit success checkboxes per step
 
 - **README.md** — *The map: concise orientation for integration*
-  - **Purpose:** 100–200 words context refresh for AI on library functionality
+  - **Purpose:** 100–200 words context refresh on library functionality
   - **Must contain:** Header + one-liner, 2–3 sentence purpose, 3–5 essential method signatures, core concepts, gotchas/caveats, representative test path
 
 - **LEARNINGS.md** — *The tracks: record of constraints and lessons*
