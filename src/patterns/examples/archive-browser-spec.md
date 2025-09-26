@@ -1,12 +1,19 @@
-# SPEC.md — Archive Browser, Stage 1 (Toy A + Toy B)
+# Archive Browser Spec
+
+This example demonstrates a complete SPEC.md file from the Archive Browser project. This specification guided development of the shipped NPM package for viewing ChatGPT conversation exports.
+
+---
+
+```markdown
+# SPEC.md
+
+Archive Browser, Stage 1 (Toy A + Toy B)
 
 Scope: Implement the first two primitives for the Archive Browser kickoff (Stage 1), without integration.
 - Toy A: ZIP Metadata Reader (`zipmeta`)
 - Toy B: TUI List (`tuilist`)
 
 No extrapolation beyond existing docs: this SPEC defines minimal contracts and invariants to enable TDD for Stage 1.
-
----
 
 ## 1. Invariants
 
@@ -23,27 +30,25 @@ No extrapolation beyond existing docs: this SPEC defines minimal contracts and i
 Read a ZIP file’s central directory and emit a JSON array of entries (metadata only). Do not read file contents.
 
 ### Input (stdin JSON)
-```
-{
-  "zip_path": "./path/to/archive.zip"
-}
-```
+
+    {
+      "zip_path": "./path/to/archive.zip"
+    }
 
 ### Output (stdout JSON)
 Array of entry objects, ordered by central directory order.
-```
-[
-  {
-    "name": "conversations/2024-09-30.json",
-    "compressed_size": 12345,
-    "uncompressed_size": 67890,
-    "method": "deflate",           // or "store", etc. (string label)
-    "crc32": "89abcd12",            // lowercase hex, 8 chars
-    "last_modified": "2024-09-30T12:34:56Z",
-    "is_directory": false
-  }
-]
-```
+
+    [
+      {
+        "name": "conversations/2024-09-30.json",
+        "compressed_size": 12345,
+        "uncompressed_size": 67890,
+        "method": "deflate",
+        "crc32": "89abcd12",
+        "last_modified": "2024-09-30T12:34:56Z",
+        "is_directory": false
+      }
+    ]
 
 Notes:
 - `method` is a human label derived from the ZIP method code.
@@ -51,9 +56,8 @@ Notes:
 
 ### Errors (stderr JSON)
 On failure, emit a single JSON object to stderr; no stdout payload.
-```
-{ "type": "ERR_ZIP_OPEN", "message": "cannot open zip", "hint": "check path and permissions" }
-```
+
+    { "type": "ERR_ZIP_OPEN", "message": "cannot open zip", "hint": "check path and permissions" }
 Other representative errors:
 - `ERR_ZIP_NOT_FOUND` — path does not exist
 - `ERR_ZIP_INVALID` — invalid/corrupt ZIP central directory
@@ -70,19 +74,16 @@ Render a scrollable list of strings with instant navigation. Stage 1 validates r
 - Output: For Stage 1, stdout may be empty or a minimal confirmation object; interaction is the focus. Errors use structured JSON on stderr if startup fails.
 
 Example input (stdin):
-```
-["a.json", "b.json", "c.html"]
-```
+
+    ["a.json", "b.json", "c.html"]
 
 Example minimal output (stdout):
-```
-{ "ok": true }
-```
+
+    { "ok": true }
 
 ### Errors (stderr JSON)
-```
-{ "type": "ERR_TUI_INIT", "message": "terminal init failed", "hint": "verify terminal supports required features" }
-```
+
+    { "type": "ERR_TUI_INIT", "message": "terminal init failed", "hint": "verify terminal supports required features" }
 
 ---
 
@@ -126,3 +127,4 @@ Example minimal output (stdout):
 - [ ] Both tools follow CLI + JSON purity (no hidden state in outputs; logs allowed).
 
 *** End of Stage 1 SPEC ***
+```

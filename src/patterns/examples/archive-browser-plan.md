@@ -1,10 +1,17 @@
-# PLAN.md — Archive Browser, Stage 1 (Toy A + Toy B)
+# Archive Browser Plan
+
+This example demonstrates a complete PLAN.md file from the Archive Browser project. This strategic roadmap guided TDD implementation of the shipped NPM package for viewing ChatGPT conversation exports.
+
+---
+
+```markdown
+# PLAN.md
+
+Archive Browser, Stage 1 (Toy A + Toy B)
 
 Overview: Build and validate the two Stage 1 primitives from KICKOFF — Toy A (`zipmeta`) and Toy B (`tuilist`) — using TDD. Keep changes minimal and test-first. Use A/B structure per Plan Writing guide.
 
 Methodology: TDD discipline; tests-first; Red → Green → Next; explicit success criteria; focus on interfaces and contracts.
-
----
 
 ## Step 1: Toy A — ZIP Metadata Reader (HIGH)
 
@@ -66,3 +73,4 @@ Methodology: TDD discipline; tests-first; Red → Green → Next; explicit succe
 - [ ] SPEC and PLAN reflect actual behavior
 
 *** End of Stage 1 PLAN ***
+```

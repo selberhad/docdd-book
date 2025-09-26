@@ -3,10 +3,10 @@
 ## Overview
 
 - **Total files:** 19
-- **Total words:** 5,189
-- **Total lines:** 1,509
-- **Total characters:** 57,136
-- **Reading time:** ~25 minutes
+- **Total words:** 3,910
+- **Total lines:** 1,525
+- **Total characters:** 57,811
+- **Reading time:** ~19 minutes
 
 ## Per-File Breakdown
 
@@ -26,9 +26,9 @@
 | foundations/napkin-physics.md | 321 | 37 |
 | foundations/toy-model-rationale.md | 493 | 117 |
 | patterns/chatgpt-export-viewer.md | 224 | 35 |
-| patterns/examples/archive-browser-kickoff.md | 490 | 105 |
-| patterns/examples/archive-browser-plan.md | 406 | 68 |
-| patterns/examples/archive-browser-spec.md | 481 | 128 |
+| patterns/examples/archive-browser-kickoff.md | 36 | 111 |
+| patterns/examples/archive-browser-plan.md | 32 | 76 |
+| patterns/examples/archive-browser-spec.md | 30 | 130 |
 | patterns/spatial-mud-database.md | 291 | 37 |
 | practice/docdd-agents-template.md | 45 | 123 |
-| **TOTAL** | **5,189** | **1,509** |
+| **TOTAL** | **3,910** | **1,525** |

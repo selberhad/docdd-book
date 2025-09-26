@@ -1,9 +1,14 @@
-# Project Kickoff
+# Archive Browser Kickoff
 
-A clarity-first, agent-oriented development plan for building a lightning-fast TUI archive browser for ChatGPT export ZIPs.  
-This document is disposable scaffolding: clarity and validated integrations are the true outputs.
+This example demonstrates the binary-weave kickoff process for a real DocDD project. This KICKOFF.md file guided the development of the Archive Browser, a shipped NPM package for viewing ChatGPT conversation exports.
 
 ---
+
+```markdown
+# KICKOFF.md
+
+A clarity-first, agent-oriented development plan for building a lightning-fast TUI archive browser for ChatGPT export ZIPs.
+This document is disposable scaffolding: clarity and validated integrations are the true outputs.
 
 ## Napkin Physics
 
@@ -103,3 +108,4 @@ Each stage introduces at most one new primitive, then integrates it with an exis
 
 - **Final Product**: Lightning-fast Node.js archive browser for ChatGPT exports.
 - **Process**: 5 primitives (A, B, D, F, H, J) woven into 5 integrations (C, E, G, I, K).
+```
