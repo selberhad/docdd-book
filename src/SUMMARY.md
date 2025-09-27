@@ -10,6 +10,7 @@
   - [Repo Layout, Guardrails, Workflow](./foundations/ddd-repo-guardrails.md)
 - [Execution Workflow](./foundations/execution-workflow.md)
   - [Code Maps](./foundations/code-maps.md)
+  - [Refactoring with AI Agents](./foundations/refactoring-with-ai.md)
 
 ### Part II — Practice (How)
 - [DocDD AGENTS.md Template](./practice/docdd-agents-template.md)

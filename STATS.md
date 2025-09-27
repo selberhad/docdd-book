@@ -2,17 +2,17 @@
 
 ## Overview
 
-- **Total files:** 23
-- **Total words:** 6,289
-- **Total lines:** 1,927
-- **Total characters:** 84,555
-- **Reading time:** ~31 minutes
+- **Total files:** 24
+- **Total words:** 7,176
+- **Total lines:** 2,009
+- **Total characters:** 91,662
+- **Reading time:** ~35 minutes
 
 ## Per-File Breakdown
 
 | File | Words | Lines |
 |------|------:|------:|
-| SUMMARY.md | 79 | 32 |
+| SUMMARY.md | 83 | 33 |
 | appendices/faq.md | 441 | 41 |
 | authoring/README.md | 158 | 21 |
 | authoring/kickoff-writing.md | 38 | 81 |
@@ -25,8 +25,9 @@
 | foundations/ddd-repo-guardrails.md | 412 | 57 |
 | foundations/debugger-mindset.md | 426 | 99 |
 | foundations/discovery-workflow.md | 528 | 83 |
-| foundations/execution-workflow.md | 945 | 67 |
+| foundations/execution-workflow.md | 950 | 69 |
 | foundations/napkin-physics.md | 321 | 37 |
+| foundations/refactoring-with-ai.md | 878 | 79 |
 | foundations/toy-model-rationale.md | 493 | 117 |
 | patterns/chatgpt-export-viewer.md | 246 | 39 |
 | patterns/examples/archive-browser-code-map.md | 37 | 156 |
@@ -35,4 +36,4 @@
 | patterns/examples/archive-browser-spec.md | 30 | 130 |
 | patterns/spatial-mud-database.md | 698 | 85 |
 | practice/docdd-agents-template.md | 45 | 123 |
-| **TOTAL** | **6,289** | **1,927** |
+| **TOTAL** | **7,176** | **2,009** |

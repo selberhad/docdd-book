@@ -32,6 +32,8 @@ The mandatory refactoring step serves multiple purposes. It cleans up integratio
 
 This discipline prevents the gradual degradation that typically occurs in software systems. Instead of accumulating technical debt that eventually requires expensive remediation, the system maintains consistent quality through continuous small improvements.
 
+See: [Refactoring with AI Agents](./refactoring-with-ai.md)
+
 ## The Integration Development Cycle
 
 Execution workflow follows a five-step cycle designed for efficiency within established systems:
