@@ -9,6 +9,7 @@
   - [Debugger Mindset](./foundations/debugger-mindset.md)
   - [Repo Layout, Guardrails, Workflow](./foundations/ddd-repo-guardrails.md)
 - [Integration Workflow](./foundations/integration-workflow.md)
+  - [Code Maps](./foundations/code-maps.md)
 
 ### Part II — Practice (How)
 - [DocDD AGENTS.md Template](./practice/docdd-agents-template.md)

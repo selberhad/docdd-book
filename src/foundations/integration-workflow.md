@@ -1,95 +1,63 @@
 # Integration Workflow
 
-When working on established architectures where patterns are known and you're building on proven foundations, DocDD uses a lighter approach focused on maintaining architectural coherence and code quality.
+Most software development happens within established systems. Once you've moved past the research and experimentation phase—once the core patterns are proven and the architectural approach is validated—the heavy documentation discipline of R&D mode becomes unnecessary overhead. Integration mode addresses this common reality with a lighter, more focused approach.
 
-## Core Artifacts: CODE_MAP.md + Refactoring
+Integration workflow recognizes that the primary challenge shifts from discovery to orchestration. Instead of validating uncertain approaches through systematic experimentation, you're building features within known constraints, following established patterns, and maintaining architectural coherence across a growing system.
 
-Integration mode centers on two key practices:
+## The Economic Reality of Established Systems
 
-**CODE_MAP.md**: A living architectural document that provides structural orientation for both humans and AI agents. Updated with every commit to reflect the current system state.
+When working within mature codebases, the development economics change fundamentally. The core abstractions already exist. The data patterns are established. The integration points are defined. The technology choices have been made and validated through use.
 
-**Mandatory Refactoring**: A required step after every feature implementation or integration that ensures code quality and prevents technical debt accumulation.
+In this context, the four-document harness of R&D mode—with its emphasis on systematic experimentation and risk mitigation—becomes process overhead that slows development without adding proportional value. The uncertainty that R&D mode addresses has already been resolved through earlier work.
 
-## CODE_MAP.md: Living Architecture Documentation
+Integration mode emerged from recognizing this shifted context. Rather than applying R&D discipline uniformly across all development work, DocDD adapts its approach to match the actual challenges: maintaining system legibility, ensuring architectural consistency, and preventing quality degradation as the system grows.
 
-The CODE_MAP.md serves as the central orchestration document that gives both humans and AI a clear mental model of how the codebase is organized.
+## Living Architecture Through Code Maps
 
-### Structure and Contents
+The cornerstone of integration workflow is the CODE_MAP.md—a living architectural document that serves as the primary coordination mechanism between human developers, AI agents, and the evolving codebase.
 
-**Architecture Overview**: High-level purpose, design philosophy, and data flow patterns
+Unlike traditional architectural documentation that becomes stale and misleading over time, the code map maintains currency through discipline: it's updated with every commit that changes system structure. This creates a reliable source of truth that both humans and AI can depend on for understanding how the system is organized.
 
-**Key Directories**: Functional organization with clear responsibilities
+The code map serves multiple audiences simultaneously. For human developers returning to a project or working in unfamiliar areas, it provides rapid orientation without requiring them to reverse-engineer system structure from implementation details. For AI agents, it supplies the architectural context necessary to make changes that fit existing patterns rather than introducing inconsistencies.
 
-**Component Documentation**: Each major module/library documented with key functions and interactions
+See: [Code Maps](./code-maps.md)
 
-**Integration Patterns**: How components connect and depend on each other
+## Refactoring as System Maintenance
 
-**Practical Insights**: Known issues, gotchas, safety patterns, and common pitfalls
+Integration workflow treats refactoring not as an occasional cleanup activity, but as mandatory system maintenance performed after every feature implementation or integration step. This shift from optional to required reflects the economic reality that AI assistance has made refactoring dramatically less expensive.
 
-### Maintenance Discipline
+Traditionally, refactoring was difficult to justify because the effort-to-benefit ratio was poor. Improving working code consumed significant developer time while providing unclear business value. With AI assistance, refactoring becomes routine maintenance—similar to how automatic garbage collection eliminated manual memory management as a developer concern.
 
-- **Updated with every commit**: The CODE_MAP must always reflect current reality
-- **Focus on structure over details**: Architectural insight, not implementation specifics
-- **AI-agent friendly**: Written to help agents understand the system quickly
-- **Change-sensitive sections**: Flag areas that are fragile or require careful modification
+The mandatory refactoring step serves multiple purposes. It cleans up integration seams between new and existing components, maintaining clean boundaries and clear interfaces. It extracts emerging patterns and eliminates duplication that accumulates during feature development. Most importantly, it ensures that new code follows established architectural patterns rather than introducing inconsistencies that compound over time.
 
-## Refactoring as Mandatory Step
+This discipline prevents the gradual degradation that typically occurs in software systems. Instead of accumulating technical debt that eventually requires expensive remediation, the system maintains consistent quality through continuous small improvements.
 
-After every feature implementation or integration, a refactoring step ensures the codebase remains clean and maintainable.
+## The Integration Development Cycle
 
-### What to Refactor
+Integration workflow follows a five-step cycle designed for efficiency within established systems:
 
-**Integration Seams**: Clean up interfaces between new and existing components
+**Orient** by reading the CODE_MAP.md to understand current architecture and constraints. This step ensures that new work builds on existing foundations rather than working against them.
 
-**Code Quality**: Extract patterns, eliminate duplication, improve naming
+**Plan** with brief, focused planning that emphasizes integration points and architectural fit. Unlike R&D mode's systematic experimentation planning, integration planning assumes known approaches and focuses on execution details.
 
-**Architectural Consistency**: Ensure new code follows established patterns
+**Implement** the feature following established patterns and architectural guidelines. The implementation phase benefits from clear constraints and proven approaches, enabling faster development cycles.
 
-**Documentation Sync**: Update CODE_MAP.md to reflect any structural changes
+**Refactor** to clean up integration seams and improve code quality. This mandatory step ensures that the system's quality improves continuously rather than degrading over time.
 
-### Why It's Mandatory
+**Update** the CODE_MAP.md to reflect any structural changes introduced during implementation. This maintains the currency and reliability of the architectural documentation.
 
-With AI assistance, refactoring shifts from expensive manual work to routine maintenance. The economic shift makes it feasible to continuously improve code quality rather than accumulate technical debt.
+## When Integration Mode Applies
 
-## Integration Mode Workflow
+Integration workflow works best when uncertainty has been resolved through previous work. The architectural approaches are proven and understood. Requirements are clear and well-defined. Technical constraints and limitations are documented and stable. Core systems and interfaces have matured through use.
 
-**1. Orient**: Read CODE_MAP.md to understand current architecture and constraints
+These conditions indicate that the primary development challenge has shifted from discovery to execution. The system's fundamental patterns are established, and new work primarily involves extending these patterns to address additional requirements.
 
-**2. Plan**: Brief planning focused on integration points and architectural fit
+Integration mode acknowledges this shift explicitly. Rather than applying discovery-oriented processes to execution-oriented work, it provides lightweight discipline that maintains system quality without unnecessary overhead.
 
-**3. Implement**: Build the feature following established patterns
+## Relationship to R&D Mode
 
-**4. Refactor**: Clean up integration seams and improve code quality
+Integration workflow doesn't replace R&D mode—it complements it. When uncertainty arises during integration work, the methodology supports switching back to R&D mode's systematic experimentation approach. This might happen when requirements reveal gaps in the established patterns, when new technologies need evaluation, or when performance constraints require architectural changes.
 
-**5. Update**: Refresh CODE_MAP.md to reflect any structural changes
+The key insight is recognizing which mode fits the current development challenge. Most work in established systems benefits from integration workflow's lighter approach. But when uncertainty emerges, R&D mode's more rigorous discipline becomes valuable again.
 
-## When Integration Mode Works Best
-
-- **Established patterns**: The architectural approaches are proven and understood
-- **Clear requirements**: What needs to be built is well-defined
-- **Known constraints**: Technical limitations and design decisions are documented
-- **Stable foundations**: Core systems and interfaces are mature
-
-## Differences from R&D Mode
-
-**Documentation Weight**: Much lighter - CODE_MAP.md instead of four-document harness
-
-**Planning Depth**: Tactical integration planning vs. systematic experimentation
-
-**Risk Profile**: Lower risk due to established patterns and proven foundations
-
-**Speed**: Faster development cycles without heavy documentation overhead
-
-**Focus**: Orchestration and quality maintenance vs. discovery and validation
-
-## Integration Mode Artifacts
-
-**Primary**: CODE_MAP.md (architectural orientation)
-
-**Secondary**: Brief integration plans for complex features
-
-**Continuous**: Refactoring commits maintaining code quality
-
-**Optional**: Component READMEs for complex modules (following R&D README format)
-
-The key insight: Integration mode acknowledges that most software development is about building on existing foundations rather than solving novel problems. It provides the right level of process for this common case while preserving the option to switch to R&D mode when uncertainty arises.
+This flexibility prevents the common antipattern of applying heavy process uniformly across all development work. Instead, DocDD adapts its methodology to match the actual challenges and uncertainty levels present in different phases of system development.
