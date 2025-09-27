@@ -21,6 +21,8 @@ This repository is an mdBook about the Document‑Driven Development (DocDD) met
 - Build + link check: `make check`.
 - Static build: `make build` (outputs to `book/`).
 
+**Note**: The project scaffolding (build tools, scripts, configuration) is MIT-licensed and freely reusable for your own books. However, the DocDD book content itself (`src/` directory) is copyrighted material under Personal-Use license - see the License section below.
+
 ## Repository Layout
 - `book.toml`: mdBook configuration (HTML output + linkcheck).
 - `src/`: book sources
