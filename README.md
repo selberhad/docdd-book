@@ -49,6 +49,8 @@ This repository serves as a practical example of "vibe-writing" a technical book
 - Book content collaboratively developed through iterative human-AI editing
 - Automated statistics, pre-commit hooks, and CI/CD provide quality gates without heavyweight process
 
+**Note on AI collaboration**: As a working draft developed with AI assistance, this book may contain unintended redundancies, inconsistencies, or hallucinated details. If you notice such issues while reading, please file an issue at https://github.com/selberhad/docdd-book/issues to help improve the content.
+
 ## Deploying
 - Published via GitHub Pages on pushes to `main` (see workflow badge above).
 

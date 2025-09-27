@@ -3,17 +3,17 @@
 ## Overview
 
 - **Total files:** 24
-- **Total words:** 7,176
-- **Total lines:** 2,009
-- **Total characters:** 91,662
-- **Reading time:** ~35 minutes
+- **Total words:** 7,397
+- **Total lines:** 2,021
+- **Total characters:** 93,116
+- **Reading time:** ~36 minutes
 
 ## Per-File Breakdown
 
 | File | Words | Lines |
 |------|------:|------:|
 | SUMMARY.md | 83 | 33 |
-| appendices/faq.md | 441 | 41 |
+| appendices/faq.md | 662 | 53 |
 | authoring/README.md | 158 | 21 |
 | authoring/kickoff-writing.md | 38 | 81 |
 | authoring/learnings-writing.md | 37 | 77 |
@@ -36,4 +36,4 @@
 | patterns/examples/archive-browser-spec.md | 30 | 130 |
 | patterns/spatial-mud-database.md | 698 | 85 |
 | practice/docdd-agents-template.md | 45 | 123 |
-| **TOTAL** | **7,176** | **2,009** |
+| **TOTAL** | **7,397** | **2,021** |
