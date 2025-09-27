@@ -1,6 +1,6 @@
 # Code Maps
 
-CODE_MAP.md serves as living architectural documentation that provides structural orientation for both humans and AI agents. It's the central orchestration document in Integration Mode, updated with every commit to reflect the current system state.
+CODE_MAP.md serves as living architectural documentation that provides structural orientation for both humans and AI agents. It's the central orchestration document in Execution Mode, updated with every commit to reflect the current system state.
 
 ## Purpose and Philosophy
 
@@ -67,7 +67,7 @@ Treat the CODE_MAP as a living document that evolves with the codebase.
 ### Be Selective
 Include what helps understanding, skip what adds noise. Focus on the most important 80% of the system.
 
-## Integration with Development Workflow
+## Integration with Execution Workflow
 
 Code maps work best when integrated into the standard development cycle:
 

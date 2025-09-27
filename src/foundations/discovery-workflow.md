@@ -1,4 +1,4 @@
-# R&D Workflow
+# Discovery Workflow
 
 When working on novel solutions, uncertain requirements, or exploratory work, DocDD uses a structured approach centered on the four-document harness and systematic experimentation.
 
@@ -77,3 +77,7 @@ The Document-Driven Development cycle follows four sequential phases:
   - Workflow: self-audit metrics and human review gates.
 
   See: [Repo Layout, Guardrails, Workflow](./ddd-repo-guardrails.md)
+
+---
+
+**Example in Practice**: [Case Study II: Spatial MUD Database](../patterns/spatial-mud-database.md) demonstrates discovery workflow in action, showing how toy model discipline and systematic experimentation addressed complex technical challenges through four focused prototypes and multi-system integration.

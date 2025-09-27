@@ -40,22 +40,22 @@ Document-Driven Development emerges from this shifted landscape, reversing the t
 
 Document-Driven Development operates in two distinct modes depending on the project phase and level of uncertainty:
 
-**R&D Mode**: For novel solutions, uncertain requirements, or exploratory work where you need to validate concepts and discover constraints. Uses the full four-document harness (SPEC/PLAN/README/LEARNINGS) with toy model discipline to systematically explore and validate approaches.
+**Discovery Mode**: For novel solutions, uncertain requirements, or exploratory work where you need to validate concepts and discover constraints. Uses the full four-document harness (SPEC/PLAN/README/LEARNINGS) with toy model discipline to systematically explore and validate approaches.
 
-**Integration Mode**: For established architectures where the patterns are known and you're building on proven foundations. Uses CODE_MAP.md as the central orchestration document plus mandatory refactoring after each feature implementation or integration step.
+**Execution Mode**: For established architectures where the patterns are known and you're building on proven foundations. Uses CODE_MAP.md as the central orchestration document plus mandatory refactoring after each feature implementation or integration step.
 
-### When to Use R&D Mode
+### When to Use Discovery Mode
 - Implementing novel algorithms or approaches
 - Uncertain requirements or problem definition
 - Exploring new technologies or frameworks
 - Building foundational components where the patterns aren't established
 - Any work that requires systematic experimentation
 
-### When to Use Integration Mode
+### When to Use Execution Mode
 - Adding features to established codebases
 - Building on proven architectural patterns
 - Straightforward implementations without novel components
 - Post-MVP development where core patterns are validated
 - Any work where the main challenge is orchestration rather than discovery
 
-The key insight: most development is integration work that doesn't require the heavy documentation discipline of R&D mode. But when uncertainty exists, the R&D approach prevents costly architectural mistakes through systematic exploration.
+The key insight: most development is execution work that doesn't require the heavy documentation discipline of discovery mode. But when uncertainty exists, the discovery approach prevents costly architectural mistakes through systematic exploration.
