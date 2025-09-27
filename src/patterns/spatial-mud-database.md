@@ -1,4 +1,4 @@
-# Case Study II
+# Case Study II: Spatial MUD Database
 
 ## Multi-Scale Spatial Architecture for MUDs
 

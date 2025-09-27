@@ -1,4 +1,4 @@
-# Case Study I
+# Case Study I: ChatGPT Export Viewer
 
 This archive lists concrete, working examples referenced throughout the book. It is intentionally small and current.
 

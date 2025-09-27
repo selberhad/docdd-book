@@ -20,9 +20,9 @@
   - [Learnings Writing](./authoring/learnings-writing.md)
 
 ### Part IV — Patterns & Appendices
-- [Case Study I](./patterns/chatgpt-export-viewer.md)
+- [Case Study I: ChatGPT Export Viewer](./patterns/chatgpt-export-viewer.md)
   - [Archive Browser Kickoff](./patterns/examples/archive-browser-kickoff.md)
   - [Archive Browser Spec](./patterns/examples/archive-browser-spec.md)
   - [Archive Browser Plan](./patterns/examples/archive-browser-plan.md)
-- [Case Study II](./patterns/spatial-mud-database.md)
+- [Case Study II: Spatial MUD Database](./patterns/spatial-mud-database.md)
 - [FAQ](./appendices/faq.md)
