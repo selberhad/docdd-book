@@ -21,3 +21,6 @@ Examines the environmental impact of AI-generated code, drawing parallels betwee
 
 ### [Shipping My First Fully AI‑Coded Project](First%20Vibecoded%20Project.md)
 A hands-on account of building and shipping a complete project where AI handled all implementation while the human focused on product direction, UX decisions, and testing. Demonstrates the practical application of human-AI collaboration through the development of a ChatGPT export viewer toolkit.
+
+### [Vibe-writing the DocDD Book](Vibewriting.md)
+How the DocDD book was produced through "vibe-writing": agents draft, restructure, and refactor while the human edits for clarity, constraints, and voice. Connects the methodology’s dual modes (Discovery for uncertainty, Execution for delivery) to long-form writing, showing agent-first operations beyond code.
