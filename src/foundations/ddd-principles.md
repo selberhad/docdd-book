@@ -1,5 +1,17 @@
 # Doc‑Driven Development — Principles
 
+## The Problem with Current AI-Coding Approaches
+
+Software development is experiencing a fundamental shift as AI agents become capable programming partners. The industry has responded with various methodologies: spec-driven development, AI-enhanced TDD, structured prompting frameworks, and workflow optimizations. While these approaches offer incremental improvements, they share a critical limitation — they are human programming practices remixed for AI, not ground-up designs for AI capabilities.
+
+Most current AI-coding methodologies ask: "How can we modify existing development workflows to work better with AI?" But this misses the deeper question: "If we designed software development from scratch for AI agents, what would it look like?"
+
+The difference is significant. Human-oriented practices evolved around human cognitive limitations: working memory constraints, context-switching costs, and the difficulty of maintaining mental models across large codebases. AI agents have entirely different constraints: they excel at rapid iteration and pattern generation but struggle with consistency across sessions, maintaining context over long conversations, and distinguishing between hallucination and valid solutions.
+
+Traditional approaches try to fit AI into human-shaped processes. They focus on better prompts, more structured inputs, and clearer specifications — essentially teaching AI to work within frameworks designed for human cognition. This is like optimizing horse carriages instead of inventing the automobile.
+
+Document-Driven Development takes the alternative approach: redesigning the entire development process around AI capabilities and limitations. Rather than asking how to make AI better at human workflows, it asks what programming methodology would emerge if we started from first principles with AI as the primary implementer.
+
 ## The Economic Shift
 
 AI assistants have fundamentally altered the economics of software creation. Activities that once consumed significant human effort — writing code, updating documentation, refactoring existing implementations — can now be automated or substantially accelerated. This economic inversion transforms the traditional development calculus across multiple dimensions:

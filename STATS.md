@@ -3,10 +3,10 @@
 ## Overview
 
 - **Total files:** 19
-- **Total words:** 3,910
-- **Total lines:** 1,525
-- **Total characters:** 57,811
-- **Reading time:** ~19 minutes
+- **Total words:** 4,165
+- **Total lines:** 1,537
+- **Total characters:** 59,673
+- **Reading time:** ~20 minutes
 
 ## Per-File Breakdown
 
@@ -20,7 +20,7 @@
 | authoring/plan-writing.md | 34 | 123 |
 | authoring/readme-writing.md | 32 | 126 |
 | authoring/spec-writing.md | 37 | 105 |
-| foundations/ddd-principles.md | 760 | 101 |
+| foundations/ddd-principles.md | 1,015 | 113 |
 | foundations/ddd-repo-guardrails.md | 412 | 57 |
 | foundations/debugger-mindset.md | 426 | 99 |
 | foundations/napkin-physics.md | 321 | 37 |
@@ -31,4 +31,4 @@
 | patterns/examples/archive-browser-spec.md | 30 | 130 |
 | patterns/spatial-mud-database.md | 291 | 37 |
 | practice/docdd-agents-template.md | 45 | 123 |
-| **TOTAL** | **3,910** | **1,525** |
+| **TOTAL** | **4,165** | **1,537** |
