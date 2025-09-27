@@ -30,6 +30,10 @@ Technical specification defining invariants, contracts, and behaviors for Stage 
 Step-by-step implementation plan with TDD methodology, success criteria, and risk mitigation.
 - [Archive Browser Plan](./examples/archive-browser-plan.md)
 
+### Code Map Document
+Living architectural documentation providing structural orientation for both humans and AI agents.
+- [Archive Browser Code Map](./examples/archive-browser-code-map.md)
+
 Notes
 - Keep examples practical and minimal; link them from relevant chapters.
 - Export formats: when useful, include small JSON/DOT/CSV snippets alongside examples.

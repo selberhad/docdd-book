@@ -3,10 +3,12 @@
 
 ### Part I — Foundations (Why)
 - [Doc‑Driven Development](./foundations/ddd-principles.md)
+- [R&D Workflow](./foundations/rd-workflow.md)
   - [Napkin Physics](./foundations/napkin-physics.md)
   - [Toy‑Model Rationale](./foundations/toy-model-rationale.md)
   - [Debugger Mindset](./foundations/debugger-mindset.md)
   - [Repo Layout, Guardrails, Workflow](./foundations/ddd-repo-guardrails.md)
+- [Integration Workflow](./foundations/integration-workflow.md)
 
 ### Part II — Practice (How)
 - [DocDD AGENTS.md Template](./practice/docdd-agents-template.md)
