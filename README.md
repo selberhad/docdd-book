@@ -53,6 +53,7 @@ This repository serves as a practical example of "vibe-writing" a technical book
 - Published via GitHub Pages on pushes to `main` (see workflow badge above).
 
 ## License
-- Text: Personal-Use (no redistribution). See `LICENSE.md`.
-- Code samples: MIT (see `LICENSE.md`).
+- **Book content** (`src/` directory): Personal-Use license (no redistribution). See `LICENSE.md`.
+- **Project scaffolding** (build tools, scripts, configuration): MIT license - feel free to fork this setup for your own books!
+- **Code samples within the book**: MIT license.
 - Permissions/requests: open an issue on the GitHub repo.

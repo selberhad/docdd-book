@@ -1,16 +1,22 @@
-Personal-Use License (No Redistribution)
+## Book Content License (Personal-Use, No Redistribution)
+
+**Applies to:** All content in the `src/` directory (the book text itself)
 
 Copyright (c) 2024–present selberhad. All rights reserved.
 
-Grant of rights. You may download, view, and print one personal copy of this work for your own use, including use in your employment or business.
+**Grant of rights.** You may download, view, and print one personal copy of this work for your own use, including use in your employment or business.
 
-Restrictions. You may not redistribute, republish, host, sell, sublicense, or make this work publicly available in any form. You may not modify, translate, or create derivative works based on the text of this work.
+**Restrictions.** You may not redistribute, republish, host, sell, sublicense, or make this work publicly available in any form. You may not modify, translate, or create derivative works based on the text of this work.
 
-Use of ideas. You may use the ideas, techniques, and concepts described herein for any purpose, including commercial, provided you do not reproduce substantial portions of the text.
+**Use of ideas.** You may use the ideas, techniques, and concepts described herein for any purpose, including commercial, provided you do not reproduce substantial portions of the text.
 
-Excerpts and quotations. Short quotations for purposes such as review, commentary, scholarship, or news reporting are permitted where legally allowed (e.g., fair use).
+**Excerpts and quotations.** Short quotations for purposes such as review, commentary, scholarship, or news reporting are permitted where legally allowed (e.g., fair use).
 
-Code samples. Unless otherwise noted, code samples in this repository are licensed under the MIT License (below) and may be copied, modified, and redistributed under those terms.
+## Project Scaffolding License (MIT)
+
+**Applies to:** Build tools, scripts, configuration files, GitHub Actions workflows, and all other project infrastructure outside the `src/` directory
+
+Feel free to fork this repository structure to create your own technical books! The mdBook setup, build scripts, statistics generation, pre-commit hooks, and CI/CD configuration are all open source.
 
 Disclaimer. This work is provided “as is” without warranties of any kind. Liability is disclaimed to the fullest extent permitted by law.
 
@@ -20,7 +26,9 @@ Permissions. For uses beyond the scope above, please open an issue at: https://g
 
 ---
 
-MIT License (for code samples only)
+## Code Samples License (MIT)
+
+**Applies to:** Code examples and samples within the book content
 
 Copyright (c) 2024–present selberhad
 
