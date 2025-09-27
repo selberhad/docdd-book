@@ -2,7 +2,7 @@
 
 [![Deploy mdBook to GitHub Pages](https://github.com/selberhad/docdd-book/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/selberhad/docdd-book/actions/workflows/gh-pages.yml)
 
-This repository is an mdBook about the Document‑Driven Development (DocDD) methodology. It is not product documentation for a software project. The book teaches how to use specs, plans, and tight feedback loops (with toy models and a CLI+JSON “debugger mindset”) to build software with clarity and speed.
+This repository is an mdBook about the Document‑Driven Development (DocDD) methodology.  The book teaches how to use specs, plans, and tight feedback loops (with toy models and a CLI+JSON “debugger mindset”) to build software with clarity and speed.
 
 - Read online: https://selberhad.github.io/docdd-book/
 - Book statistics: [STATS.md](STATS.md)
@@ -35,14 +35,13 @@ This repository is an mdBook about the Document‑Driven Development (DocDD) met
 - `scripts/`: helper scripts and `migrate_to_mdbook.py` used to transform legacy docs.
 
 ## Contributing
-External contributions and pull requests are not accepted for this draft.
 
-- Feedback, typos, and suggestions: please open an issue at
-  https://github.com/selberhad/docdd-book/issues
-- PRs will be closed without review; this helps keep the text coherent while
-  it evolves.
+This is my personal book project - I'm the sole author and prefer to maintain full editorial control during the writing process.
 
-## AI-First Development Example
+- **Feedback welcome**: Please open an issue at https://github.com/selberhad/docdd-book/issues for typos, suggestions, or questions
+- **No PRs**: Pull requests will be closed without review, but I appreciate the interest!
+
+## AI-First Technical Writing Example
 
 This repository serves as a practical example of "vibe-writing" a technical book using mdBook and AI coding agents like Anthropic's Claude Code CLI and OpenAI's Codex CLI, demonstrating effective human-AI collaboration:
 
