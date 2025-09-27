@@ -3,10 +3,10 @@
 ## Overview
 
 - **Total files:** 19
-- **Total words:** 4,165
-- **Total lines:** 1,537
-- **Total characters:** 59,673
-- **Reading time:** ~20 minutes
+- **Total words:** 4,569
+- **Total lines:** 1,585
+- **Total characters:** 63,062
+- **Reading time:** ~22 minutes
 
 ## Per-File Breakdown
 
@@ -29,6 +29,6 @@
 | patterns/examples/archive-browser-kickoff.md | 36 | 111 |
 | patterns/examples/archive-browser-plan.md | 32 | 76 |
 | patterns/examples/archive-browser-spec.md | 30 | 130 |
-| patterns/spatial-mud-database.md | 291 | 37 |
+| patterns/spatial-mud-database.md | 695 | 85 |
 | practice/docdd-agents-template.md | 45 | 123 |
-| **TOTAL** | **4,165** | **1,537** |
+| **TOTAL** | **4,569** | **1,585** |
