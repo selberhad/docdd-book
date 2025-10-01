@@ -23,4 +23,10 @@ Examines the environmental impact of AI-generated code, drawing parallels betwee
 A hands-on account of building and shipping a complete project where AI handled all implementation while the human focused on product direction, UX decisions, and testing. Demonstrates the practical application of human-AI collaboration through the development of a ChatGPT export viewer toolkit.
 
 ### [Vibe-writing the DocDD Book](Vibewriting.md)
-How the DocDD book was produced through "vibe-writing": agents draft, restructure, and refactor while the human edits for clarity, constraints, and voice. Connects the methodology’s dual modes (Discovery for uncertainty, Execution for delivery) to long-form writing, showing agent-first operations beyond code.
+How the DocDD book was produced through "vibe-writing": agents draft, restructure, and refactor while the human edits for clarity, constraints, and voice. Connects the methodology's dual modes (Discovery for uncertainty, Execution for delivery) to long-form writing, showing agent-first operations beyond code.
+
+### [Futureproofed](Futureproofed.md)
+Why DocDD won't be obsolete tomorrow: Explores how Document-Driven Development is built on stable economic and cognitive invariants rather than current model capabilities, making it resilient across technological shifts. Argues that the methodology is designed for optimal collaboration structure, not as a workaround for current model limitations.
+
+### [Working With vs. Working On: The Coming Schism in LLM Development](Working%20With%20vs.%20Working%20On.md)
+An examination of the fundamental difference between building large language models and building usable LLM-driven systems. Argues for a crucial division of labor and the need for multi-disciplinary teams including linguists, philosophers, and cognitive psychologists alongside ML engineers.
