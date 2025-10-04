@@ -3,10 +3,10 @@
 ## Overview
 
 - **Total files:** 24
-- **Total words:** 7,397
-- **Total lines:** 2,021
-- **Total characters:** 93,116
-- **Reading time:** ~36 minutes
+- **Total words:** 8,146
+- **Total lines:** 2,119
+- **Total characters:** 98,543
+- **Reading time:** ~40 minutes
 
 ## Per-File Breakdown
 
@@ -24,7 +24,7 @@
 | foundations/ddd-principles.md | 741 | 61 |
 | foundations/ddd-repo-guardrails.md | 412 | 57 |
 | foundations/debugger-mindset.md | 426 | 99 |
-| foundations/discovery-workflow.md | 528 | 83 |
+| foundations/discovery-workflow.md | 1,277 | 181 |
 | foundations/execution-workflow.md | 950 | 69 |
 | foundations/napkin-physics.md | 321 | 37 |
 | foundations/refactoring-with-ai.md | 878 | 79 |
@@ -36,4 +36,4 @@
 | patterns/examples/archive-browser-spec.md | 30 | 130 |
 | patterns/spatial-mud-database.md | 698 | 85 |
 | practice/docdd-agents-template.md | 45 | 123 |
-| **TOTAL** | **7,397** | **2,021** |
+| **TOTAL** | **8,146** | **2,119** |
