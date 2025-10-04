@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo.png" alt="DocDD Logo" width="200">
+</p>
+
 # Document‑Driven Development — The Book
 
 [![Deploy mdBook to GitHub Pages](https://github.com/selberhad/docdd-book/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/selberhad/docdd-book/actions/workflows/gh-pages.yml)
@@ -8,11 +12,21 @@ This repository is an mdBook about the Document‑Driven Development (DocDD) met
 - Book statistics: [STATS.md](STATS.md)
 - Blog posts: [docs/blog/README.md](docs/blog/README.md)
 
-## What You’ll Learn
+## What You'll Learn
 - Foundations (why): principles of DocDD, Napkin Physics, Toy‑Model rationale, Debugger mindset.
 - Practice (how): the DocDD loop, kickoff, checklists, and workflow.
 - Authoring guides: writing SPECs, PLANs, READMEs, and LEARNINGS.
 - Patterns & examples: toy patterns and an examples archive.
+
+## Built with DocDD
+
+If you're building a project using the DocDD methodology, show it off with this badge in your README:
+
+```markdown
+[![Built with DocDD](https://img.shields.io/badge/built_with-DocDD-blue)](https://github.com/selberhad/docdd-book)
+```
+
+[![Built with DocDD](https://img.shields.io/badge/built_with-DocDD-blue)](https://github.com/selberhad/docdd-book)
 
 ## Develop Locally
 - Prereqs: rustup + cargo (Rust stable).
@@ -42,6 +56,12 @@ This is my personal book project - I'm the sole author and prefer to maintain fu
 
 - **Feedback welcome**: Please open an issue at https://github.com/selberhad/docdd-book/issues for typos, suggestions, or questions
 - **No PRs**: Pull requests will be closed without review, but I appreciate the interest!
+
+## Community
+
+Join our Discord community to discuss DocDD methodology, share experiences, and get help with your document-driven projects:
+
+**[Join the DocDD Discord](https://discord.gg/eVGgHAcMGY)**
 
 ## AI-First Technical Writing Example
 
