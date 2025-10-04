@@ -174,7 +174,7 @@ Even exploratory work benefits from lightweight structure and constraints.
 
 Discovery thrives on disciplined constraints. They're not bureaucracy—they're feedback mechanisms that surface when you're exploring unproductively.
 
-See: [Repo Layout, Guardrails, Workflow](./ddd-repo-guardrails.md)
+See: [General Practices](./general-practices.md)
 
 ---
 

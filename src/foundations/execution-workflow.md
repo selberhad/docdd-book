@@ -1,68 +1,174 @@
 # Execution Workflow
 
-Most software development happens within established systems. Once you've moved past the research and experimentation phase—once the core patterns are proven and the architectural approach is validated—the heavy documentation discipline of discovery mode becomes unnecessary overhead. Execution mode addresses this common reality with a lighter, more focused approach.
+Execution mode is for building features within established systems. Once core patterns are proven and architectural approaches validated, the heavy experimentation discipline of Discovery mode becomes unnecessary overhead. Execution mode focuses on maintaining system legibility and architectural consistency while building quickly.
 
-Execution workflow recognizes that the primary challenge shifts from discovery to orchestration. Instead of validating uncertain approaches through systematic experimentation, you're building features within known constraints, following established patterns, and maintaining architectural coherence across a growing system.
+**Use Execution mode when:**
+- Core abstractions and patterns are established
+- Requirements are clear and well-defined
+- Technical constraints are documented
+- Building on existing codebase (not exploring from scratch)
 
-## The Economic Reality of Established Systems
+## Central Artifact: CODE_MAP.md
 
-When working within mature codebases, the development economics change fundamentally. The core abstractions already exist. The data patterns are established. The integration points are defined. The technology choices have been made and validated through use.
+CODE_MAP.md is the primary coordination mechanism in Execution mode—a living architectural document that stays current through discipline.
 
-In this context, the four-document harness of discovery mode—with its emphasis on systematic experimentation and risk mitigation—becomes process overhead that slows development without adding proportional value. The uncertainty that discovery mode addresses has already been resolved through earlier work.
+**Key principle:** Update CODE_MAP.md before every commit that adds, removes, or renames files, or changes module purposes.
 
-Execution mode emerged from recognizing this shifted context. Rather than applying discovery discipline uniformly across all development work, DocDD adapts its approach to match the actual challenges: maintaining system legibility, ensuring architectural consistency, and preventing quality degradation as the system grows.
+**Convention:** One CODE_MAP.md per directory containing source files (non-recursive). Each CODE_MAP.md describes only files/folders in its own directory, not subdirectories.
 
-## Living Architecture Through Code Maps
+Example structure:
+```
+./CODE_MAP.md                    # Root-level files only
+src/CODE_MAP.md                  # Source modules
+tests/CODE_MAP.md                # Test organization
+tests/unit/CODE_MAP.md           # Unit test files
+```
 
-The cornerstone of execution workflow is the CODE_MAP.md—a living architectural document that serves as the primary coordination mechanism between human developers, AI agents, and the evolving codebase.
-
-Unlike traditional architectural documentation that becomes stale and misleading over time, the code map maintains currency through discipline: it's updated with every commit that changes system structure. This creates a reliable source of truth that both humans and AI can depend on for understanding how the system is organized.
-
-The code map serves multiple audiences simultaneously. For human developers returning to a project or working in unfamiliar areas, it provides rapid orientation without requiring them to reverse-engineer system structure from implementation details. For AI agents, it supplies the architectural context necessary to make changes that fit existing patterns rather than introducing inconsistencies.
+Why this matters: CODE_MAP.md provides rapid orientation for both humans and AI agents. It prevents reverse-engineering system structure from implementation details.
 
 See: [Code Maps](./code-maps.md)
 
-## Refactoring as System Maintenance
+## Feature Documentation Structure
 
-Execution workflow treats refactoring not as an occasional cleanup activity, but as mandatory system maintenance performed after every feature implementation or integration step. This shift from optional to required reflects the economic reality that AI assistance has made refactoring dramatically less expensive.
+Features are documented in dedicated directories during development:
 
-Traditionally, refactoring was difficult to justify because the effort-to-benefit ratio was poor. Improving working code consumed significant developer time while providing unclear business value. With AI assistance, refactoring becomes routine maintenance—similar to how automatic garbage collection eliminated manual memory management as a developer concern.
+**In-progress features:**
+```
+.docdd/feat/<feature_name>/
+  KICKOFF.md      - Binary-weave planning (what primitive + which integration)
+  SPEC.md         - Behavioral contract
+  PLAN.md         - TDD implementation steps
+  ORIENTATION.md  - Working notes (deleted on completion)
+  LEARNINGS.md    - Optional (only if architectural insights emerge)
+```
 
-The mandatory refactoring step serves multiple purposes. It cleans up integration seams between new and existing components, maintaining clean boundaries and clear interfaces. It extracts emerging patterns and eliminates duplication that accumulates during feature development. Most importantly, it ensures that new code follows established architectural patterns rather than introducing inconsistencies that compound over time.
+**Completed features:**
+```
+.docdd/done/<feature_name>/
+  KICKOFF.md      - Preserved for historical record
+  SPEC.md         - Preserved for historical record
+  PLAN.md         - Preserved for historical record
+  LEARNINGS.md    - Preserved if it exists
+  (ORIENTATION.md deleted - it's a working document)
+```
 
-This discipline prevents the gradual degradation that typically occurs in software systems. Instead of accumulating technical debt that eventually requires expensive remediation, the system maintains consistent quality through continuous small improvements.
+**LEARNINGS.md is optional in Execution mode** - Only write it if unexpected insights, architectural pivots, or valuable failures emerged. Unlike Discovery mode (where LEARNINGS is central), Execution mode assumes things go according to plan.
+
+## The Execution Cycle
+
+### 1. Orient
+
+**Read CODE_MAP.md** to understand current architecture and constraints. Start in the directory where you'll work, check parent directories as needed.
+
+Understand:
+- How the system is organized
+- Where new code should live
+- Which patterns to follow
+- What constraints exist
+
+### 2. Kickoff
+
+**Create `.docdd/feat/<feature_name>/` and write KICKOFF.md** using binary-weave pattern:
+- Which primitive are you introducing?
+- What existing product does it integrate with?
+- What's the new integrated capability?
+
+Example: "Introduce authentication primitive (A), integrate with existing API layer (B), creating authenticated endpoints (A+B=C)"
+
+See: [Kickoff Writing](../authoring/kickoff-writing.md)
+
+### 3. Specify
+
+**Write SPEC.md** defining the behavioral contract:
+- Input/output formats
+- Invariants and state shapes
+- Operations and validation rules
+- Error semantics
+- Test scenarios
+- Success criteria
+
+Execution mode SPECs are lighter than Discovery mode—assume established patterns, focus on what's specific to this feature.
+
+See: [Spec Writing](../authoring/spec-writing.md)
+
+### 4. Plan
+
+**Write PLAN.md** with TDD implementation steps:
+- Numbered steps following test-first discipline
+- Each step: write test → implement → refactor
+- Explicit success checkboxes per step
+- Integration points with existing code
+- Risks and dependencies
+
+See: [Plan Writing](../authoring/plan-writing.md)
+
+### 5. Implement
+
+**Follow PLAN.md steps** with TDD discipline:
+- Write failing test (red)
+- Implement minimal code to pass (green)
+- Commit after each step completes
+- Use conventional commit format: `feat(scope): complete Step N - description`
+- Update ORIENTATION.md with working notes as needed
+
+Build on existing patterns. Keep CODE_MAP.md open for reference.
+
+### 6. Refactor
+
+**Default practice: refactor after feature completion.**
+
+Why the default: AI assistance makes refactoring cheap. This prevents gradual quality degradation by ensuring the system maintains consistent quality through continuous small improvements.
+
+Refactor to:
+- Clean up integration seams between new and existing components
+- Extract emerging patterns and eliminate duplication
+- Ensure new code follows established architectural patterns
+- Improve naming, structure, and clarity
+
+**When to skip:** Porting work where 1:1 correspondence with reference implementation matters (refactoring would break golden tests and systematic gap analysis). Other contexts where refactoring conflicts with project goals.
+
+The mindset: refactoring is cheap with AI, so do it unless you have a good reason not to.
 
 See: [Refactoring with AI Agents](./refactoring-with-ai.md)
 
-## The Integration Development Cycle
+### 7. Update Documentation
 
-Execution workflow follows a five-step cycle designed for efficiency within established systems:
+**Update affected CODE_MAP.md files** to reflect structural changes (new files, renamed modules, changed purposes).
 
-**Orient** by reading the CODE_MAP.md to understand current architecture and constraints. This step ensures that new work builds on existing foundations rather than working against them.
+**Update project-level docs** (README, architecture docs) if feature changes user-facing behavior or system design.
 
-**Plan** with brief, focused planning that emphasizes integration points and architectural fit. Unlike discovery mode's systematic experimentation planning, execution planning assumes known approaches and focuses on execution details.
+### 8. Complete
 
-**Implement** the feature following established patterns and architectural guidelines. The implementation phase benefits from clear constraints and proven approaches, enabling faster development cycles.
+**Move feature to done:**
+1. Delete ORIENTATION.md (working document, no historical value)
+2. Move directory: `.docdd/feat/<name>` → `.docdd/done/<name>`
+3. Keep KICKOFF.md, SPEC.md, PLAN.md, and LEARNINGS.md (if exists) for historical record
 
-**Refactor** to clean up integration seams and improve code quality. This mandatory step ensures that the system's quality improves continuously rather than degrading over time.
+## Commit Discipline
 
-**Update** the CODE_MAP.md to reflect any structural changes introduced during implementation. This maintains the currency and reliability of the architectural documentation.
+**Use conventional commit format:**
+- Format: `type(scope): subject`
+- Types: `feat`, `fix`, `docs`, `chore`, `refactor`, `test`
+- Include step numbers: `feat(auth): complete Step 3 - add token validation`
 
-## When Execution Mode Applies
+**Commit frequency:**
+- After every numbered step in PLAN.md (red → green cycle)
+- Before switching contexts or tasks
+- When CODE_MAP.md updated (often same commit as structural change)
 
-Execution workflow works best when uncertainty has been resolved through previous work. The architectural approaches are proven and understood. Requirements are clear and well-defined. Technical constraints and limitations are documented and stable. Core systems and interfaces have matured through use.
+**History:**
+- Keep linear history (prefer rebase, avoid merge commits)
+- Link issues if applicable: `Refs #123`
 
-These conditions indicate that the primary development challenge has shifted from discovery to execution. The system's fundamental patterns are established, and new work primarily involves extending these patterns to address additional requirements.
+## When to Switch to Discovery Mode
 
-Execution mode acknowledges this shift explicitly. Rather than applying discovery-oriented processes to execution-oriented work, it provides lightweight discipline that maintains system quality without unnecessary overhead.
+Switch back to Discovery mode when:
+- Requirements reveal gaps in established patterns
+- New technologies need evaluation before production use
+- Performance constraints require architectural changes
+- Significant uncertainty emerges that needs systematic experimentation
 
-## Relationship to Discovery Mode
-
-Execution workflow doesn't replace discovery mode—it complements it. When uncertainty arises during execution work, the methodology supports switching back to discovery mode's systematic experimentation approach. This might happen when requirements reveal gaps in the established patterns, when new technologies need evaluation, or when performance constraints require architectural changes.
-
-The key insight is recognizing which mode fits the current development challenge. Most work in established systems benefits from execution workflow's lighter approach. But when uncertainty emerges, discovery mode's more rigorous discipline becomes valuable again.
-
-This flexibility prevents the common antipattern of applying heavy process uniformly across all development work. Instead, DocDD adapts its methodology to match the actual challenges and uncertainty levels present in different phases of system development.
+The methodology is flexible—use the right mode for the current challenge. Most work in established systems benefits from Execution workflow's lighter approach, but when uncertainty emerges, Discovery mode's rigor becomes valuable again.
 
 ---
 

@@ -30,3 +30,6 @@ Why DocDD won't be obsolete tomorrow: Explores how Document-Driven Development i
 
 ### [Working With vs. Working On: The Coming Schism in LLM Development](Working%20With%20vs.%20Working%20On.md)
 An examination of the fundamental difference between building large language models and building usable LLM-driven systems. Argues for a crucial division of labor and the need for multi-disciplinary teams including linguists, philosophers, and cognitive psychologists alongside ML engineers.
+
+### [How We Tricked ncurses Into Running Without a Terminal (And Got Test Coverage)](FakeTTY.md)
+Solving the problem of testing ncurses code in CI environments by using macOS DYLD_INTERPOSE to fake a TTY. Shows how an "idle thought" during a break led to a simple 90-line C solution that enabled full test coverage for terminal-dependent code, demonstrating effective human-AI collaboration on practical engineering challenges.
