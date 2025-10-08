@@ -4,11 +4,11 @@
 
 # Dialectic‑Driven Development — The Book
 
-[![Deploy mdBook to GitHub Pages](https://github.com/selberhad/ddd-book/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/selberhad/ddd-book/actions/workflows/gh-pages.yml)
+[![Deploy mdBook to GitHub Pages](https://github.com/dialecticianai/ddd-book/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/dialecticianai/ddd-book/actions/workflows/gh-pages.yml)
 
 This repository is an mdBook about the Dialectic‑Driven Development (DDD) methodology.  The book teaches how to use specs, plans, and tight feedback loops (with toy models and a CLI+JSON “debugger mindset”) to build software with clarity and speed.
 
-- Read online: https://selberhad.github.io/ddd-book/
+- Read online: https://dialecticianai.github.io/ddd-book/
 - Book statistics: [STATS.md](STATS.md)
 - Blog posts: [docs/blog/README.md](docs/blog/README.md)
 
@@ -23,15 +23,15 @@ This repository is an mdBook about the Dialectic‑Driven Development (DDD) meth
 If you're building a project using the DDD methodology, show it off with this badge in your README:
 
 ```markdown
-[![Built with DDD](https://img.shields.io/badge/built_with-DDD-blue)](https://github.com/selberhad/ddd-book)
+[![Built with DDD](https://img.shields.io/badge/built_with-DDD-blue)](https://github.com/dialecticianai/ddd-book)
 ```
 
-[![Built with DDD](https://img.shields.io/badge/built_with-DDD-blue)](https://github.com/selberhad/ddd-book)
+[![Built with DDD](https://img.shields.io/badge/built_with-DDD-blue)](https://github.com/dialecticianai/ddd-book)
 
 ## Develop Locally
 - Prereqs: rustup + cargo (Rust stable).
 - Setup tools: `make setup` (installs `mdbook` and `mdbook-linkcheck`).
-- Live preview: `make serve` (http://12- Read online: https://selberhad.github.io/ddd-book/
+- Live preview: `make serve` (http://12- Read online: https://dialecticianai.github.io/ddd-book/
 - Book statistics: [STATS.md](STATS.md)
 - Blog posts: [docs/blog/README.md](docs/blog/README.md)
 
@@ -46,10 +46,10 @@ If you're building a project using the DDD methodology, show it off with this ba
 If you're building a project using the DDD methodology, show it off with this badge in your README:
 
 ```markdown
-[![Built with DDD](https://img.shields.io/badge/built_with-DDD-blue)](https://github.com/selberhad/ddd-book)
+[![Built with DDD](https://img.shields.io/badge/built_with-DDD-blue)](https://github.com/dialecticianai/ddd-book)
 ```
 
-[![Built with DDD](https://img.shields.io/badge/built_with-DDD-blue)](https://github.com/selberhad/ddd-book)
+[![Built with DDD](https://img.shields.io/badge/built_with-DDD-blue)](https://github.com/dialecticianai/ddd-book)
 
 ## Develop Locally
 - Prereqs: rustup + cargo (Rust stable).
@@ -77,7 +77,7 @@ If you're building a project using the DDD methodology, show it off with this ba
 
 This is my personal book project - I'm the sole author and prefer to maintain full editorial control during the writing process.
 
-- **Feedback welcome**: Please open an issue at https://github.com/selberhad/ddd-book/issues for typos, suggestions, or questions
+- **Feedback welcome**: Please open an issue at https://github.com/dialecticianai/ddd-book/issues for typos, suggestions, or questions
 - **No PRs**: Pull requests will be closed without review, but I appreciate the interest!
 
 ## Community
@@ -96,7 +96,7 @@ This repository serves as a practical example of "vibe-writing" a technical book
 
 Related post: [Vibe-writing the DDD Book](docs/blog/Vibewriting.md)
 
-**Note on AI collaboration**: As a working draft developed with AI assistance, this book may contain unintended redundancies, inconsistencies, or hallucinated details. If you notice such issues while reading, please file an issue at https://github.com/selberhad/ddd-book/issues to help improve the content.
+**Note on AI collaboration**: As a working draft developed with AI assistance, this book may contain unintended redundancies, inconsistencies, or hallucinated details. If you notice such issues while reading, please file an issue at https://github.com/dialecticianai/ddd-book/issues to help improve the content.
 
 ## Deploying
 - Published via GitHub Pages on pushes to `main` (see workflow badge above).

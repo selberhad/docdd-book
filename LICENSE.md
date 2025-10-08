@@ -2,7 +2,7 @@
 
 **Applies to:** All content in the `src/` directory (the book text itself)
 
-Copyright (c) 2024–present selberhad. All rights reserved.
+Copyright (c) 2024–present Dialectician AI. All rights reserved.
 
 **Grant of rights.** You may download, view, and print one personal copy of this work for your own use, including use in your employment or business.
 
@@ -22,7 +22,7 @@ Disclaimer. This work is provided “as is” without warranties of any kind. Li
 
 Termination. This license terminates automatically if you breach its terms.
 
-Permissions. For uses beyond the scope above, please open an issue at: https://github.com/selberhad/ddd-book/issues
+Permissions. For uses beyond the scope above, please open an issue at: https://github.com/dialecticianai/ddd-book/issues
 
 ---
 
@@ -30,7 +30,7 @@ Permissions. For uses beyond the scope above, please open an issue at: https://g
 
 **Applies to:** Code examples and samples within the book content
 
-Copyright (c) 2024–present selberhad
+Copyright (c) 2024–present Dialectician AI
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to deal
