@@ -1,5 +1,7 @@
 # Doc‑Driven Development — Principles
 
+> **Note:** The name "Document Driven Development" was originally coined by [Ryan Vice](https://docdd.ai). This is a working name for this project, which will be renamed in the coming days.
+
 ## The Problem with Current AI-Coding Approaches
 
 Software development is experiencing a fundamental shift as AI agents become capable programming partners. The industry has responded with various methodologies: spec-driven development, AI-enhanced TDD, structured prompting frameworks, and workflow optimizations. While these approaches offer incremental improvements, they share a critical limitation — they are human programming practices remixed for AI, not ground-up designs for AI capabilities.

@@ -3,9 +3,9 @@
 ## Overview
 
 - **Total files:** 25
-- **Total words:** 9,405
-- **Total lines:** 2,505
-- **Total characters:** 109,862
+- **Total words:** 9,433
+- **Total lines:** 2,507
+- **Total characters:** 110,053
 - **Reading time:** ~47 minutes
 
 ## Per-File Breakdown
@@ -21,7 +21,7 @@
 | authoring/readme-writing.md | 32 | 126 |
 | authoring/spec-writing.md | 37 | 105 |
 | foundations/code-maps.md | 443 | 80 |
-| foundations/ddd-principles.md | 741 | 61 |
+| foundations/ddd-principles.md | 769 | 63 |
 | foundations/debugger-mindset.md | 426 | 99 |
 | foundations/discovery-workflow.md | 1,275 | 181 |
 | foundations/execution-workflow.md | 768 | 175 |
@@ -37,4 +37,4 @@
 | patterns/mcl-rust-port.md | 1,000 | 201 |
 | patterns/spatial-mud-database.md | 698 | 85 |
 | practice/docdd-agents-template.md | 45 | 123 |
-| **TOTAL** | **9,405** | **2,505** |
+| **TOTAL** | **9,433** | **2,507** |

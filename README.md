@@ -2,6 +2,8 @@
   <img src="logo.png" alt="DocDD Logo" width="200">
 </p>
 
+> **Note:** The name "Document Driven Development" was originally coined by [Ryan Vice](https://docdd.ai). This is a working name for this project, which will be renamed in the coming days.
+
 # Document‑Driven Development — The Book
 
 [![Deploy mdBook to GitHub Pages](https://github.com/selberhad/docdd-book/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/selberhad/docdd-book/actions/workflows/gh-pages.yml)
