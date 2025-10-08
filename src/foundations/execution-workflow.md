@@ -34,7 +34,7 @@ Features are documented in dedicated directories during development:
 
 **In-progress features:**
 ```
-.docdd/feat/<feature_name>/
+.ddd/feat/<feature_name>/
   KICKOFF.md      - Binary-weave planning (what primitive + which integration)
   SPEC.md         - Behavioral contract
   PLAN.md         - TDD implementation steps
@@ -44,7 +44,7 @@ Features are documented in dedicated directories during development:
 
 **Completed features:**
 ```
-.docdd/done/<feature_name>/
+.ddd/done/<feature_name>/
   KICKOFF.md      - Preserved for historical record
   SPEC.md         - Preserved for historical record
   PLAN.md         - Preserved for historical record
@@ -68,7 +68,7 @@ Understand:
 
 ### 2. Kickoff
 
-**Create `.docdd/feat/<feature_name>/` and write KICKOFF.md** using binary-weave pattern:
+**Create `.ddd/feat/<feature_name>/` and write KICKOFF.md** using binary-weave pattern:
 - Which primitive are you introducing?
 - What existing product does it integrate with?
 - What's the new integrated capability?
@@ -141,7 +141,7 @@ See: [Refactoring with AI Agents](./refactoring-with-ai.md)
 
 **Move feature to done:**
 1. Delete ORIENTATION.md (working document, no historical value)
-2. Move directory: `.docdd/feat/<name>` → `.docdd/done/<name>`
+2. Move directory: `.ddd/feat/<name>` → `.ddd/done/<name>`
 3. Keep KICKOFF.md, SPEC.md, PLAN.md, and LEARNINGS.md (if exists) for historical record
 
 ## Commit Discipline

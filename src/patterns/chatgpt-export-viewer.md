@@ -4,7 +4,7 @@ This archive lists concrete, working examples referenced throughout the book. It
 
 ## Archive Browser Project
 
-A complete DocDD example demonstrating the full development cycle from kickoff to shipped product. This real-world project produced [chatgpt‑export‑viewer](https://www.npmjs.com/package/chatgpt-export-viewer), a suite of composable CLI tools for browsing ChatGPT export archives.
+A complete DDD example demonstrating the full development cycle from kickoff to shipped product. This real-world project produced [chatgpt‑export‑viewer](https://www.npmjs.com/package/chatgpt-export-viewer), a suite of composable CLI tools for browsing ChatGPT export archives.
 
 **Project outcome:** A cross-platform toolkit with clean human-AI collaboration boundaries:
 - **Human role:** Product direction, UX decisions, constraint setting, edge case validation
@@ -16,7 +16,7 @@ A complete DocDD example demonstrating the full development cycle from kickoff t
 - Modular libraries: ZIP access, terminal primitives, cross-platform launchers
 - Publishing discipline: proper `bin` entries, dependency management, lint/format gates
 
-The example demonstrates DocDD's strength in AI-first development: clear documentation boundaries enable effective human-agent collaboration while maintaining code quality and user experience standards.
+The example demonstrates DDD's strength in AI-first development: clear documentation boundaries enable effective human-agent collaboration while maintaining code quality and user experience standards.
 
 ### Kickoff Document
 Initial project definition using "napkin physics" to establish core constraints and approach.

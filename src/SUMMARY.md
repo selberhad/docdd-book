@@ -2,7 +2,7 @@
 
 
 ### Part I — Foundations (Why)
-- [Doc‑Driven Development](./foundations/ddd-principles.md)
+- [Dialectic‑Driven Development](./foundations/ddd-principles.md)
   - [General Practices](./foundations/general-practices.md)
 - [Discovery Workflow](./foundations/discovery-workflow.md)
   - [Napkin Physics](./foundations/napkin-physics.md)
@@ -13,7 +13,7 @@
   - [Refactoring with AI Agents](./foundations/refactoring-with-ai.md)
 
 ### Part II — Practice (How)
-- [DocDD AGENTS.md Template](./practice/docdd-agents-template.md)
+- [DDD AGENTS.md Template](./practice/ddd-agents-template.md)
 
 ### Part III — Authoring Guides
 - [Authoring Guides](./authoring/README.md)

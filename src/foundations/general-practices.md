@@ -1,8 +1,8 @@
 # General Practices
 
-Document-Driven Development requires minimal repository structure to enable parallel experimentation through toy models. Each toy is a self-contained experiment with complete meta-documentation.
+Dialectic-Driven Development requires minimal repository structure to enable parallel experimentation through toy models. Each toy is a self-contained experiment with complete meta-documentation.
 
-DocDD is inherently **flexible and modular** - different projects require different flavors. A spatial database benefits from CLI+JSON debugging and strict TDD practices, while a TUI project might emphasize human user testing over JSON pipelines. This book provides foundational patterns to help you discover the right DocDD variant for your specific problem domain.
+DDD is inherently **flexible and modular** - different projects require different flavors. A spatial database benefits from CLI+JSON debugging and strict TDD practices, while a TUI project might emphasize human user testing over JSON pipelines. This book provides foundational patterns to help you discover the right DDD variant for your specific problem domain.
 
 *Note: If this were an RFC, most recommendations would be SHOULDs not MUSTs - adapt the patterns to fit your context rather than following them rigidly.*
 
@@ -26,7 +26,7 @@ toys/
 
 **Toy Independence**: Each toy contains everything needed to understand and reproduce the experiment. No shared dependencies on global documentation or complex directory hierarchies.
 
-**Language Agnostic**: Directory structure and conventions emerge naturally from language choice (Python, Rust, JavaScript, etc.). DocDD imposes no language-specific requirements.
+**Language Agnostic**: Directory structure and conventions emerge naturally from language choice (Python, Rust, JavaScript, etc.). DDD imposes no language-specific requirements.
 
 **Iteration Cheapness**: Code can be rewritten freely since LLMs make implementation cheap. The meta-documents capture lasting insights while code remains malleable.
 
@@ -42,7 +42,7 @@ toys/
 
 ## Dependency Philosophy
 
-External dependencies are technical debt. Each dependency added is a maintenance burden, security surface, and complexity multiplier. DocDD encourages aggressive minimalism.
+External dependencies are technical debt. Each dependency added is a maintenance burden, security surface, and complexity multiplier. DDD encourages aggressive minimalism.
 
 **When to add a dependency:**
 - **High impact**: Solves a genuinely hard problem you shouldn't solve yourself (cryptography, parsers, protocol implementations)
@@ -60,7 +60,7 @@ External dependencies are technical debt. Each dependency added is a maintenance
 
 ## External Documentation as First-Class Artifact
 
-In document-driven development, **external documentation is as important as internal documentation**. Dependencies and third-party APIs require RTFM (Read The Fine Manual) discipline.
+In dialectic-driven development, **external documentation is as important as internal documentation**. Dependencies and third-party APIs require RTFM (Read The Fine Manual) discipline.
 
 ### The `.webcache/` Pattern
 
@@ -118,7 +118,7 @@ When developing with dependencies:
 
 External documentation is not optional. Treat it as required reading before using any dependency or third-party API.
 
-## What DocDD Doesn't Prescribe
+## What DDD Doesn't Prescribe
 
 - File organization within toys (language-dependent)
 - Testing frameworks or strategies (project-dependent)

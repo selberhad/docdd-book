@@ -1,6 +1,6 @@
-# PLAYBOOK.md — Doc-Driven Development (Agent-Oriented)
+# PLAYBOOK.md — Dialectic-Driven Development (Agent-Oriented)
 
-This playbook defines the methodology agents must follow when building software in this repository. It encodes **Doc-Driven Development (DocDD)**: an AI-first approach that treats documentation and code as equally disposable artifacts, organizes work around toy models, and relies on clear, composable interfaces for debuggability.
+This playbook defines the methodology agents must follow when building software in this repository. It encodes **Dialectic-Driven Development (DDD)**: an AI-first approach that treats documentation and code as equally disposable artifacts, organizes work around toy models, and relies on clear, composable interfaces for debuggability.
 
 ---
 
@@ -73,7 +73,7 @@ The point is clarity, not structure. Before drafting, collapse the problem into 
 
 ## 7. Methodological Genealogy
 
-DocDD borrows selectively:  
+DDD borrows selectively:  
 - **From TDD:** start with specifications before code.  
 - **From DDD:** decompose into bounded contexts → here, toy models.  
 - **From FP/Redux:** pure functions, no hidden state, explicit contracts.  

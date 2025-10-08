@@ -3,16 +3,16 @@
 Purpose: Consolidate findings from Claude’s review (REVIEW_CLAUDE.md) and Codex’s running questions (REVIEW_CODEX.md) into a single, actionable summary.
 
 ## Confirmed Principles (Consensus)
-- DocDD flow: AI drafts everything; humans review using SPEC, PLAN, README, LEARNINGS as control surfaces.
+- DDD flow: AI drafts everything; humans review using SPEC, PLAN, README, LEARNINGS as control surfaces.
 - Upstream simplification: Napkin Physics before specs/plans to prevent scope drift.
 - Toy discipline: Single axis per toy; two-at-a-time integrations; discard code, keep insights.
 - Debugger mindset: CLI + JSON I/O; deterministic behavior; structured errors; golden tests.
 - Guardrails: Dependency allowlists, small spikes, complexity caps, explicit error handling.
 - Repo layout: Clear locations for docs, CLIs, schemas, tests, fixtures.
-- Proof by example: Archive Browser shows the complete DocDD cycle from kickoff to shipped tool.
+- Proof by example: Archive Browser shows the complete DDD cycle from kickoff to shipped tool.
 
 ## Resolved or Well-Addressed Topics
-- What DocDD is and how it differs (AI-first docs/tests/code under human control).
+- What DDD is and how it differs (AI-first docs/tests/code under human control).
 - Napkin Physics structure and intent; binary‑weave kickoff pattern.
 - Toy model cycle and axis/integration constraints.
 - CLI+JSON substrate, structured error format, and golden-test purpose.
@@ -47,13 +47,13 @@ Purpose: Consolidate findings from Claude’s review (REVIEW_CLAUDE.md) and Code
 - Examples: Inclusion criteria and location to keep archive minimal and current.
 
 ### Methodology Boundaries (Claude)
-- Failure modes: Where DocDD struggles; antipatterns and team constraints.
+- Failure modes: Where DDD struggles; antipatterns and team constraints.
 - Legacy adoption: Retrofitting existing codebases lacking meta‑docs.
 - Scale: Multi‑team practices; cross‑repo coordination.
 - Event sourcing: Concrete patterns for “microscope” usage in toys.
 - Pivot criteria: When to abandon vs. persist with a toy.
 - Meta‑doc evolution: How SPEC/PLAN/README/LEARNINGS change from toy → production.
-- Measurement: Metrics validating DocDD benefits (speed, quality, maintainability).
+- Measurement: Metrics validating DDD benefits (speed, quality, maintainability).
 
 ## Synthesis — What’s Missing vs. What’s Implied
 - The core methodology is well-specified; operational defaults are underspecified (schemas, error codes, goldens, allowlists, metrics).

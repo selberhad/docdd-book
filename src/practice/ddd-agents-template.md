@@ -1,6 +1,6 @@
-# DocDD AGENTS.md Template
+# DDD AGENTS.md Template
 
-This chapter provides a sample `AGENTS.md` you can drop into a repository to guide a coding agent in using Document‑Driven Development (DocDD). Treat it as a template: adapt roles, guardrails, and the DocDD loop to your project's constraints and goals.
+This chapter provides a sample `AGENTS.md` you can drop into a repository to guide a coding agent in using Dialectic‑Driven Development (DDD). Treat it as a template: adapt roles, guardrails, and the DDD loop to your project's constraints and goals.
 
 ---
 
@@ -9,7 +9,7 @@ This chapter provides a sample `AGENTS.md` you can drop into a repository to gui
 
 ## 1. Purpose
 
-Doc-Driven Development (DocDD) turns ambiguous problems into deterministic, legible systems through lightweight docs, disposable toy models, and incremental integrations.  
+Dialectic-Driven Development (DDD) turns ambiguous problems into deterministic, legible systems through lightweight docs, disposable toy models, and incremental integrations.  
 
 
 ---
@@ -25,7 +25,7 @@ Doc-Driven Development (DocDD) turns ambiguous problems into deterministic, legi
 
 ---
 
-## 3. The DocDD Loop
+## 3. The DDD Loop
 
 1. SPEC — define minimal contract (inputs, outputs, invariants). 
 2. PLAN — outline the smallest testable step.  

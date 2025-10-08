@@ -4,7 +4,7 @@ Executive summary of how the documentation set fits together, the core concepts 
 
 ## Big Picture
 
-- Philosophy: Doc-Driven Development (DDD) + Toy Models.  
+- Philosophy: Dialectic-Driven Development (DDD) + Toy Models.  
   Write the contract and plan first, validate with tests and minimal code, extract learnings, and iterate.
 - Validation: CLI + JSON as debugger + tests.  
   Treat tools as pure CLIs with JSON I/O so agents can single-step, bisect, and replay deterministically.
@@ -24,10 +24,10 @@ Executive summary of how the documentation set fits together, the core concepts 
 
 ## Core Concepts
 
-- Doc-Driven Development (DDD): Specifications and plans lead; code is the minimum to satisfy tests. Meta-docs remain the source of truth.
+- Dialectic-Driven Development (DDD): Specifications and plans lead; code is the minimum to satisfy tests. Meta-docs remain the source of truth.
 - Toy Models: Focused, low-cost experiments to validate invariants, data shapes, and APIs before integration. The code is disposable; the learnings are durable.
 - CLI + JSON as Debugger: Prefer pure, stateless interfaces with JSON I/O, enabling deterministic pipelines, bisection, and agent legibility.
-- Guardrails: Constraints on complexity and dependencies; explicit error handling; security hygiene; and self-audits to keep work small and reviewable.
+- Guardrails: Constraints on complexity and dependencies; explicit error handling; security hygiene; and self-audits to keep small and reviewable.
 
 ## Typical Flow
 

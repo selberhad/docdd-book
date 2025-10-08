@@ -22,19 +22,19 @@ It summarizes scope, structure, tone, and coverage; highlights overlaps, gaps, a
 
 ## One‑Paragraph Summaries (V1–V6)
 
-- V1 (`PLAYBOOK_V1.md`): Most comprehensive and procedural. Covers principles, DocDD loop, meta‑docs, Napkin Physics, Toy Models, CLI+JSON debugger, pipelines/golden tests, planning/testing, guardrails/self‑audit, heuristics, adoption, and appendices (templates/checklists/conventions). Includes many “Why this matters” callouts.
-- V2 (`PLAYBOOK_V2.md`): Compact, agent‑centric doctrine. DocDD philosophy, core principles, primitive→integration loop, four meta‑docs, Napkin Physics, Toy Models, a brief genealogy. Skimmable; light on operational detail.
+- V1 (`PLAYBOOK_V1.md`): Most comprehensive and procedural. Covers principles, DDD loop, meta‑docs, Napkin Physics, Toy Models, CLI+JSON debugger, pipelines/golden tests, planning/testing, guardrails/self‑audit, heuristics, adoption, and appendices (templates/checklists/conventions). Includes many “Why this matters” callouts.
+- V2 (`PLAYBOOK_V2.md`): Compact, agent‑centric doctrine. DDD philosophy, core principles, primitive→integration loop, four meta‑docs, Napkin Physics, Toy Models, a brief genealogy. Skimmable; light on operational detail.
 - V3 (`PLAYBOOK_V3.md`): Doctrinal narrative. Purpose, principles, loop, Napkin Physics, Toy Models, JSON+CLI convention, integration path, roles, philosophy. Clear integration discipline (two‑at‑a‑time), readable tone.
 - V4 (`PLAYBOOK_V4.md`): Adds Binary‑Weave Kickoff to V3’s doctrine. Strict alternation: one new primitive → integrate with current product; sequential stages; end state. Retains concise operational chapters (CLI+JSON, pipelines/golden tests, planning/testing, guardrails/heuristics) and a kickoff template.
 - V5 (`PLAYBOOK_V5.md`): Streamlined V4. Keeps binary‑weave center; compresses operational sections; adds Roles and Templates sections; emphasizes clarity of weave and JSON+CLI convention.
-- V6 (`PLAYBOOK_V6.md`): Further tightened. Similar doctrine and kickoff; notes that pipelines/CLI composition should be used when it makes sense; includes README in the DocDD loop and cross‑links to meta‑doc guides. Short, directive tone.
+- V6 (`PLAYBOOK_V6.md`): Further tightened. Similar doctrine and kickoff; notes that pipelines/CLI composition should be used when it makes sense; includes README in the DDD loop and cross‑links to meta‑doc guides. Short, directive tone.
 
 ---
 
 ## Structure Comparison (What’s Covered Where)
 
 - Core principles: V1, V2, V3, V4, V5, V6
-- DocDD loop: V1, V2, V3, V4, V5, V6 (V6 also lists README in the loop)
+- DDD loop: V1, V2, V3, V4, V5, V6 (V6 also lists README in the loop)
 - Meta‑docs (SPEC/PLAN/LEARNINGS/README): V1 (detailed), V2/V3 (brief), V4/V5 (concise pointers), V6 (concise with cross‑links)
 - Napkin Physics: V1, V2, V3, V4, V5, V6
 - Toy models (axis/integration discipline): V1, V2, V3, V4, V5, V6
@@ -56,7 +56,7 @@ It summarizes scope, structure, tone, and coverage; highlights overlaps, gaps, a
 - V3: Doctrinal narrative — readable and motivating; sets roles and final‑system framing.
 - V4: V3 + kickoff rigor — adds strict binary‑weave, keeps concise ops content and templates.
 - V5: Streamlined V4 — same center; fewer words; keeps roles and templates visible.
-- V6: Tightest doctrine — adds pragmatism note on pipelines (“use when it makes sense”), includes README in loop; directive tone.
+- V6: Tightest doctrine — adds pragmatism note on when to apply pipelines (“use when it makes sense”), includes README in loop; directive tone.
 
 ---
 
@@ -111,7 +111,7 @@ Gaps to watch:
 
 ## Recommendations
 
-- Start with a doctrinal core (V3/V5/V6): purpose, principles, roles, DocDD loop, and two‑at‑a‑time integration.
+- Start with a doctrinal core (V3/V5/V6): purpose, principles, roles, DDD loop, and two‑at‑a‑time integration.
 - Add the Binary‑Weave Kickoff section early (V4/V5): Napkin Physics → sequential stages → end state + checklist.
 - Follow with operational chapters from V1 (trimmed): CLI+JSON contract, pipelines & golden tests, planning & testing, guardrails & self‑audit, heuristics, adoption & repo layout.
 - Close with templates/checklists (V1/V4) and optional genealogy note (V2) for context.
@@ -121,7 +121,7 @@ Gaps to watch:
 ## Suggested Final Outline (Unified 1–6)
 
 1) Purpose, Principles, Roles (V3/V5/V6)  
-2) DocDD Loop (V3 + V6’s README inclusion)  
+2) DDD Loop (V3 + V6’s README inclusion)  
 3) Kickoff: Binary‑Weave (V4/V5/V6)  
 4) Napkin Physics (all)  
 5) Toy Models: Axes & Integration Discipline (all)  

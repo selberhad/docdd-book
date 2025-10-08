@@ -4,7 +4,7 @@ Purpose: Extract genuine insights from agent reviews while removing LLM over-pre
 
 ## What the LLMs Got Right
 
-**Core DocDD Understanding:**
+**Core DDD Understanding:**
 - AI drafts everything; humans review using SPEC, PLAN, README, LEARNINGS as control surfaces
 - Upstream simplification through Napkin Physics prevents scope drift
 - Toy discipline: single axis per toy, discard code but keep insights
@@ -28,14 +28,14 @@ Purpose: Extract genuine insights from agent reviews while removing LLM over-pre
 - Creating "Conventions" chapters with rigid operational defaults
 
 **Missing the Philosophy:**
-DocDD is meant to be **flexible and adaptive**, not a heavyweight process framework. The LLMs want to systematize everything into hard rules, which would make the methodology too brittle to be useful.
+DDD is meant to be **flexible and adaptive**, not a heavyweight process framework. The LLMs want to systematize everything into hard rules, which would make the methodology too brittle to be useful.
 
 ## Actual Gaps (Filtering Out the Noise)
 
 After removing the over-prescription, the genuine questions/gaps appear to be:
 
 **Methodology Boundaries:**
-- When does DocDD struggle? What are the failure modes?
+- When does DDD struggle? What are the failure modes?
 - How do you retrofit existing codebases that lack meta-documentation?
 - What happens when toys need to be abandoned vs. persisted?
 
@@ -45,7 +45,7 @@ After removing the over-prescription, the genuine questions/gaps appear to be:
 - How do you maintain simplicity when complexity pressures mount?
 
 **Real-World Adoption:**
-- What team constraints make DocDD difficult?
+- What team constraints make DDD difficult?
 - How does it scale beyond individual projects?
 - What metrics actually matter for validating the approach?
 
@@ -53,7 +53,7 @@ After removing the over-prescription, the genuine questions/gaps appear to be:
 
 **Not much.** The methodology is intentionally lightweight and principle-based rather than process-heavy. The main gap seems to be:
 
-**Failure Mode Awareness**: A brief section on when DocDD doesn't work well and what to do about it.
+**Failure Mode Awareness**: A brief section on when DDD doesn't work well and what to do about it.
 
 ## Anti-Recommendations
 
@@ -63,12 +63,12 @@ After removing the over-prescription, the genuine questions/gaps appear to be:
 - Detailed process specifications
 - More appendices with technical standards
 
-**The LLM Trap:** Adding these would turn DocDD into yet another heavyweight methodology that people ignore because it's too prescriptive.
+**The LLM Trap:** Adding these would turn DDD into yet another heavyweight methodology that people ignore because it's too prescriptive.
 
 ## Proposed Action
 
 **Single Small Addition**: Add a brief FAQ entry or subsection covering:
-- "When DocDD Doesn't Work Well"
+- "When DDD Doesn't Work Well"
 - Common failure modes and how to recognize them
 - What to do when toys become unwieldy or the methodology feels forced
 
@@ -76,4 +76,4 @@ Keep it to 1-2 paragraphs. Maintain the philosophy of flexibility over systemati
 
 ---
 
-**Key Insight**: The LLMs' desire to systematize everything reveals why DocDD is needed - current methodologies are over-engineered. DocDD's value lies in its simplicity and adaptability, not in becoming another rigid framework.
+**Key Insight**: The LLMs' desire to systematize everything reveals why DDD is needed - current methodologies are over-engineered. DDD's value lies in its simplicity and adaptability, not in becoming another rigid framework.

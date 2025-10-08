@@ -1,6 +1,6 @@
 # Learnings Writing
 
-This chapter provides agent-oriented documentation for writing LEARNINGS.md files in DocDD projects. Drop this guide into your repository as `LEARNINGS_WRITING.md` to help AI agents create effective retrospective documentation that captures architectural insights and constraints.
+This chapter provides agent-oriented documentation for writing LEARNINGS.md files in DDD projects. Drop this guide into your repository as `LEARNINGS_WRITING.md` to help AI agents create effective retrospective documentation that captures architectural insights and constraints.
 
 ---
 
@@ -37,6 +37,7 @@ Its job: extract maximum value from an experiment by recording **what worked, wh
 ## Essential Sections
 
 ### Header
+
     # Toy Model N: System Name – Learnings
     Duration: X days | Status: Complete/Incomplete | Estimate: Y days
 
@@ -74,4 +75,4 @@ Its job: extract maximum value from an experiment by recording **what worked, wh
 - One page max — dense, parsimonious, reusable.
 
 LEARNINGS.md is not a diary. It is a **distilled record of architectural insights** that prevent future agents from repeating failures and help them understand what constraints actually matter.
-```  
+```    

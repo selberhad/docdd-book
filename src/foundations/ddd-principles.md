@@ -1,6 +1,4 @@
-# Doc‑Driven Development — Principles
-
-> **Note:** The name "Document Driven Development" was originally coined by [Ryan Vice](https://docdd.ai). This is a working name for this project, which will be renamed in the coming days.
+# Dialectic‑Driven Development — Principles
 
 ## The Problem with Current AI-Coding Approaches
 
@@ -12,7 +10,7 @@ The difference is significant. Human-oriented practices evolved around human cog
 
 Traditional approaches try to fit AI into human-shaped processes. They focus on better prompts, more structured inputs, and clearer specifications — essentially teaching AI to work within frameworks designed for human cognition. This is like optimizing horse carriages instead of inventing the automobile.
 
-Document-Driven Development takes the alternative approach: redesigning the entire development process around AI capabilities and limitations. Rather than asking how to make AI better at human workflows, it asks what programming methodology would emerge if we started from first principles with AI as the primary implementer.
+Dialectic-Driven Development takes the alternative approach: redesigning the entire development process around AI capabilities and limitations. Rather than asking how to make AI better at human workflows, it asks what programming methodology would emerge if we started from first principles with AI as the primary implementer.
 
 ## The Economic Shift
 
@@ -26,7 +24,7 @@ AI assistants have fundamentally altered the economics of software creation. Act
 
 The result is a shifted value equation: individual artifacts become expendable, while clarity, architectural insight, and strategic decision-making become the primary sources of durable value.
 
-Document-Driven Development emerges from this shifted landscape, reversing the traditional implementation-first flow.
+Dialectic-Driven Development emerges from this shifted landscape, reversing the traditional implementation-first flow.
 
 ## Core Principles
 
@@ -38,9 +36,9 @@ Document-Driven Development emerges from this shifted landscape, reversing the t
 
 **System Legibility**: Design for transparent, inspectable execution that both humans and AI can reason about reliably.
 
-## Two Modes of DocDD
+## Two Modes of DDD
 
-Document-Driven Development operates in two distinct modes depending on the project phase and level of uncertainty:
+Dialectic-Driven Development operates in two distinct modes depending on the project phase and level of uncertainty:
 
 **Discovery Mode**: For novel solutions, uncertain requirements, or exploratory work where you need to validate concepts and discover constraints. Uses the full four-document harness (SPEC/PLAN/README/LEARNINGS) with toy model discipline to systematically explore and validate approaches.
 

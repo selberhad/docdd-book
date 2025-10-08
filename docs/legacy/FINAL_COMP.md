@@ -25,7 +25,7 @@ It also includes a Wrongness Register for V1: concepts that conflict with V6’s
 - SOFTENED: Pipelines as execution traces (detailed, prescriptive in V1) → concise mention with appropriateness caveat in V6.
 - SOFTENED: Guardrails/self‑audit (long metric/checklist blocks in V1) → concise habits and heuristics in V6.
 - SOFTENED: Adoption/repo layout (explicit structure in V1) → omitted in V6 (assumed or deferred).
-- REFRAMED: DocDD loop (V1 operational) → V6 loop includes README explicitly and cross‑links to meta‑doc guides.
+- REFRAMED: DDD loop (V1 operational) → V6 loop includes README explicitly and cross‑links to meta‑doc guides.
 - ELEVATED: Two‑at‑a‑time integration discipline (present as “never exceed two axes” in V1) → a core doctrine in V6 and enforced via kickoff.
 - ELEVATED: Human spotter role (implicit in V1 via review gates) → explicit “Agent/Human” roles section in V6.
 

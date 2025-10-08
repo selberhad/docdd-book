@@ -34,4 +34,4 @@ The exercise forces identification of the core problem without implementation as
 
 The technique leverages AI systems' sensitivity to framing. Abstract, constraint-focused prompts produce fundamentally different outputs than implementation-focused ones. The napkin physics format consistently guides AI toward minimal viable solutions rather than maximal complete ones.
 
-See also: [Doc‑Driven Principles](./ddd-principles.md), [DocDD AGENTS.md Template](../practice/docdd-agents-template.md)
+See also: [Dialectic‑Driven Principles](./ddd-principles.md), [DDD AGENTS.md Template](../practice/ddd-agents-template.md)

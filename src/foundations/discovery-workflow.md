@@ -1,6 +1,6 @@
 # Discovery Workflow
 
-Discovery mode is DocDD's approach for uncertain requirements, novel solutions, or exploratory work. Instead of optimizing for production code, discovery optimizes for **learning density**: extracting architectural insights, validating assumptions, and discovering constraints as efficiently as possible.
+Discovery mode is DDD's approach for uncertain requirements, novel solutions, or exploratory work. Instead of optimizing for production code, discovery optimizes for **learning density**: extracting architectural insights, validating assumptions, and discovering constraints as efficiently as possible.
 
 Use discovery mode when you're working with unfamiliar technology, exploring solution spaces, or building foundational components where the right approach isn't yet clear. The output isn't production-ready code—it's validated insights that inform how to build the real thing.
 

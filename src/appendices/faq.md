@@ -1,8 +1,8 @@
-# FAQ: Doc-Driven Development
+# FAQ: Dialectic-Driven Development
 
-## What problem is DocDD actually solving?
+## What problem is DDD actually solving?
 
-It solves the chaos of AI-assisted coding without context. DocDD adapts to different development phases: Discovery Mode for uncertain work uses systematic experimentation, while Execution Mode for established systems uses lightweight documentation and refactoring discipline. Both keep you in control.
+It solves the chaos of AI-assisted coding without context. DDD adapts to different development phases: Discovery Mode for uncertain work uses systematic experimentation, while Execution Mode for established systems uses lightweight documentation and refactoring discipline. Both keep you in control.
 
 ## Is this just another spec-first approach with fancy terms?
 
@@ -10,7 +10,7 @@ Nope. The key difference is: **you don't write the docs — the AI does**. In Di
 
 ## Why not just use a PRD and vibe code from there?
 
-PRDs describe *what* to build, but not *how*. Without technical scaffolding, the AI will guess — and its guesses change session to session. DocDD provides that scaffolding through different approaches depending on whether you're discovering new patterns or executing within established ones.
+PRDs describe *what* to build, but not *how*. Without technical scaffolding, the AI will guess — and its guesses change session to session. DDD provides that scaffolding through different approaches depending on whether you're discovering new patterns or executing within established ones.
 
 ## What's the difference between a toy model and a prototype?
 
@@ -34,7 +34,7 @@ Works great for solo builders using AI as a partner. But the doc artifacts also 
 
 ## What if I already wrote code — can I still apply this retroactively?
 
-Yep. Just ask the AI to generate docs based on the existing codebase. Use that to lock in structure, then resume with the DocDD flow going forward. Think of it as reverse-engineering clarity.
+Yep. Just ask the AI to generate docs based on the existing codebase. Use that to lock in structure, then resume with the DDD flow going forward. Think of it as reverse-engineering clarity.
 
 ## Why is this worth the upfront structure? Doesn't it slow me down?
 

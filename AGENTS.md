@@ -1,6 +1,6 @@
 # Repository Guidelines (AI + Humans)
 
-This repo contains an mdBook about the Document‑Driven Development (DocDD) methodology. Keep changes focused, minimal, and verifiable.
+This repo contains an mdBook about the Dialectic‑Driven Development (DDD) methodology. Keep changes focused, minimal, and verifiable.
 
 **See also:** `CLAUDE.md` for comprehensive development guidance.
 

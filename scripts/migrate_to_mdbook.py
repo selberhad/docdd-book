@@ -149,7 +149,7 @@ def write_summary():
     parts.append("\n")
 
     parts.append(line("## Core Guides"))
-    parts.append(line("- [Doc-Driven Development (DDD)](./guides/ddd.md)"))
+    parts.append(line("- [Dialectic-Driven Development (DDD)](./guides/ddd.md)"))
     parts.append(line("- [Debuggers: CLI+JSON](./guides/debuggers.md)"))
     parts.append(line("- [Toy Model Development](./guides/toy-dev.md)"))
     parts.append("\n")

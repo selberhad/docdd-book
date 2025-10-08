@@ -1,12 +1,12 @@
-# Why DocDD Won't Be Obsolete Tomorrow: Designing for Economic Invariants, Not Model Capabilities
+# Why DDD Won't Be Obsolete Tomorrow: Designing for Economic Invariants, Not Model Capabilities
 
 A common criticism of AI-assisted development methodologies is that they become obsolete as quickly as new models arrive. Before the ink could dry, the argument goes, your carefully crafted workflow is useless. And there's truth to this - many approaches that worked beautifully with GPT-3.5 broke with GPT-4, and approaches tuned for GPT-4 may struggle with future architectures.
 
-But Document-Driven Development is fundamentally different. It's not designed around current model capabilities - it's designed around **economic and cognitive invariants** that persist across model generations.
+But Dialectic-Driven Development is fundamentally different. It's not designed around current model capabilities - it's designed around **economic and cognitive invariants** that persist across model generations.
 
 ## The Two Types of AI Methodologies
 
-To understand why DocDD is resilient, it helps to distinguish between two fundamentally different approaches to AI-assisted development:
+To understand why DDD is resilient, it helps to distinguish between two fundamentally different approaches to AI-assisted development:
 
 **Capability-tuned methodologies** encode operational assumptions about how current models work:
 - "Use retrieval in this sequence"
@@ -24,7 +24,7 @@ These approaches optimize for today's capabilities. When new models arrive with 
 
 These approaches optimize for the **cost structure of human-AI collaboration**. As long as AI can generate and iterate faster than humans can write code by hand, the fundamental economics hold - regardless of whether the AI is GPT-4 or GPT-7.
 
-DocDD is the latter.
+DDD is the latter.
 
 ## Real-World Example: What Breaks vs What Persists
 
@@ -32,9 +32,9 @@ Lance Martin from LangChain discussed this problem in his podcast "Context Engin
 
 He was encoding: "Do research *this way* with *these tools*."
 
-DocDD encodes: "Always write SPEC before code. Always refactor after implementation. Human edits for parsimony. AI generates comprehensively."
+DDD encodes: "Always write SPEC before code. Always refactor after implementation. Human edits for parsimony. AI generates comprehensively."
 
-Martin's approach was prescriptive workflow ("do A, then B, then C with tool X"). DocDD is a constraint framework ("always satisfy these invariants using whatever works"). The former is brittle to capability changes. The latter improves with them.
+Martin's approach was prescriptive workflow ("do A, then B, then C with tool X"). DDD is a constraint framework ("always satisfy these invariants using whatever works"). The former is brittle to capability changes. The latter improves with them.
 
 ## Designed for Ceiling Intelligence, Not Current Limitations
 
@@ -45,7 +45,7 @@ Most AI methodologies are designed as **workarounds** for current model limitati
 
 These are scaffolding approaches. They assume the methodology becomes unnecessary overhead as models improve.
 
-DocDD is designed for **optimal collaboration structure**, assuming both parties are highly capable:
+DDD is designed for **optimal collaboration structure**, assuming both parties are highly capable:
 - SPEC before code isn't a workaround for dumb AI - it's the correct development sequence
 - Human editing for parsimony isn't compensating for model weakness - it's a structural role difference
 - Mandatory refactoring isn't training wheels - it's optimal practice made economically viable
@@ -78,9 +78,9 @@ The discipline required was:
 
 Smart creative people rebelled against this structure. It felt robotic, bureaucratic, soul-crushing. The Yugoslavian education minister problem: "I designed the perfect system, the people implementing it were too flawed."
 
-**DocDD makes XP/TDD finally viable** by reassigning the labor:
+**DDD makes XP/TDD finally viable** by reassigning the labor:
 
-| Practice | Why XP/TDD Failed (Humans) | Why DocDD Succeeds (AI) |
+| Practice | Why XP/TDD Failed (Humans) | Why DDD Succeeds (AI) |
 |----------|---------------------------|------------------------|
 | Write tests first | Tedious, feels robotic | AI happily generates from SPEC |
 | Mandatory refactoring | Sisyphean busywork | AI never gets tired |
@@ -93,7 +93,7 @@ The anthropomorphic experience of the AI grinding through test cycles is that it
 
 ## The Stable Foundation
 
-DocDD's resilience comes from building on three invariants:
+DDD's resilience comes from building on three invariants:
 
 **Economic invariant**: As long as AI generates/refactors faster than humans write code, artifacts are disposable and editorial judgment is the scarce resource. This has only become *more* true with each model generation.
 
@@ -103,7 +103,7 @@ DocDD's resilience comes from building on three invariants:
 
 ## In Practice
 
-Over multiple model generations, DocDD has:
+Over multiple model generations, DDD has:
 - **Improved with better models**: They execute it more fluently, follow instructions better, generate higher-quality artifacts
 - **Normalized worse models**: The structure still works, just requires more human editorial intervention
 - **Remained stable through architectural changes**: Agents, MCP, multi-modal - none break the core workflow
@@ -116,7 +116,7 @@ That economic reality isn't going away. If anything, it's intensifying.
 
 The test of a methodology isn't whether it works today. It's whether it identifies **stable abstractions** that persist across technological shifts.
 
-DocDD isn't a collection of prompt engineering tricks. It's a systematic methodology derived from:
+DDD isn't a collection of prompt engineering tricks. It's a systematic methodology derived from:
 1. Economic inversion (cheap code, expensive judgment)
 2. Role-based division of labor (generation vs editing)
 3. Proven practices made viable (XP/TDD finally sustainable)

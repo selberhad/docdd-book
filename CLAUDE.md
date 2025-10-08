@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-This is an mdBook documenting the Document-Driven Development (DocDD) methodology. The book teaches using specs, plans, and tight feedback loops with toy models and a CLI+JSON "debugger mindset" to build software with clarity and speed.
+This is an mdBook documenting the Dialectic-Driven Development (DDD) methodology. The book teaches using specs, plans, and tight feedback loops with toy models and a CLI+JSON "debugger mindset" to build software with clarity and speed.
 
 **Key Architecture:**
 - `src/` contains all book content organized into logical sections
@@ -34,7 +34,7 @@ make install-hooks  # Install pre-commit hook (run once per clone)
 ## Content Structure
 
 **Four main sections:**
-1. **Foundations** (`src/foundations/`) - Core DocDD principles, napkin physics, toy models
+1. **Foundations** (`src/foundations/`) - Core DDD principles, napkin physics, toy models
 2. **Practice** (`src/practice/`) - AGENTS.md template and operational guidance
 3. **Authoring Guides** (`src/authoring/`) - Agent-oriented writing templates for SPEC, PLAN, etc.
 4. **Patterns & Examples** (`src/patterns/`) - Real-world examples using flat file structure

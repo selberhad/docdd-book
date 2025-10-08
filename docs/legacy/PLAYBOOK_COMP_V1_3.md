@@ -20,7 +20,7 @@ It summarizes scope, structure, tone, and coverage; highlights overlaps, gaps, a
 ## One‑Paragraph Summaries
 
 - V1 (`PLAYBOOK.md`): The most comprehensive and procedural. Covers principles, DDD loop, meta‑docs, Napkin Physics, Toy Models, CLI+JSON debugger, pipelines/golden tests, planning/testing, guardrails/self‑audit, heuristics, adoption, and appendices (templates/checklists/conventions). Emphasizes “why this matters” callouts.
-- V2 (`PLAYBOOK_V2.md`): Concise and agent‑centric. Defines DocDD philosophy, core principles, a primitive→integration loop, the four meta‑docs, Napkin Physics, Toy Models, and a brief genealogy. Most compact; light on implementation detail.
+- V2 (`PLAYBOOK_V2.md`): Concise and agent‑centric. Defines DDD philosophy, core principles, a primitive→integration loop, the four meta‑docs, Napkin Physics, Toy Models, and a brief genealogy. Most compact; light on implementation detail.
 - V3 (`PLAYBOOK_V3.md`): Doctrinal and narrative. Clarifies purpose, principles, loop, Napkin Physics, Toy Models, JSON+CLI convention, integration path, roles, and philosophy. Balanced middle ground: clearer narrative than V2; less procedural depth than V1.
 
 ---
@@ -29,7 +29,7 @@ It summarizes scope, structure, tone, and coverage; highlights overlaps, gaps, a
 
 - V1 sections (13): Preface; Core Principles; DDD Loop; Meta‑Docs; Napkin Physics; Toy Models; CLI+JSON Contract; Pipelines & Golden Tests; Planning & Testing; Guardrails & Self‑Audit; Heuristics & Anti‑Patterns; Adoption Guide; Appendices (templates/checklists/schemas/glossary).
 - V2 sections (7): Purpose & Audience; Core Principles; Development Loop; Meta‑Docs; Napkin Physics; Toy Models; Methodological Genealogy.
-- V3 sections (9): Purpose; Core Principles; DocDD Loop; Napkin Physics; Toy Models; JSON+CLI Convention; Integration & Final System; Roles; Philosophy.
+- V3 sections (9): Purpose; Core Principles; DDD Loop; Napkin Physics; Toy Models; JSON+CLI Convention; Integration & Final System; Roles; Philosophy.
 
 Observations:
 - V1 is exhaustive and operational; V2 is minimal and philosophical; V3 is doctrinal with a clean integration narrative.
@@ -80,7 +80,7 @@ Observations:
 ## Redundancies & Gaps
 
 Redundancies (safe to unify once):
-- Core principles, DocDD loop, Napkin Physics, Toy Models appear in all versions (wording differs).
+- Core principles, DDD loop, Napkin Physics, Toy Models appear in all versions (wording differs).
 
 Gaps (present only in one version):
 - V1‑only: planning/testing specifics; guardrails and self‑audit; pipelines + golden tests detail; adoption guide; templates/checklists.
@@ -102,7 +102,7 @@ Rationale:
 
 ## Recommendations
 
-- Lead with a short doctrinal core (V3 tone): purpose, core principles, roles, the DocDD loop, and the two‑at‑a‑time integration path.
+- Lead with a short doctrinal core (V3 tone): purpose, core principles, roles, the DDD loop, and the two‑at‑a‑time integration path.
 - Follow with the operational chapters (V1 depth): CLI+JSON contract; pipelines & golden tests; planning/testing; guardrails/self‑audit; heuristics; adoption.
 - Conclude with appendices (V1): templates, checklists, error JSON, pipeline pattern, glossary. Add the V2 genealogy as a brief note.
 - Maintain “Why this matters” callouts (from V1) to connect advice to value.
@@ -113,7 +113,7 @@ Rationale:
 
 1) Purpose & Principles (V3+V2 phrasing, consolidated)  
 2) Roles & Responsibilities (V3)  
-3) The DocDD Loop (V1/V3)  
+3) The DDD Loop (V1/V3)  
 4) Napkin Physics (all, unified)  
 5) Toy Models: Axes & Integration Discipline (all, unified)  
 6) CLI + JSON: Contract & Conventions (V1 detail, V3 framing)  

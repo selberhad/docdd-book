@@ -1,4 +1,4 @@
-# PLAYBOOK.md — Doc‑Driven Development with Binary‑Weave Kickoff (V4)
+# PLAYBOOK.md — Dialectic‑Driven Development with Binary‑Weave Kickoff (V4)
 
 A clarity‑first, agent‑oriented methodology that expands the V3 doctrine with a strict, sequential kickoff format, while avoiding the prescriptive bloat that crept into V1.
 
@@ -6,7 +6,7 @@ A clarity‑first, agent‑oriented methodology that expands the V3 doctrine wit
 
 ## 1. Purpose
 
-Doc‑Driven Development (DocDD) turns ambiguous problems into deterministic, legible systems by cycling through lightweight docs, disposable toy models, and incremental integrations. This version adds a binary‑weave kickoff: new primitive → integrate with the prior product, repeated until the final product emerges.
+Dialectic‑Driven Development (DDD) turns ambiguous problems into deterministic, legible systems by cycling through lightweight docs, disposable toy models, and incremental integrations. This version adds a binary‑weave kickoff: new primitive → integrate with the prior product, repeated until the final product emerges.
 
 ---
 
@@ -23,7 +23,7 @@ See also: [[DDD]], [[TOY_DEV]].
 
 ---
 
-## 3. The DocDD Loop
+## 3. The DDD Loop
 
 1. SPEC.md — Define minimal behavioral contract (inputs, outputs, invariants, error cases).
 2. PLAN.md — Outline the smallest step to test the contract (sequence, risks, success criteria).

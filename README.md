@@ -1,34 +1,55 @@
 <p align="center">
-  <img src="logo.png" alt="DocDD Logo" width="200">
+  <img src="logo.png" alt="DDD Logo" width="200">
 </p>
 
-> **Note:** The name "Document Driven Development" was originally coined by [Ryan Vice](https://docdd.ai). This is a working name for this project, which will be renamed in the coming days.
+# Dialectic‑Driven Development — The Book
 
-# Document‑Driven Development — The Book
+[![Deploy mdBook to GitHub Pages](https://github.com/selberhad/ddd-book/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/selberhad/ddd-book/actions/workflows/gh-pages.yml)
 
-[![Deploy mdBook to GitHub Pages](https://github.com/selberhad/docdd-book/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/selberhad/docdd-book/actions/workflows/gh-pages.yml)
+This repository is an mdBook about the Dialectic‑Driven Development (DDD) methodology.  The book teaches how to use specs, plans, and tight feedback loops (with toy models and a CLI+JSON “debugger mindset”) to build software with clarity and speed.
 
-This repository is an mdBook about the Document‑Driven Development (DocDD) methodology.  The book teaches how to use specs, plans, and tight feedback loops (with toy models and a CLI+JSON “debugger mindset”) to build software with clarity and speed.
-
-- Read online: https://selberhad.github.io/docdd-book/
+- Read online: https://selberhad.github.io/ddd-book/
 - Book statistics: [STATS.md](STATS.md)
 - Blog posts: [docs/blog/README.md](docs/blog/README.md)
 
 ## What You'll Learn
-- Foundations (why): principles of DocDD, Napkin Physics, Toy‑Model rationale, Debugger mindset.
-- Practice (how): the DocDD loop, kickoff, checklists, and workflow.
+- Foundations (why): principles of DDD, Napkin Physics, Toy‑Model rationale, Debugger mindset.
+- Practice (how): the DDD loop, kickoff, checklists, and workflow.
 - Authoring guides: writing SPECs, PLANs, READMEs, and LEARNINGS.
 - Patterns & examples: toy patterns and an examples archive.
 
-## Built with DocDD
+## Built with DDD
 
-If you're building a project using the DocDD methodology, show it off with this badge in your README:
+If you're building a project using the DDD methodology, show it off with this badge in your README:
 
 ```markdown
-[![Built with DocDD](https://img.shields.io/badge/built_with-DocDD-blue)](https://github.com/selberhad/docdd-book)
+[![Built with DDD](https://img.shields.io/badge/built_with-DDD-blue)](https://github.com/selberhad/ddd-book)
 ```
 
-[![Built with DocDD](https://img.shields.io/badge/built_with-DocDD-blue)](https://github.com/selberhad/docdd-book)
+[![Built with DDD](https://img.shields.io/badge/built_with-DDD-blue)](https://github.com/selberhad/ddd-book)
+
+## Develop Locally
+- Prereqs: rustup + cargo (Rust stable).
+- Setup tools: `make setup` (installs `mdbook` and `mdbook-linkcheck`).
+- Live preview: `make serve` (http://12- Read online: https://selberhad.github.io/ddd-book/
+- Book statistics: [STATS.md](STATS.md)
+- Blog posts: [docs/blog/README.md](docs/blog/README.md)
+
+## What You'll Learn
+- Foundations (why): principles of DDD, Napkin Physics, Toy‑Model rationale, Debugger mindset.
+- Practice (how): the DDD loop, kickoff, checklists, and workflow.
+- Authoring guides: writing SPECs, PLANs, READMEs, and LEARNINGS.
+- Patterns & examples: toy patterns and an examples archive.
+
+## Built with DDD
+
+If you're building a project using the DDD methodology, show it off with this badge in your README:
+
+```markdown
+[![Built with DDD](https://img.shields.io/badge/built_with-DDD-blue)](https://github.com/selberhad/ddd-book)
+```
+
+[![Built with DDD](https://img.shields.io/badge/built_with-DDD-blue)](https://github.com/selberhad/ddd-book)
 
 ## Develop Locally
 - Prereqs: rustup + cargo (Rust stable).
@@ -37,7 +58,7 @@ If you're building a project using the DocDD methodology, show it off with this 
 - Build + link check: `make check`.
 - Static build: `make build` (outputs to `book/`).
 
-**Note**: The project scaffolding (build tools, scripts, configuration) is MIT-licensed and freely reusable for your own books. However, the DocDD book content itself (`src/` directory) is copyrighted material under Personal-Use license - see the License section below.
+**Note**: The project scaffolding (build tools, scripts, configuration) is MIT-licensed and freely reusable for your own books. However, the DDD book content itself (`src/` directory) is copyrighted material under Personal-Use license - see the License section below.
 
 ## Repository Layout
 - `book.toml`: mdBook configuration (HTML output + linkcheck).
@@ -56,14 +77,14 @@ If you're building a project using the DocDD methodology, show it off with this 
 
 This is my personal book project - I'm the sole author and prefer to maintain full editorial control during the writing process.
 
-- **Feedback welcome**: Please open an issue at https://github.com/selberhad/docdd-book/issues for typos, suggestions, or questions
+- **Feedback welcome**: Please open an issue at https://github.com/selberhad/ddd-book/issues for typos, suggestions, or questions
 - **No PRs**: Pull requests will be closed without review, but I appreciate the interest!
 
 ## Community
 
-Join our Discord community to discuss DocDD methodology, share experiences, and get help with your document-driven projects:
+Join our Discord community to discuss DDD methodology, share experiences, and get help with your document-driven projects:
 
-**[Join the DocDD Discord](https://discord.gg/eVGgHAcMGY)**
+**[Join the DDD Discord](https://discord.gg/eVGgHAcMGY)**
 
 ## AI-First Technical Writing Example
 
@@ -73,9 +94,9 @@ This repository serves as a practical example of "vibe-writing" a technical book
 - Book content collaboratively developed through iterative human-AI editing
 - Automated statistics, pre-commit hooks, and CI/CD provide quality gates without heavyweight process
 
-Related post: [Vibe-writing the DocDD Book](docs/blog/Vibewriting.md)
+Related post: [Vibe-writing the DDD Book](docs/blog/Vibewriting.md)
 
-**Note on AI collaboration**: As a working draft developed with AI assistance, this book may contain unintended redundancies, inconsistencies, or hallucinated details. If you notice such issues while reading, please file an issue at https://github.com/selberhad/docdd-book/issues to help improve the content.
+**Note on AI collaboration**: As a working draft developed with AI assistance, this book may contain unintended redundancies, inconsistencies, or hallucinated details. If you notice such issues while reading, please file an issue at https://github.com/selberhad/ddd-book/issues to help improve the content.
 
 ## Deploying
 - Published via GitHub Pages on pushes to `main` (see workflow badge above).

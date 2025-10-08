@@ -22,7 +22,7 @@ Disclaimer. This work is provided “as is” without warranties of any kind. Li
 
 Termination. This license terminates automatically if you breach its terms.
 
-Permissions. For uses beyond the scope above, please open an issue at: https://github.com/selberhad/docdd-book/issues
+Permissions. For uses beyond the scope above, please open an issue at: https://github.com/selberhad/ddd-book/issues
 
 ---
 

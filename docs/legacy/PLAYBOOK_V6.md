@@ -1,10 +1,10 @@
-# PLAYBOOK_V6.md — Doc-Driven Development with Binary-Weave Kickoff
+# PLAYBOOK_V6.md — Dialectic-Driven Development with Binary-Weave Kickoff
 
 ---
 
 ## 1. Purpose
 
-Doc-Driven Development (DocDD) turns ambiguous problems into deterministic, legible systems through lightweight docs, disposable toy models, and incremental integrations.  
+Dialectic-Driven Development (DDD) turns ambiguous problems into deterministic, legible systems through lightweight docs, disposable toy models, and incremental integrations.  
 
 See: [[DDD]].
 
@@ -21,7 +21,7 @@ See: [[DDD]].
 
 ---
 
-## 3. The DocDD Loop
+## 3. The DDD Loop
 
 1. SPEC — define minimal contract (inputs, outputs, invariants). 
 2. PLAN — outline the smallest testable step.  

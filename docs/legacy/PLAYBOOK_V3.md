@@ -1,4 +1,4 @@
-# PLAYBOOK.md — Doc-Driven Development (Core Doctrine)
+# PLAYBOOK.md — Dialectic-Driven Development (Core Doctrine)
 
 A clarity-first, agent-oriented methodology for building complex systems out of simple, disposable experiments.  
 
@@ -6,7 +6,7 @@ A clarity-first, agent-oriented methodology for building complex systems out of 
 
 ## 1. Purpose
 
-Doc-Driven Development (DocDD) is a workflow designed for AI engineers and AI agents. Its goal is to turn ambiguous problem statements into deterministic, legible systems by cycling through lightweight docs, disposable toy models, and incremental integrations.  
+Dialectic-Driven Development (DDD) is a workflow designed for AI engineers and AI agents. Its goal is to turn ambiguous problem statements into deterministic, legible systems by cycling through lightweight docs, disposable toy models, and incremental integrations.  
 
 ---
 
@@ -21,7 +21,7 @@ Doc-Driven Development (DocDD) is a workflow designed for AI engineers and AI ag
 
 ---
 
-## 3. The DocDD Loop
+## 3. The DDD Loop
 
 1. **SPEC.md** — Define the minimal behavioral contract. Inputs, outputs, invariants, error cases.  
 2. **PLAN.md** — Outline the smallest step to test the contract. No code, just sequence and risks.  
@@ -93,3 +93,4 @@ The only lasting artifacts are the **final implementation** and the **final docs
 - Code and docs are chickens and eggs, but both are disposable until the final generation.  
 - The true product is clarity: contracts, constraints, invariants, and working integrations.  
 - Everything else is scaffolding to get there.  
+  

@@ -1,6 +1,6 @@
 # Meta-Document: How to Write an Effective SPEC.md
 
-_Guide to writing toy-model specifications in the Doc-Driven Development paradigm._
+_Guide to writing toy-model specifications in the Dialectic-Driven Development paradigm._
 
 ---
 

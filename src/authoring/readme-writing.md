@@ -1,6 +1,6 @@
 # README Writing
 
-This chapter provides agent-oriented documentation for writing README.md files in DocDD projects. Drop this guide into your repository as `README_WRITING.md` to help AI agents create effective context refresh documentation.
+This chapter provides agent-oriented documentation for writing README.md files in DDD projects. Drop this guide into your repository as `README_WRITING.md` to help AI agents create effective context refresh documentation.
 
 ---
 
@@ -20,6 +20,7 @@ These READMEs serve as **context refresh documents** for AI assistants working w
 ## Required Structure
 
 ### **1. Header + One-Liner**
+
     # library_name
     Brief description of what it does and key technology/pattern
 
@@ -30,6 +31,7 @@ These READMEs serve as **context refresh documents** for AI assistants working w
 - How it fits in the broader system/integration
 
 ### **3. Key API (essential methods only)**
+
     # 3-5 most important methods with type hints
     primary_method(param: Type) -> ReturnType
     secondary_method(param: Type) -> ReturnType
@@ -49,6 +51,7 @@ These READMEs serve as **context refresh documents** for AI assistants working w
 - Integration pitfalls
 
 ### **6. Quick Test**
+
     pytest tests/test_basic.py  # or most representative test
 
 ---
@@ -124,3 +127,4 @@ A good library README should allow an AI assistant to:
 
 If any of these takes longer than expected, the README needs to be more concise or better organized.
 ```
+

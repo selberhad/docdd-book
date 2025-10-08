@@ -3,9 +3,9 @@
 ## Overview
 
 - **Total files:** 25
-- **Total words:** 9,433
-- **Total lines:** 2,507
-- **Total characters:** 110,053
+- **Total words:** 9,405
+- **Total lines:** 2,509
+- **Total characters:** 109,828
 - **Reading time:** ~47 minutes
 
 ## Per-File Breakdown
@@ -15,13 +15,13 @@
 | SUMMARY.md | 90 | 34 |
 | appendices/faq.md | 662 | 53 |
 | authoring/README.md | 158 | 21 |
-| authoring/kickoff-writing.md | 38 | 81 |
-| authoring/learnings-writing.md | 37 | 77 |
+| authoring/kickoff-writing.md | 38 | 80 |
+| authoring/learnings-writing.md | 37 | 78 |
 | authoring/plan-writing.md | 34 | 123 |
-| authoring/readme-writing.md | 32 | 126 |
+| authoring/readme-writing.md | 32 | 130 |
 | authoring/spec-writing.md | 37 | 105 |
 | foundations/code-maps.md | 443 | 80 |
-| foundations/ddd-principles.md | 769 | 63 |
+| foundations/ddd-principles.md | 741 | 61 |
 | foundations/debugger-mindset.md | 426 | 99 |
 | foundations/discovery-workflow.md | 1,275 | 181 |
 | foundations/execution-workflow.md | 768 | 175 |
@@ -36,5 +36,5 @@
 | patterns/examples/archive-browser-spec.md | 30 | 130 |
 | patterns/mcl-rust-port.md | 1,000 | 201 |
 | patterns/spatial-mud-database.md | 698 | 85 |
-| practice/docdd-agents-template.md | 45 | 123 |
-| **TOTAL** | **9,433** | **2,507** |
+| practice/ddd-agents-template.md | 45 | 123 |
+| **TOTAL** | **9,405** | **2,509** |

@@ -1,6 +1,6 @@
 # Archive Browser Kickoff
 
-This example demonstrates the binary-weave kickoff process for a real DocDD project. This KICKOFF.md file guided the development of the Archive Browser, a shipped NPM package for viewing ChatGPT conversation exports.
+This example demonstrates the binary-weave kickoff process for a real DDD project. This KICKOFF.md file guided the development of the Archive Browser, a shipped NPM package for viewing ChatGPT conversation exports.
 
 ---
 

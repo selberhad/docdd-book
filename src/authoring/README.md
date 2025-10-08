@@ -1,6 +1,6 @@
 # Authoring Guides
 
-**Agent-oriented writing templates for Doc Driven Development.**
+**Agent-oriented writing templates for Dialectic Driven Development.**
 
 These guides are designed to be copied into your repository and referenced by AI agents before authoring documents. They provide structured templates, constraints, and examples that help agents produce consistent, high-quality documentation.
 
@@ -18,4 +18,4 @@ These guides are designed to be copied into your repository and referenced by AI
 - **README Writing:** Concise orientation docs for internal libraries
 - **Learnings Writing:** Capturing evidence, pivots, and architectural insights
 
-Each guide includes templates, constraints, anti-patterns, and real examples to help agents author documents that integrate seamlessly with the DocDD workflow.
+Each guide includes templates, constraints, anti-patterns, and real examples to help agents author documents that integrate seamlessly with the DDD workflow.

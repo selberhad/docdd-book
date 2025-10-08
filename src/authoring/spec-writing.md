@@ -1,6 +1,6 @@
 # Spec Writing
 
-This chapter provides agent-oriented documentation for writing SPEC.md files in DocDD projects. Drop this guide into your repository as `SPEC_WRITING.md` to help AI agents understand how to create precise behavioral contracts for toy models.
+This chapter provides agent-oriented documentation for writing SPEC.md files in DDD projects. Drop this guide into your repository as `SPEC_WRITING.md` to help AI agents understand how to create precise behavioral contracts for toy models.
 
 ---
 
@@ -36,7 +36,7 @@ It exists to make implementation falsifiable — to ensure tests and validation 
 ## Core Structure
 
 ### 1. Header
-Toy Model N: System Name Specification
+Toy Model N: [System Name] Specification
 
 One-line purpose statement
 

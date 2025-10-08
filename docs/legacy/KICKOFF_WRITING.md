@@ -1,6 +1,6 @@
 # KICKOFF_WRITING.md — Guide for Binary-Weave Kickoff Docs
 
-This document instructs the agent how to write a **KICKOFF.md** for a new DocDD project.  
+This document instructs the agent how to write a **KICKOFF.md** for a new DDD project.  
 The goal is to produce a single, explicit binary-weave plan — not a flat list of toys, not parallel streams.  
 The weave always alternates: *new primitive → integration with prior product*.  
 

@@ -1,6 +1,6 @@
 # Plan Writing
 
-This chapter provides agent-oriented documentation for writing PLAN.md files in DocDD projects. Drop this guide into your repository as `PLAN_WRITING.md` to help AI agents create strategic roadmaps for toy model implementation.
+This chapter provides agent-oriented documentation for writing PLAN.md files in DDD projects. Drop this guide into your repository as `PLAN_WRITING.md` to help AI agents create strategic roadmaps for toy model implementation.
 
 ---
 

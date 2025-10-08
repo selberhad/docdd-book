@@ -2,7 +2,7 @@
 
 ## Multi-Scale Spatial Architecture for MUDs
 
-This case study documents the application of DocDD to a spatial reasoning system for text-based virtual worlds. The project involved multi-scale spatial coordination, AI-guided world generation, and algorithmic spatial reasoning.
+This case study documents the application of DDD to a spatial reasoning system for text-based virtual worlds. The project involved multi-scale spatial coordination, AI-guided world generation, and algorithmic spatial reasoning.
 
 The work demonstrates how toy model discipline can address complex technical challenges through systematic experimentation and integration.
 
@@ -70,15 +70,15 @@ The experiments validated multi-scale system coordination patterns. Each scale h
 
 ## Experimental Impact
 
-The spatial architecture demonstrates DocDD's effectiveness for complex technical challenges:
+The spatial architecture demonstrates DDD's effectiveness for complex technical challenges:
 
-**Proof of Concept**: Demonstrates that DocDD's toy model discipline scales to genuinely complex technical challenges involving AI collaboration and multi-system integration.
+**Proof of Concept**: Demonstrates that DDD's toy model discipline scales to genuinely complex technical challenges involving AI collaboration and multi-system integration.
 
 **Methodology Validation**: Shows how systematic experimentation through focused toys can tackle problems that would be overwhelming as monolithic projects.
 
 **Process Insights**: Reveals patterns for AI collaboration, integration testing priorities, and iterative refinement that apply beyond the specific domain.
 
-**Next Phase**: Integration with Evennia MUD framework to validate DocDD's effectiveness for legacy system integration.
+**Next Phase**: Integration with Evennia MUD framework to validate DDD's effectiveness for legacy system integration.
 
 ---
 

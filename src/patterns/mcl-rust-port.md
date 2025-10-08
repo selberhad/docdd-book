@@ -2,7 +2,7 @@
 
 ## When Discovery and Execution Aren't Enough
 
-This case study documents the discovery of **Porting Mode** - a specialized DocDD workflow that emerged from translating an 11k LOC C++ codebase to Rust in ~2 days.
+This case study documents the discovery of **Porting Mode** - a specialized DDD workflow that emerged from translating an 11k LOC C++ codebase to Rust in ~2 days.
 
 The work revealed that reference-driven translation requires a hybrid approach distinct from pure Discovery (exploratory) or Execution (delivery) modes, with unique constraints and practices.
 
@@ -168,9 +168,9 @@ Reality: Some features intentionally deferred, new features added
 - Golden tests - Input/output pairs from reference
 - Side-by-side comparison - Always have source open
 
-## Impact on DocDD Methodology
+## Impact on DDD Methodology
 
-Porting Mode revealed DocDD's flexibility:
+Porting Mode revealed DDD's flexibility:
 
 **Discovery and Execution are cognitive modes, not rigid phases:**
 - Discovery = "optimize for learning density"
