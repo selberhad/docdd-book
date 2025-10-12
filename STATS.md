@@ -2,17 +2,17 @@
 
 ## Overview
 
-- **Total files:** 30
-- **Total words:** 15,600
-- **Total lines:** 4,046
-- **Total characters:** 165,122
-- **Reading time:** ~78 minutes
+- **Total files:** 31
+- **Total words:** 16,668
+- **Total lines:** 4,427
+- **Total characters:** 176,274
+- **Reading time:** ~83 minutes
 
 ## Per-File Breakdown
 
 | File | Words | Lines |
 |------|------:|------:|
-| SUMMARY.md | 111 | 39 |
+| SUMMARY.md | 116 | 40 |
 | appendices/faq.md | 662 | 53 |
 | authoring/README.md | 158 | 21 |
 | authoring/kickoff-writing.md | 38 | 80 |
@@ -42,4 +42,5 @@
 | patterns/mcl-rust-port.md | 1,000 | 201 |
 | patterns/spatial-mud-database.md | 698 | 85 |
 | practice/ddd-agents-template.md | 45 | 123 |
-| **TOTAL** | **15,600** | **4,046** |
+| practice/hegel-cli.md | 1,063 | 380 |
+| **TOTAL** | **16,668** | **4,427** |

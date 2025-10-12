@@ -18,6 +18,7 @@
 
 ### Part II — Practice (How)
 - [DDD AGENTS.md Template](./practice/ddd-agents-template.md)
+- [Hegel CLI: Workflow Orchestration Tool](./practice/hegel-cli.md)
 
 ### Part III — Authoring Guides
 - [Authoring Guides](./authoring/README.md)
