@@ -36,26 +36,47 @@ Dialectic-Driven Development emerges from this shifted landscape, reversing the 
 
 **System Legibility**: Design for transparent, inspectable execution that both humans and AI can reason about reliably.
 
-## Two Modes of DDD
+## Three Atomic Modes of DDD
 
-Dialectic-Driven Development operates in two distinct modes depending on the project phase and level of uncertainty:
+Dialectic-Driven Development operates in three fundamental cognitive modes, each optimized for a different goal:
 
-**Discovery Mode**: For novel solutions, uncertain requirements, or exploratory work where you need to validate concepts and discover constraints. Uses the full four-document harness (SPEC/PLAN/README/LEARNINGS) with toy model discipline to systematically explore and validate approaches.
+**Research Mode**: For external knowledge gathering and question cataloguing. Study unfamiliar domains, cache documentation, and systematically document what you don't yet know. Optimizes for knowledge capture.
 
-**Execution Mode**: For established architectures where the patterns are known and you're building on proven foundations. Uses CODE_MAP.md as the central orchestration document plus mandatory refactoring after each feature implementation or integration step.
+**Discovery Mode**: For experimental validation and constraint discovery. Build toy models to test assumptions, validate approaches, and extract portable patterns. Optimizes for learning density.
+
+**Execution Mode**: For production delivery on established foundations. Build features using proven patterns with mandatory refactoring to maintain quality. Optimizes for production resilience.
+
+### When to Use Research Mode
+- Studying unfamiliar technologies, domains, or APIs
+- Reading documentation, tutorials, or reference implementations
+- Cataloguing open questions before experimentation
+- Building foundational knowledge before hands-on work
+- Any work focused on understanding external sources
 
 ### When to Use Discovery Mode
-- Implementing novel algorithms or approaches
-- Uncertain requirements or problem definition
-- Exploring new technologies or frameworks
-- Building foundational components where the patterns aren't established
-- Any work that requires systematic experimentation
+- Validating assumptions with minimal experiments
+- Testing novel algorithms or uncertain approaches
+- Building toy models to discover constraints
+- Exploring integration patterns between systems
+- Any work where theory needs reality-testing
 
 ### When to Use Execution Mode
-- Adding features to established codebases
-- Building on proven architectural patterns
-- Straightforward implementations without novel components
-- Post-MVP development where core patterns are validated
-- Any work where the main challenge is orchestration rather than discovery
+- Building features on established codebases
+- Applying patterns validated through Discovery
+- Production work with known requirements
+- Post-validation development where risks are understood
+- Any work focused on delivery rather than learning
 
-The key insight: most development is execution work that doesn't require the heavy documentation discipline of discovery mode. But when uncertainty exists, the discovery approach prevents costly architectural mistakes through systematic exploration.
+## Meta-Modes: Patterns of Mode Transitions
+
+Real projects don't stay in a single mode—they transition between modes based on the work's nature. Common patterns:
+
+**Learning Meta-mode**: Research ↔ Discovery ping-pong to build comprehensive knowledge. Study external sources (Research), validate through experiments (Discovery), update theory with findings (back to Research). Common in knowledge-building projects.
+
+**Porting Meta-mode**: Structured Discovery → Execution for reference-driven translation. Validate risky patterns via toys (Discovery phase), then systematic translation (Execution phase).
+
+**Standard Progression**: Discovery → Execution for typical feature development. Validate unknowns first, then build production code.
+
+The methodology is deliberately multi-stable between modes. Projects naturally transition as their needs change.
+
+See [Meta-Modes & Mode Transitions](./meta-modes.md) for detailed patterns.

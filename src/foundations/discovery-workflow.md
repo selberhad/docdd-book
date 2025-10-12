@@ -4,6 +4,8 @@ Discovery mode is DDD's approach for uncertain requirements, novel solutions, or
 
 Use discovery mode when you're working with unfamiliar technology, exploring solution spaces, or building foundational components where the right approach isn't yet clear. The output isn't production-ready code—it's validated insights that inform how to build the real thing.
 
+**Relationship to Research mode:** Discovery often follows Research mode (external knowledge gathering), validating documented theory through hands-on experiments. In Learning meta-mode, Discovery and Research alternate as experiments reveal new questions requiring study. See [Research Workflow](./research-workflow.md) and [Meta-Modes](./meta-modes.md).
+
 Discovery mode uses a **learning-first approach** built around four core documents that form an integrated harness for systematic experimentation.
 
 ## The Learning-First Approach
@@ -178,4 +180,8 @@ See: [General Practices](./general-practices.md)
 
 ---
 
-**Example in Practice**: [Case Study II: Spatial MUD Database](../patterns/spatial-mud-database.md) demonstrates discovery workflow in action, showing how toy model discipline and systematic experimentation addressed complex technical challenges through four focused prototypes and multi-system integration.
+**Examples in Practice**:
+
+[Case Study II: Spatial MUD Database](../patterns/spatial-mud-database.md) demonstrates discovery workflow in action, showing how toy model discipline and systematic experimentation addressed complex technical challenges through four focused prototypes and multi-system integration.
+
+[Case Study IV: NES Development](../patterns/ddd-nes.md) shows Research ↔ Discovery ping-pong (Learning meta-mode), where systematic wiki study catalogs questions, Discovery validates theory through test ROMs, and findings update external knowledge documents.

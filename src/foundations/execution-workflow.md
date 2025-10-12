@@ -8,6 +8,8 @@ Execution mode is for building features within established systems. Once core pa
 - Technical constraints are documented
 - Building on existing codebase (not exploring from scratch)
 
+**Note:** Execution mode typically follows Discovery mode in standard progression. For complex domains, Research mode may precede Discovery to build foundational knowledge before experimentation. See [Meta-Modes & Mode Transitions](./meta-modes.md) for workflow patterns.
+
 ## Central Artifact: CODE_MAP.md
 
 CODE_MAP.md is the primary coordination mechanism in Execution mode—a living architectural document that stays current through discipline.
@@ -160,15 +162,21 @@ See: [Refactoring with AI Agents](./refactoring-with-ai.md)
 - Keep linear history (prefer rebase, avoid merge commits)
 - Link issues if applicable: `Refs #123`
 
-## When to Switch to Discovery Mode
+## When to Switch Modes
 
-Switch back to Discovery mode when:
+**Switch to Discovery mode when:**
 - Requirements reveal gaps in established patterns
 - New technologies need evaluation before production use
 - Performance constraints require architectural changes
 - Significant uncertainty emerges that needs systematic experimentation
 
-The methodology is flexible—use the right mode for the current challenge. Most work in established systems benefits from Execution workflow's lighter approach, but when uncertainty emerges, Discovery mode's rigor becomes valuable again.
+**Switch to Research mode when:**
+- Need to study unfamiliar APIs or documentation
+- External knowledge exists but isn't yet understood
+- Building foundational knowledge before experimentation
+- Cataloguing questions before designing experiments
+
+The methodology is flexible—use the right mode for the current challenge. Most work in established systems benefits from Execution workflow's lighter approach, but when uncertainty emerges, switch modes deliberately. See [Meta-Modes & Mode Transitions](./meta-modes.md) for detailed transition patterns.
 
 ---
 

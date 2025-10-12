@@ -21,3 +21,4 @@ __pycache__/
 
 # Migration backups
 src*.tgz
+bulk_replace.py
