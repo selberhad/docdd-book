@@ -33,3 +33,15 @@ An examination of the fundamental difference between building large language mod
 
 ### [How We Tricked ncurses Into Running Without a Terminal (And Got Test Coverage)](FakeTTY.md)
 Solving the problem of testing ncurses code in CI environments by using macOS DYLD_INTERPOSE to fake a TTY. Shows how an "idle thought" during a break led to a simple 90-line C solution that enabled full test coverage for terminal-dependent code, demonstrating effective human-AI collaboration on practical engineering challenges.
+
+### [Developing a Theory of LLM Cognition: Modes, Meta-Modes, and the Internal/External Split](LLM%20Cognition%20Theory.md)
+DDD isn't just methodology—it's hypothesis-testing about how LLMs work best. Explores recent discoveries (Research mode and meta-mode patterns) and planned work (separating reasoning from communication) as observations about LLM cognitive architecture. Shows how each pattern reveals something fundamental about effective human-AI collaboration.
+
+### [Cargo-Culting Human Limitations: What LLMs Think They Can't Do (But Actually Can)](Cargo-Culting%20Human%20Limitations.md)
+*Part 2 of the LLM Cognition series.* Explores how LLMs inherit human constraints they don't actually have—time pressure, decision fatigue, context-switching costs. Through the ddd-nes audio testing moment and meta-analysis of LLM behavioral patterns, reveals how cargo-culting manifests and how meta-coaching can recalibrate AI to its actual capabilities.
+
+### [Guidance Vectors in Practice: Compression Algorithms for Philosophy](Guidance%20Vectors%20in%20Practice.md)
+*Part 3 of the LLM Cognition series.* From theory to practice: how guidance vectors evolved during ddd-nes into the Hegel CLI LEXICON. Shows significant compression transforming verbose corrections into dense philosophical principles. Demonstrates how vectors work as cognitive shortcuts, create shared vocabulary, and enable methodology transfer across projects.
+
+### [Context is King: Why We Pivoted from MCP to CLI](Context%20is%20King.md)
+*Part 4 of the LLM Cognition series.* The MCP → CLI pivot wasn't about features—it was about context composition. Every tool invocation enters LLM context; names repeated 20+ times per session compound semantic weight. "Hegel" isn't just branding—it's a guidance vector that primes dialectical thinking through repetition. Shows why tool names matter and how to design for cumulative context effects.
