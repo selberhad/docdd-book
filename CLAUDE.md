@@ -62,6 +62,47 @@ make install-hooks  # Install pre-commit hook (run once per clone)
 - **Commit and push:** When user explicitly requests "commit and push", always chain: `git commit ... && git push origin main`
 - Use conventional commit format: `type(scope): description`
 
+## Writing Case Studies and Technical Documentation
+
+**CRITICAL: Never estimate timelines from intuition.** Temporal claims systematically hallucinate toward human-baseline velocity, erasing evidence of AI-assisted speed gains.
+
+### Temporal Claims Require Evidence
+
+**Always verify timing with git log:**
+```bash
+# Get project timeline
+git log --pretty=format:"%ai %s" --reverse | head -1  # First commit
+git log --pretty=format:"%ai %s" | head -1             # Latest commit
+
+# Check specific milestones
+git log --pretty=format:"%ai %s" | grep "milestone_keyword"
+
+# Count days between events
+git log --oneline --after="2025-10-05" --before="2025-10-09" | wc -l
+```
+
+**The pattern:** Without checking git history, temporal estimates default to "what would be reasonable for average human developer" (~1 month, ~1 week). Actual AI-assisted timelines are often 5-10x faster.
+
+**Examples of systematic error:**
+- ❌ "Research phase lasted ~1 week" (hallucination)
+- ✅ "Research phase completed same day as toy0 (Oct 5)" (git log verified)
+- ❌ "~1 month for study phase + 5 toys" (hallucination)
+- ✅ "~5 days total (Oct 5-9, 2025)" (git log verified)
+
+**If git history unavailable:** Say "timeline unknown" rather than estimate. Human-calibrated intuitions don't apply to AI-assisted workflows.
+
+**Why this matters for DDD book:** The methodology's core value proposition is velocity multiplication. Hallucinating human-baseline timelines directly undermines the book's purpose.
+
+### Other Quantitative Claims
+
+This principle extends to all measurable claims:
+- ❌ Lines of code (count them: `find src -name "*.rs" | xargs wc -l`)
+- ❌ Test coverage (measure it: `cargo tarpaulin` or equivalent)
+- ❌ Number of files (count them: `find . -type f | wc -l`)
+- ❌ Dependencies (check them: `grep dependencies Cargo.toml | wc -l`)
+
+**Heuristic:** If it's a number and you didn't measure it, don't claim it. "Unknown" > plausible hallucination.
+
 ## CI/CD Notes
 
 - Deploys to GitHub Pages on `main` branch pushes
