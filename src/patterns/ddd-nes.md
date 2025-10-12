@@ -366,12 +366,13 @@ This project demonstrates Learning meta-mode's ideal use case:
 
 ## Current Status
 
-**As of October 2025:**
+**As of October 9, 2025:**
 - Research phase: Complete (52 wiki pages → 11 learning docs)
-- Discovery phase: In progress (8 toys, 66+ tests passing)
+- Discovery phase: In progress (8+ toys, 66+ tests passing)
 - Execution phase: Not started (no main game yet)
 - Blog posts: 9 written
 - Open questions: 43 catalogued (36 open, 7 answered)
+- **Project elapsed time**: ~5 days (October 5-9, 2025)
 
 **Project still in Research ↔ Discovery loop:** Building comprehensive knowledge foundation before considering production game.
 
@@ -404,7 +405,7 @@ This case study revealed Research mode as distinct cognitive mode:
 9. **Handoffs preserve momentum** - NEXT_SESSION.md bridges context gaps
 10. **Meta-mode matches goal** - Learning meta-mode fits knowledge-building projects
 
-**Timeline:** ~1 month for study phase + 5 toys demonstrates Research ↔ Discovery sustainability.
+**Timeline:** ~5 days total (Oct 5-9, 2025) with study phase + 5 toys in first ~2 days demonstrates Research ↔ Discovery velocity and sustainability.
 
 ---
 
