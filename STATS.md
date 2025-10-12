@@ -3,10 +3,10 @@
 ## Overview
 
 - **Total files:** 30
-- **Total words:** 15,583
+- **Total words:** 15,600
 - **Total lines:** 4,046
-- **Total characters:** 165,004
-- **Reading time:** ~77 minutes
+- **Total characters:** 165,122
+- **Reading time:** ~78 minutes
 
 ## Per-File Breakdown
 
@@ -34,7 +34,7 @@
 | foundations/research-workflow.md | 966 | 205 |
 | foundations/toy-model-rationale.md | 493 | 117 |
 | patterns/chatgpt-export-viewer.md | 246 | 39 |
-| patterns/ddd-nes.md | 1,887 | 412 |
+| patterns/ddd-nes.md | 1,904 | 412 |
 | patterns/examples/archive-browser-code-map.md | 37 | 156 |
 | patterns/examples/archive-browser-kickoff.md | 36 | 111 |
 | patterns/examples/archive-browser-plan.md | 32 | 76 |
@@ -42,4 +42,4 @@
 | patterns/mcl-rust-port.md | 1,000 | 201 |
 | patterns/spatial-mud-database.md | 698 | 85 |
 | practice/ddd-agents-template.md | 45 | 123 |
-| **TOTAL** | **15,583** | **4,046** |
+| **TOTAL** | **15,600** | **4,046** |

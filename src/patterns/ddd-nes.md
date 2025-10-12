@@ -282,7 +282,7 @@ Project alternated between modes systematically:
 
 ### 1. Research Mode Is Distinct from Discovery
 
-Research phase lasted ~1 week before any ROM built.
+Research phase (wiki study → learning docs → questions catalog) completed before any ROM built, though both happened on the same day (Oct 5).
 
 **Traditional approach:** "Learn by doing" (jump to coding immediately)
 
@@ -290,7 +290,7 @@ Research phase lasted ~1 week before any ROM built.
 
 **Result:** Targeted experiments answering specific questions, not unfocused exploration
 
-**Lesson:** External knowledge capture prevents false starts. Research mode is its own cognitive mode.
+**Lesson:** External knowledge capture prevents false starts. Research mode is its own cognitive mode, even when executed quickly.
 
 ### 2. Questions Are First-Class Artifacts
 
