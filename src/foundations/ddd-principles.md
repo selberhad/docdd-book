@@ -28,7 +28,7 @@ Dialectic-Driven Development emerges from this shifted landscape, reversing the 
 
 ## Core Principles
 
-**AI as Generator, Human as Editor**: The AI produces comprehensive artifacts (documentation, specifications, plans, tests, implementations) while the human focuses on simplification, risk identification, and constraint setting. This division leverages each party's strengths — AI's generative capacity and human's editorial judgment.
+**AI as Generator, Human as Editor**: The AI produces comprehensive artifacts (documentation, specifications, plans, tests, implementations) while the human focuses on simplification, risk identification, and constraint setting through conversation. The human never directly edits files—all artifact manipulation happens through conversational steering. This division leverages each party's strengths — AI's generative capacity and human's editorial judgment.
 
 **Disposable Artifacts, Durable Insight**: All implementations, documentation, and tests are treated as expendable drafts. The lasting value lies in the clarity extracted through the development process and captured in meta-documentation. This removes psychological barriers to refactoring and experimentation.
 

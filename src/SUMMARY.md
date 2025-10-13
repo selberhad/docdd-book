@@ -1,5 +1,6 @@
 # Summary
 
+- [Introduction](./introduction.md)
 
 ### Part I — Foundations (Why)
 - [Dialectic‑Driven Development](./foundations/ddd-principles.md)

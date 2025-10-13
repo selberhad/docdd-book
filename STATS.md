@@ -2,17 +2,17 @@
 
 ## Overview
 
-- **Total files:** 31
-- **Total words:** 16,668
-- **Total lines:** 4,427
-- **Total characters:** 176,274
-- **Reading time:** ~83 minutes
+- **Total files:** 32
+- **Total words:** 16,836
+- **Total lines:** 4,449
+- **Total characters:** 177,409
+- **Reading time:** ~84 minutes
 
 ## Per-File Breakdown
 
 | File | Words | Lines |
 |------|------:|------:|
-| SUMMARY.md | 116 | 40 |
+| SUMMARY.md | 117 | 41 |
 | appendices/faq.md | 662 | 53 |
 | authoring/README.md | 158 | 21 |
 | authoring/kickoff-writing.md | 38 | 80 |
@@ -21,7 +21,7 @@
 | authoring/readme-writing.md | 32 | 130 |
 | authoring/spec-writing.md | 37 | 105 |
 | foundations/code-maps.md | 443 | 80 |
-| foundations/ddd-principles.md | 856 | 82 |
+| foundations/ddd-principles.md | 871 | 82 |
 | foundations/debugger-mindset.md | 426 | 99 |
 | foundations/discovery-workflow.md | 1,346 | 187 |
 | foundations/execution-workflow.md | 832 | 183 |
@@ -33,6 +33,7 @@
 | foundations/refactoring-with-ai.md | 878 | 79 |
 | foundations/research-workflow.md | 966 | 205 |
 | foundations/toy-model-rationale.md | 493 | 117 |
+| introduction.md | 152 | 21 |
 | patterns/chatgpt-export-viewer.md | 246 | 39 |
 | patterns/ddd-nes.md | 1,904 | 412 |
 | patterns/examples/archive-browser-code-map.md | 37 | 156 |
@@ -43,4 +44,4 @@
 | patterns/spatial-mud-database.md | 698 | 85 |
 | practice/ddd-agents-template.md | 45 | 123 |
 | practice/hegel-cli.md | 1,063 | 380 |
-| **TOTAL** | **16,668** | **4,427** |
+| **TOTAL** | **16,836** | **4,449** |
