@@ -3,10 +3,10 @@
 ## Overview
 
 - **Total files:** 32
-- **Total words:** 17,199
-- **Total lines:** 4,457
-- **Total characters:** 179,475
-- **Reading time:** ~85 minutes
+- **Total words:** 16,602
+- **Total lines:** 4,224
+- **Total characters:** 174,214
+- **Reading time:** ~83 minutes
 
 ## Per-File Breakdown
 
@@ -27,13 +27,13 @@
 | foundations/execution-workflow.md | 832 | 183 |
 | foundations/external-knowledge.md | 795 | 243 |
 | foundations/general-practices.md | 848 | 135 |
-| foundations/meta-modes.md | 1,450 | 339 |
+| foundations/meta-modes.md | 787 | 90 |
 | foundations/napkin-physics.md | 321 | 37 |
 | foundations/open-questions.md | 809 | 298 |
 | foundations/refactoring-with-ai.md | 878 | 79 |
 | foundations/research-workflow.md | 966 | 205 |
 | foundations/toy-model-rationale.md | 493 | 117 |
-| introduction.md | 515 | 29 |
+| introduction.md | 581 | 45 |
 | patterns/chatgpt-export-viewer.md | 246 | 39 |
 | patterns/ddd-nes.md | 1,904 | 412 |
 | patterns/examples/archive-browser-code-map.md | 37 | 156 |
@@ -44,4 +44,4 @@
 | patterns/spatial-mud-database.md | 698 | 85 |
 | practice/ddd-agents-template.md | 45 | 123 |
 | practice/hegel-cli.md | 1,063 | 380 |
-| **TOTAL** | **17,199** | **4,457** |
+| **TOTAL** | **16,602** | **4,224** |
